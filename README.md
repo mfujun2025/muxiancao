@@ -14,7 +14,7 @@
 | `assets/` | 母线槽实拍素材图（hero / 安装实景 / 车间成品） |
 | `scripts/build_companies.py` | 本地一键同步：拉取飞书「黄页收录」表 → 写入两个页面的企业数据 |
 | `scripts/fetch_feishu.py` | 全自动同步脚本（GitHub Actions 用，走飞书开放 API） |
-| `.github/workflows/sync-companies.yml` | 定时自动同步工作流（需配置飞书应用凭证） |
+| `scripts/sync-companies.yml` | 定时自动同步工作流模板（上传到 `.github/workflows/` 启用，需配置飞书应用凭证） |
 
 ## 核心业务流程（飞书侧）
 
@@ -49,7 +49,8 @@ git add -A && git commit -m "更新黄页数据" && git push
 **方式二：GitHub Actions 全自动（需配置飞书应用凭证）**
 1. 飞书开放平台（open.feishu.cn）创建企业自建应用，开通「多维表格」权限 `bitable:app`（查看、评论和导出多维表格），并授权给「母线槽黄页」多维表格所在空间；
 2. 仓库 Settings → Secrets and variables → Actions，添加 `FEISHU_APP_ID` 与 `FEISHU_APP_SECRET` 两个 secret；
-3. 启用 `.github/workflows/sync-companies.yml`（默认每 2 小时自动同步一次，也可在 Actions 页面手动触发）。审核通过后，最多 2 小时网站自动更新。
+3. 将仓库 `scripts/sync-companies.yml` 的内容，在 GitHub 网页端手动上传到仓库 `.github/workflows/sync-companies.yml`（GitHub 限制无 workflow 权限的令牌不能推送工作流文件，故以模板形式存放）；
+4. 启用后默认每 2 小时自动同步一次，也可在 Actions 页面手动触发。审核通过后，最多 2 小时网站自动更新。
 
 ## 后续维护
 
