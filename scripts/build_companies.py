@@ -20,6 +20,7 @@ TABLE_ID = "tblnhJDtoCbDXVtG"
 SITE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TARGETS = ["index.html", "huangye.html"]
 PLACEHOLDER = "/*__COMPANIES_JSON__*/[]"
+PLACEHOLDER_RE = re.compile(r"/\*__COMPANIES_JSON__\*/\s*\[.*?\]", re.DOTALL)
 
 
 def fetch_records():
@@ -87,10 +88,11 @@ def main():
         path = os.path.join(SITE_DIR, target)
         with open(path, encoding="utf-8") as f:
             html = f.read()
-        if PLACEHOLDER not in html:
+        if not PLACEHOLDER_RE.search(html):
             sys.exit("{} 中未找到数据占位符 {}".format(target, PLACEHOLDER))
+        html = PLACEHOLDER_RE.sub(new_block, html)
         with open(path, "w", encoding="utf-8") as f:
-            f.write(html.replace(PLACEHOLDER, new_block))
+            f.write(html)
         print("已更新 {}：{} 家企业".format(target, len(companies)))
     print("同步完成。提交 git 后网站即更新。")
 
