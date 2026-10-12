@@ -6,12 +6,15 @@
 
 | 文件 | 说明 |
 |---|---|
-| `index.html` | 网站首页：黄页预览（内嵌飞书公开视图）、入驻流程、行业文章入口 |
-| `huangye.html` | 企业黄页页：已收录企业名录（内嵌飞书视图）+ 在线入驻申请表（内嵌飞书表单） |
+| `index.html` | 网站首页：最新收录企业预览（卡片式）、入驻流程、行业文章入口 |
+| `huangye.html` | 企业黄页页：已收录企业名录（卡片式展示）+ 在线入驻申请表（内嵌飞书表单） |
 | `articles/母线槽是什么.html` | SEO 文章：母线槽百科（信息型，约 800 字） |
 | `articles/密集型与空气型母线槽的区别.html` | SEO 文章：选型对比（对比型，约 800 字） |
 | `articles/母线槽厂家怎么选.html` | SEO 文章：厂家采购指南（交易型，约 800 字） |
 | `assets/` | 母线槽实拍素材图（hero / 安装实景 / 车间成品） |
+| `scripts/build_companies.py` | 本地一键同步：拉取飞书「黄页收录」表 → 写入两个页面的企业数据 |
+| `scripts/fetch_feishu.py` | 全自动同步脚本（GitHub Actions 用，走飞书开放 API） |
+| `.github/workflows/sync-companies.yml` | 定时自动同步工作流（需配置飞书应用凭证） |
 
 ## 核心业务流程（飞书侧）
 
@@ -32,10 +35,26 @@
 - GitHub Pages：仓库 Settings → Pages → 选择分支 `main`、根目录即可。
 - 域名绑定：在域名服务商把 `母线槽.cn` 解析到站点 CNAME，并在 Pages 设置里配置自定义域名。
 
+## 数据同步机制
+
+黄页页与首页的企业名录以卡片形式展示，数据内联在页面 `/*__COMPANIES_JSON__*/` 占位处。飞书「黄页收录」表审核通过的企业，通过以下两种方式同步到网站：
+
+**方式一：本地一键刷新（推荐，零配置）**
+```bash
+python scripts/build_companies.py
+git add -A && git commit -m "更新黄页数据" && git push
+```
+依赖本机已登录的 lark-cli（用户态），每次审核通过后运行一次即可。
+
+**方式二：GitHub Actions 全自动（需配置飞书应用凭证）**
+1. 飞书开放平台（open.feishu.cn）创建企业自建应用，开通「多维表格」权限 `bitable:app`（查看、评论和导出多维表格），并授权给「母线槽黄页」多维表格所在空间；
+2. 仓库 Settings → Secrets and variables → Actions，添加 `FEISHU_APP_ID` 与 `FEISHU_APP_SECRET` 两个 secret；
+3. 启用 `.github/workflows/sync-companies.yml`（默认每 2 小时自动同步一次，也可在 Actions 页面手动触发）。审核通过后，最多 2 小时网站自动更新。
+
 ## 后续维护
 
-- 收录企业数据自动来自飞书，无需改代码；
 - 新增 SEO 文章：按 `articles/` 内已有页面结构复制一篇，替换正文与 `<title>/<meta name="description">` 即可；
-- 申请表单字段变更后，同步更新 `huangye.html` 的「申请须知」文案。
+- 申请表单字段变更后，同步更新 `huangye.html` 的「申请须知」文案；
+- 企业名录数据以飞书「黄页收录」表为准，勿直接手改页面内数据块。
 
 © 2026 母线槽.cn

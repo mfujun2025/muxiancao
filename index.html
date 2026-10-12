@@ -60,9 +60,24 @@ section.block{padding:56px 0}
 .sec-head p{margin-top:8px;color:var(--muted);max-width:42em}
 /* 黄页预览 */
 .yellow-page{background:var(--steel)}
-.frame-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;box-shadow:0 10px 30px rgba(11,37,64,.08)}
-.frame-box iframe{width:100%;height:560px;border:0;border-radius:8px;display:block;background:#fff}
-.frame-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;color:var(--muted);font-size:.9rem}
+.company-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.company-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.company-grid{grid-template-columns:repeat(3,1fr)}}
+.company-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 16px;display:flex;flex-direction:column;gap:10px;box-shadow:0 4px 14px rgba(11,37,64,.05)}
+.company-card .head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.company-card h3{font-size:1rem;color:var(--ink);font-weight:900;line-height:1.5}
+.badge{flex-shrink:0;font-size:.72rem;color:var(--navy);background:var(--steel);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-weight:700;white-space:nowrap}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.74rem;color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:2px 8px;font-weight:700}
+.region{font-size:.84rem;color:var(--muted)}
+.desc{font-size:.88rem;color:var(--muted);flex:1}
+.contact{border-top:1px dashed var(--line);padding-top:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.tel{font-size:.9rem;color:var(--ink);font-weight:700}
+.site-link{font-size:.84rem;color:var(--accent);font-weight:700}
+.site-link:hover{text-decoration:underline}
+.empty-state{background:#fff;border:1px dashed var(--line);border-radius:14px;padding:40px 24px;text-align:center;color:var(--muted)}
+.empty-state b{display:block;color:var(--ink);font-size:1.02rem;margin-bottom:6px}
+.preview-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;color:var(--muted);font-size:.9rem}
 /* 流程 */
 .steps{display:grid;grid-template-columns:1fr;gap:16px}
 @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
@@ -146,12 +161,14 @@ section.block{padding:56px 0}
       <h2>已收录母线槽企业</h2>
       <p>以下为审核通过的母线槽企业名录，数据实时同步自飞书多维表格：申请提交后，经管理员审核通过即自动上架展示。</p>
     </div>
-    <div class="frame-box">
-      <iframe src="https://my.feishu.cn/base/HjfmbxtUIatXrusg6SacKVGrn3d?table=tblnhJDtoCbDXVtG&amp;view=vewJ1qiMYy" title="母线槽黄页-已收录企业名录" loading="lazy"></iframe>
+    <div class="company-grid" id="company-grid"></div>
+    <div class="empty-state" id="empty-state" hidden>
+      <b>黄页名录正在完善中</b>
+      已收录企业将在审核通过后自动展示，欢迎<a href="huangye.html#apply" style="color:var(--accent);font-weight:700">免费申请入驻</a>。
     </div>
-    <div class="frame-foot">
-      <span>若内嵌表格未正常显示，可点击右侧按钮在新窗口打开完整黄页。</span>
-      <a class="btn solid" href="https://my.feishu.cn/base/HjfmbxtUIatXrusg6SacKVGrn3d?table=tblnhJDtoCbDXVtG&amp;view=vewJ1qiMYy" target="_blank" rel="noopener">打开完整黄页</a>
+    <div class="preview-foot">
+      <span>名录数据实时同步自飞书多维表格，审核通过即自动上架。</span>
+      <a class="btn solid" href="huangye.html">查看全部企业黄页</a>
     </div>
   </div>
 </section>
@@ -240,5 +257,41 @@ section.block{padding:56px 0}
   <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
 </footer>
 
+<script>
+// 企业名录数据 —— 由 scripts/build_companies.py 自动同步（勿手改）
+const COMPANIES = /*__COMPANIES_JSON__*/[
+  {
+    "name": "示例·申城电气设备有限公司",
+    "type": "生产厂家",
+    "products": [
+      "密集型母线槽",
+      "空气型母线槽"
+    ],
+    "region": "上海市",
+    "intro": "专注密集型母线槽研发与生产，提供配电工程配套服务。",
+    "tel": "021-61234567",
+    "website": "https://www.shencheng-demo.cn"
+  }
+];
+
+function render(){
+  const grid = document.getElementById('company-grid');
+  const empty = document.getElementById('empty-state');
+  if(!COMPANIES.length){ empty.hidden = false; return; }
+  empty.hidden = true;
+  grid.innerHTML = COMPANIES.slice(0,6).map(c => {
+    const tags = (c.products||[]).map(p => '<span class="tag">'+p+'</span>').join('');
+    const site = c.website ? '<a class="site-link" href="'+c.website+'" target="_blank" rel="noopener">官网 →</a>' : '';
+    return '<article class="company-card">'
+      + '<div class="head"><h3>'+c.name+'</h3><span class="badge">'+c.type+'</span></div>'
+      + '<div class="tags">'+tags+'</div>'
+      + '<div class="region">'+c.region+'</div>'
+      + '<p class="desc">'+c.intro+'</p>'
+      + '<div class="contact"><span class="tel">'+c.tel+'</span>'+site+'</div>'
+      + '</article>';
+  }).join('');
+}
+render();
+</script>
 </body>
 </html>

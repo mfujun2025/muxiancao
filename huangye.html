@@ -9,10 +9,7 @@
 <link rel="preconnect" href="https://miaoda.feishu.cn">
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
 <style>
-:root{
-  --ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;
-  --accent:#E87A1F;--copper:#B87333;--text:#23303F;--muted:#5B6B7C;
-}
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--accent-soft:#FBE9D8;--text:#23303F;--muted:#5B6B7C}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.75;-webkit-font-smoothing:antialiased}
@@ -22,8 +19,7 @@ a{color:inherit;text-decoration:none}
 .site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
-.brand svg{width:30px;height:30px}
-.brand .cn{color:#F2B25C;font-weight:700}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
 .nav{display:flex;align-items:center;gap:6px}
 .nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
 .nav a:hover{background:rgba(255,255,255,.12)}
@@ -38,14 +34,40 @@ section.block{padding:52px 0}
 .sec-head{margin-bottom:24px}
 .sec-head .eyebrow{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:2px;margin-bottom:8px}
 .sec-head h2{font-size:1.5rem;color:var(--ink);font-weight:900}
-.frame-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;box-shadow:0 10px 30px rgba(11,37,64,.08)}
-.frame-box iframe{width:100%;height:680px;border:0;border-radius:8px;display:block;background:#fff}
-.frame-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;color:var(--muted);font-size:.9rem}
+.sec-head p{margin-top:8px;color:var(--muted);max-width:46em}
+/* 统计条 */
+.summary-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 28px}
+.summary-item{background:var(--steel);border:1px solid var(--line);border-radius:12px;padding:14px 12px;text-align:center}
+.summary-item b{display:block;font-size:1.5rem;color:var(--navy);font-weight:900}
+.summary-item span{font-size:.82rem;color:var(--muted)}
+/* 企业卡片 */
+.company-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.company-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.company-grid{grid-template-columns:repeat(3,1fr)}}
+.company-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 18px;display:flex;flex-direction:column;gap:12px;box-shadow:0 4px 14px rgba(11,37,64,.05)}
+.company-card .head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.company-card h3{font-size:1.05rem;color:var(--ink);font-weight:900;line-height:1.5}
+.badge{flex-shrink:0;font-size:.74rem;color:var(--navy);background:var(--steel);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-weight:700;white-space:nowrap}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.76rem;color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:3px 9px;font-weight:700}
+.region{font-size:.85rem;color:var(--muted)}
+.region::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;background:#BFD7EE;margin-right:6px;vertical-align:-1px}
+.desc{font-size:.9rem;color:var(--muted);flex:1}
+.contact{border-top:1px dashed var(--line);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.tel{font-size:.92rem;color:var(--ink);font-weight:700}
+.site-link{font-size:.85rem;color:var(--accent);font-weight:700}
+.site-link:hover{text-decoration:underline}
+/* 空态 */
+.empty-state{background:#fff;border:1px dashed var(--line);border-radius:14px;padding:44px 24px;text-align:center;color:var(--muted)}
+.empty-state b{display:block;color:var(--ink);font-size:1.05rem;margin-bottom:8px}
+.empty-state a{color:var(--accent);font-weight:700}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem}
 .btn.solid{background:var(--accent);color:#fff}
 .btn.solid:hover{background:#D16A15}
 .btn.ghost{border:1px solid var(--navy);color:var(--navy)}
 .btn.ghost:hover{background:var(--steel)}
+.update-note{display:flex;align-items:center;gap:8px;margin-top:16px;color:var(--muted);font-size:.85rem}
+.update-note svg{flex-shrink:0}
 #apply{background:var(--steel)}
 .apply-grid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:860px){.apply-grid{grid-template-columns:1.05fr .95fr}}
@@ -53,7 +75,7 @@ section.block{padding:52px 0}
 .apply-panel h3{color:var(--ink);font-weight:900;font-size:1.15rem;margin-bottom:10px}
 .apply-panel ul{margin:10px 0 0 0;padding-left:0;list-style:none}
 .apply-panel li{position:relative;padding:6px 0 6px 26px;color:var(--muted);font-size:.93rem}
-.apply-panel li::before{content:"";position:absolute;left:2px;top:13px;width:14px;height:14px;border-radius:4px;background:var(--accent-soft,#FBE9D8)}
+.apply-panel li::before{content:"";position:absolute;left:2px;top:13px;width:14px;height:14px;border-radius:4px;background:var(--accent-soft)}
 .apply-panel li b{color:var(--text)}
 .apply-cta{margin-top:18px}
 .form-frame{margin-top:14px}
@@ -90,7 +112,7 @@ section.block{padding:52px 0}
 <section class="page-hero">
   <div class="container">
     <h1>母线槽企业黄页</h1>
-    <p>全国母线槽厂家、经销代理、工程安装与设计咨询企业名录。免费入驻，审核通过自动收录，数据实时同步展示。</p>
+    <p>全国母线槽厂家、经销代理、工程安装与设计咨询企业名录。免费入驻，审核通过自动收录展示。</p>
   </div>
 </section>
 
@@ -98,14 +120,23 @@ section.block{padding:52px 0}
   <div class="container">
     <div class="sec-head">
       <div class="eyebrow">DIRECTORY</div>
-      <h2>已收录企业名录</h2>
+      <h2>已收录企业</h2>
+      <p>以下企业均已完成入驻审核，信息由管理员审核后自动同步，数据与飞书多维表格保持一致。</p>
     </div>
-    <div class="frame-box">
-      <iframe src="https://my.feishu.cn/base/HjfmbxtUIatXrusg6SacKVGrn3d?table=tblnhJDtoCbDXVtG&amp;view=vewJ1qiMYy" title="母线槽黄页-已收录企业名录" loading="lazy"></iframe>
+    <div class="summary-bar">
+      <div class="summary-item"><b id="stat-companies">0</b><span>已收录企业</span></div>
+      <div class="summary-item"><b id="stat-products">0</b><span>产品类型覆盖</span></div>
+      <div class="summary-item"><b id="stat-regions">0</b><span>覆盖省市</span></div>
     </div>
-    <div class="frame-foot">
-      <span>若内嵌表格未正常显示，可点击按钮在新窗口打开完整黄页。</span>
-      <a class="btn ghost" href="https://my.feishu.cn/base/HjfmbxtUIatXrusg6SacKVGrn3d?table=tblnhJDtoCbDXVtG&amp;view=vewJ1qiMYy" target="_blank" rel="noopener">在新窗口打开黄页</a>
+    <div class="company-grid" id="company-grid"></div>
+    <div class="empty-state" id="empty-state" hidden>
+      <b>黄页名录正在完善中</b>
+      已收录企业将在审核通过后自动展示。如果你是母线槽企业，欢迎
+      <a href="#apply">免费申请入驻</a>。
+    </div>
+    <div class="update-note">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5B6B7C" stroke-width="2"><path d="M20 11a8 8 0 1 0-2.34 5.66"/><path d="M20 4v7h-7"/></svg>
+      名录数据自动同步：审核通过后，刷新页面即可看到新企业。
     </div>
   </div>
 </section>
@@ -166,5 +197,47 @@ section.block{padding:52px 0}
   <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
 </footer>
 
+<script>
+// 企业名录数据 —— 由 scripts/build_companies.py 自动同步（勿手改）
+const COMPANIES = /*__COMPANIES_JSON__*/[
+  {
+    "name": "示例·申城电气设备有限公司",
+    "type": "生产厂家",
+    "products": [
+      "密集型母线槽",
+      "空气型母线槽"
+    ],
+    "region": "上海市",
+    "intro": "专注密集型母线槽研发与生产，提供配电工程配套服务。",
+    "tel": "021-61234567",
+    "website": "https://www.shencheng-demo.cn"
+  }
+];
+
+function render(){
+  const grid = document.getElementById('company-grid');
+  const empty = document.getElementById('empty-state');
+  document.getElementById('stat-companies').textContent = String(COMPANIES.length);
+  const prods = new Set(); const regions = new Set();
+  COMPANIES.forEach(c => (c.products||[]).forEach(p => prods.add(p)));
+  COMPANIES.forEach(c => { if(c.region) regions.add(c.region); });
+  document.getElementById('stat-products').textContent = String(prods.size);
+  document.getElementById('stat-regions').textContent = String(regions.size);
+  if(!COMPANIES.length){ empty.hidden = false; return; }
+  empty.hidden = true;
+  grid.innerHTML = COMPANIES.map(c => {
+    const tags = (c.products||[]).map(p => '<span class="tag">'+p+'</span>').join('');
+    const site = c.website ? '<a class="site-link" href="'+c.website+'" target="_blank" rel="noopener">企业官网 →</a>' : '';
+    return '<article class="company-card">'
+      + '<div class="head"><h3>'+c.name+'</h3><span class="badge">'+c.type+'</span></div>'
+      + '<div class="tags">'+tags+'</div>'
+      + '<div class="region">'+c.region+'</div>'
+      + '<p class="desc">'+c.intro+'</p>'
+      + '<div class="contact"><span class="tel">'+c.tel+'</span>'+site+'</div>'
+      + '</article>';
+  }).join('');
+}
+render();
+</script>
 </body>
 </html>

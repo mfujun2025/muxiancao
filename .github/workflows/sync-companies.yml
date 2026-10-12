@@ -1,0 +1,30 @@
+name: 同步黄页数据
+
+on:
+  schedule:
+    # 每 2 小时同步一次（UTC 时间；北京时间 = UTC+8）
+    - cron: '0 */2 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 同步黄页数据
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+        run: python scripts/fetch_feishu.py
+
+      - name: 提交变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html huangye.html
+          git diff --cached --quiet || git commit -m "chore: 自动同步黄页企业数据 $(date -u +'%Y-%m-%d %H:%M')"
+          git push
