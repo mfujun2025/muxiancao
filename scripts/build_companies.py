@@ -20,7 +20,8 @@ TABLE_ID = "tblnhJDtoCbDXVtG"
 SITE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TARGETS = ["index.html", "huangye.html"]
 PLACEHOLDER = "/*__COMPANIES_JSON__*/[]"
-PLACEHOLDER_RE = re.compile(r"/\*__COMPANIES_JSON__\*/\s*\[.*?\]", re.DOTALL)
+# 匹配整个占位数据块直到数组闭合的 "];"（避免被内层 products 数组的 "]" 截断）
+PLACEHOLDER_RE = re.compile(r"/\*__COMPANIES_JSON__\*/\s*\[.*?\];", re.DOTALL)
 
 
 def fetch_records():
@@ -90,7 +91,7 @@ def main():
             html = f.read()
         if not PLACEHOLDER_RE.search(html):
             sys.exit("{} 中未找到数据占位符 {}".format(target, PLACEHOLDER))
-        html = PLACEHOLDER_RE.sub(new_block, html)
+        html = PLACEHOLDER_RE.sub(new_block + ";", html)
         with open(path, "w", encoding="utf-8") as f:
             f.write(html)
         print("已更新 {}：{} 家企业".format(target, len(companies)))

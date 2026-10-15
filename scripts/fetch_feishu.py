@@ -24,6 +24,8 @@ TABLE_ID = os.environ.get("MUXIANCAO_TABLE", "tblnhJDtoCbDXVtG")
 SITE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TARGETS = ["index.html", "huangye.html"]
 PLACEHOLDER = "/*__COMPANIES_JSON__*/[]"
+# 匹配整个占位数据块直到数组闭合的 "];"（避免被内层 products 数组的 "]" 截断）
+PLACEHOLDER_RE = re.compile(r"/\*__COMPANIES_JSON__\*/\s*\[.*?\];", re.DOTALL)
 
 
 def http_json(url, payload=None, headers=None):
@@ -102,10 +104,11 @@ def main():
         path = os.path.join(SITE_DIR, target)
         with open(path, encoding="utf-8") as fp:
             html = fp.read()
-        if PLACEHOLDER not in html:
+        if not PLACEHOLDER_RE.search(html):
             sys.exit("{} 中未找到数据占位符 {}".format(target, PLACEHOLDER))
+        html = PLACEHOLDER_RE.sub(new_block + ";", html)
         with open(path, "w", encoding="utf-8") as fp:
-            fp.write(html.replace(PLACEHOLDER, new_block))
+            fp.write(html)
         print("已更新 {}：{} 家企业".format(target, len(companies)))
     print("同步完成。")
 
