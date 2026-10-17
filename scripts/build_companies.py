@@ -61,12 +61,30 @@ def clean_website(val):
     return m.group(0) if m else ""
 
 
+def is_garbage_text(val):
+    """识别无效/测试数据：空、过短、或由单一字符重复而成（如 rrrrr、eeeee）。"""
+    text = str(val or "").strip()
+    if not text:
+        return True
+    if len(text) < 2:
+        return True
+    # 全为同一字符重复（含 rrrr、eeee、1111 等测试乱码）
+    if re.fullmatch(r"(.)\1+", text):
+        return True
+    # 不含任何汉字、字母、数字的有效内容（纯符号）
+    if not re.search(r"[\u4e00-\u9fffA-Za-z0-9]", text):
+        return True
+    return False
+
+
 def main():
     fields, rows = fetch_records()
     companies = []
+    skipped = 0
     for row in rows:
         name = pick(row, fields, "企业名称")
-        if not name:
+        if not name or is_garbage_text(name):
+            skipped += 1
             continue
         ctype = pick(row, fields, "企业类型") or []
         if isinstance(ctype, str):
@@ -74,12 +92,15 @@ def main():
         products = pick(row, fields, "母线槽产品") or []
         if isinstance(products, str):
             products = [products]
+        intro = str(pick(row, fields, "企业简介") or "").strip()
+        if is_garbage_text(intro):
+            intro = ""
         companies.append({
             "name": str(name).strip(),
             "type": ctype[0] if ctype else "",
             "products": [str(p) for p in products],
             "region": str(pick(row, fields, "所在省市") or "").strip(),
-            "intro": str(pick(row, fields, "企业简介") or "").strip(),
+            "intro": intro,
             "tel": str(pick(row, fields, "联系电话") or "").strip(),
             "website": clean_website(pick(row, fields, "企业官网")),
         })
@@ -94,7 +115,7 @@ def main():
         html = PLACEHOLDER_RE.sub(new_block + ";", html)
         with open(path, "w", encoding="utf-8") as f:
             f.write(html)
-        print("已更新 {}：{} 家企业".format(target, len(companies)))
+        print("已更新 {}：{} 家企业（跳过无效记录 {} 条）".format(target, len(companies), skipped))
     print("同步完成。提交 git 后网站即更新。")
 
 
