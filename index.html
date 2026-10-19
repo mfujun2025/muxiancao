@@ -88,7 +88,8 @@ section.block{padding:56px 0}
 /* 文章 */
 .articles{display:grid;grid-template-columns:1fr;gap:18px}
 @media(min-width:760px){.articles{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1080px){.articles{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:760px) and (max-width:1079px){.articles .article-card:last-child{grid-column:1/-1}}
+@media(min-width:1080px){.articles{grid-template-columns:repeat(5,1fr)}}
 .article-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column}
 .article-card:hover{box-shadow:0 14px 34px rgba(11,37,64,.12);transform:translateY(-3px)}
 .article-card .thumb{height:170px;overflow:hidden}
@@ -377,6 +378,51 @@ section.block{padding:56px 0}
           <span class="more">阅读全文</span>
         </div>
       </a>
+      <a class="article-card" href="articles/数据中心母线槽.html">
+        <div class="thumb"><img src="assets/install-scene.jpg" alt="数据中心机房内母线槽末端配电敷设场景"></div>
+        <div class="body">
+          <div class="cat">应用场景</div>
+          <h3>数据中心母线槽怎么选？机房供配电方案要点</h3>
+          <p>固定式与滑轨式怎么选、电流等级与插接箱配置要点全讲清。</p>
+          <span class="more">阅读全文</span>
+        </div>
+      </a>
+      <a class="article-card" href="articles/母线槽安装规范.html">
+        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽安装规范施工支架与母线结构"></div>
+        <div class="body">
+          <div class="cat">安装施工</div>
+          <h3>母线槽安装规范要求有哪些？施工要点与验收标准</h3>
+          <p>按 GB 50303：绝缘电阻≥20MΩ、支架间距、外壳接地不少于 2 处。</p>
+          <span class="more">阅读全文</span>
+        </div>
+      </a>
+      <a class="article-card" href="articles/母线槽发热原因.html">
+        <div class="thumb"><img src="assets/factory-stack.jpg" alt="配电室内母线槽连接器与测温排查场景"></div>
+        <div class="body">
+          <div class="cat">运维指南</div>
+          <h3>母线槽发热原因有哪些？温度过高排查与处理方法</h3>
+          <p>连接松动、过载、铜铝腐蚀四大原因，附排查顺序与处理建议。</p>
+          <span class="more">阅读全文</span>
+        </div>
+      </a>
+      <a class="article-card" href="articles/母线槽3C认证.html">
+        <div class="thumb"><img src="assets/factory-stack.jpg" alt="母线槽3C认证证书与工厂检测场景"></div>
+        <div class="body">
+          <div class="cat">标准检测</div>
+          <h3>母线槽需要3C认证吗？认证要求与证书查验方法</h3>
+          <p>母线干线系统属 CCC 目录范围，依据 GB 7251.2，附证书查验方法。</p>
+          <span class="more">阅读全文</span>
+        </div>
+      </a>
+      <a class="article-card" href="articles/母线槽载流量计算.html">
+        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽载流量计算与铜排截面结构"></div>
+        <div class="body">
+          <div class="cat">选型参考</div>
+          <h3>母线槽载流量怎么计算？选型电流计算方法</h3>
+          <p>I=P/(√3·U·cosφ) 算电流，铜排载流量经验估算与裕量修正。</p>
+          <span class="more">阅读全文</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -418,6 +464,11 @@ section.block{padding:56px 0}
       <a href="articles/母线槽批发.html">批发货源</a>
       <a href="articles/母线槽定制.html">非标定制</a>
       <a href="articles/母线槽选型.html">选型指南</a>
+      <a href="articles/数据中心母线槽.html">数据中心母线</a>
+      <a href="articles/母线槽安装规范.html">安装规范</a>
+      <a href="articles/母线槽发热原因.html">发热排查</a>
+      <a href="articles/母线槽3C认证.html">3C认证</a>
+      <a href="articles/母线槽载流量计算.html">载流量计算</a>
     </div>
     <div>
       <h4>合作推广</h4>
