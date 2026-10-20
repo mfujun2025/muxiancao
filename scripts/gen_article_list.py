@@ -109,8 +109,10 @@ for cat, items in groups.items():
     rows = []
     for href, title, desc in items:
         num += 1
+        # 列表页位于 articles/ 目录内，链接需去掉 articles/ 前缀
+        href_rel = href.replace("articles/", "")
         rows.append('<div class="entry"><span class="n">%02d</span><span class="t"><a href="%s">%s</a></span><span class="d">%s</span></div>'
-                    % (num, href, title, desc))
+                    % (num, href_rel, title, desc))
     group_html.append('<div class="group"><h2>%s（%d 篇）</h2>%s</div>' % (cat, len(items), "".join(rows)))
 
 body = "".join(group_html)
