@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>母线槽与桥架承重对比：结构、荷载与选型 - 母线槽.cn</title>
+<meta name="description" content="母线槽与桥架承重能力差异来自结构与用途：母线槽自身输送电流，桥架承载电缆。挠度、跨距、自重逐项对比。">
+<meta name="keywords" content="母线槽与桥架承重对比,母线槽承重,电缆桥架挠度,母线槽挠度">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:22px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article-wrap">
+  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 母线槽与桥架承重对比</nav>
+  <h1>母线槽与桥架承重对比：结构、荷载与选型</h1>
+  <div class="meta-line">母线槽.cn 行业参考 · 2026 年更新 · 阅读约 4 分钟</div>
+
+  <p><strong>母线槽与桥架承重</strong>常常被放在一起比较，但两者的承重含义完全不同：母线槽是"自己承受自己的重量并输送电流"，桥架是"托住电缆并承受电缆的重量"。把两者承重数据直接对比容易得出错误结论，本文从结构、荷载与标准角度讲清差异。</p>
+
+  <h2>承重能力差异的来源：一个是输电器，一个是支撑架</h2>
+  <ul>
+    <li><strong>母线槽</strong>：外壳包裹铜排/铝排导体，整体是刚性电力输送设备，其"承重"主要指自身结构刚度——在外力与自重下变形要小，吊装跨距要满足规定；</li>
+    <li><strong>桥架</strong>：本身不输送电流，是电缆的支撑与保护装置，其"承重"指额定均布荷载——能托住多重的电缆；</li>
+    <li><strong>结论</strong>：母线槽的"承重"是结构刚度问题，桥架的"承重"是承载电缆荷载问题，二者不是同一指标。</li>
+  </ul>
+
+  <h2>关键参数对比</h2>
+  <ul>
+    <li><strong>挠度要求</strong>：按《电控配电用电缆桥架》JB/T 10216，桥架承受额定均布载荷时相对挠度钢制不宜大于 1/200、铝制不宜大于 1/300；母线槽外壳刚度按产品标准与厂标控制，大跨距型母线中心点允许挠度多为跨距的 1/300 左右；</li>
+    <li><strong>支架间距</strong>：桥架按荷载与规格 1.5-3 米设支架；母线槽水平安装一般 2-3 米，垂直安装逐层设支撑并加防晃支架；</li>
+    <li><strong>自重</strong>：母线槽单位重量明显大于桥架，竖井内垂直敷设时要按母线自重核算每层支撑，不能套用桥架的支撑做法。</li>
+  </ul>
+
+  <h2>选型建议：别拿承重当唯一指标</h2>
+  <ul>
+    <li><strong>大电流主干线</strong>：优先选母线槽，载流量大、结构紧凑，承重由支架系统解决；</li>
+    <li><strong>多回路电缆敷设</strong>：优先选桥架，按电缆总荷载选梯式、槽式或托盘式并核算支架；</li>
+    <li><strong>竖井内垂直干线</strong>：高层建筑 400A 及以上宜采用封闭式母线槽树干式配电，支撑按每层设置；</li>
+    <li><strong>大跨距场所</strong>：如需减少支架，选加强型外壳母线槽，先向厂家要跨距-挠度数据再定方案。</li>
+  </ul>
+
+  <h2>常见问题（FAQ）</h2>
+  <div class="qa"><b>Q1：桥架上能放母线槽吗？</b><p>不能。桥架按电缆荷载设计，母线槽自重和结构要求都不同，两者应分别设置独立支架，混装会带来荷载与检修双重风险。</p></div>
+  <div class="qa"><b>Q2：垂直母线槽每层都要支撑吗？</b><p>一般每层或每隔一定高度设承重支撑与防晃支架，具体间距以厂家深化图和层高核算为准，避免母线自重压坏连接器。</p></div>
+
+  <div class="cta-box">
+    <h2>母线槽与桥架方案拿不准？</h2>
+    <p>母线槽.cn 黄页收录母线槽与桥架生产厂家，可在线咨询选型与报价，也可免费入驻供货。</p>
+    <a class="btn" href="../huangye.html#apply">浏览黄页 / 免费入驻</a>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料：</strong><br>
+    <a href="http://dlqyw.net/down/soft/%E6%A0%87%E5%87%86%E5%85%B1%E4%BA%AB/%E8%A1%8C%E4%B8%9A%E6%A0%87%E5%87%86/JB%E2%88%95T%2010216-2000%20%E7%94%B5%E6%8E%A7%E9%85%8D%E7%94%B5%E7%94%A8%E7%94%B5%E7%BC%86%E6%A1%A5%E6%9E%B6.pdf" target="_blank" rel="noopener">JB/T 10216-2000 电控配电用电缆桥架</a><br>
+    <a href="https://gf.cabr-fire.com/m/article-35091.htm" target="_blank" rel="noopener">GB 51348-2019 民用建筑电气设计标准（7.2 低压配电系统）</a><br>
+    <a href="母线槽和桥架的区别.html">相关阅读：母线槽和桥架的区别</a><br>
+    <a href="母线槽和电缆的区别.html">相关阅读：母线槽和电缆的区别</a><br>
+    <a href="母线槽选型.html">相关阅读：母线槽选型指南</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>母线槽.cn</h4>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h4>站点导航</h4>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="母线槽是什么.html">母线槽百科</a>
+      <a href="密集型与空气型母线槽的区别.html">选型对比</a>
+      <a href="母线槽厂家怎么选.html">厂家采购指南</a>
+      <a href="母线槽怎么安装.html">安装施工</a>
+      <a href="母线槽和电缆的区别.html">母线槽与电缆对比</a>
+      <a href="母线槽国家标准.html">执行标准</a>
+      <a href="母线槽价格多少钱一米.html">母线槽价格</a>
+      <a href="密集型母线槽规格型号.html">规格型号</a>
+      <a href="母线槽维护保养.html">维护保养</a>
+    </div>
+    <div>
+      <h4>合作推广</h4>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+
+</body>
+</html>

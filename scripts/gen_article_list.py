@@ -18,6 +18,8 @@ cards = re.findall(
     r'<a class="article-card" href="([^"]+)">.*?<div class="cat">(.*?)</div>\s*<h3>(.*?)</h3>\s*<p>(.*?)</p>',
     block, re.S)
 cards = [(href.strip(), cat.strip(), title.strip(), desc.strip()) for href, cat, title, desc in cards]
+# 去掉 href 的 articles/ 前缀（列表页本身位于 articles/ 目录内），并剥离标题里的内联 span（如置顶 badge）
+cards = [(href.replace("articles/", "", 1), cat, re.sub(r"<span.*?</span>", "", title).strip(), desc) for href, cat, title, desc in cards]
 print("提取文章数:", len(cards))
 
 # 按分类分组（保持首次出现顺序）

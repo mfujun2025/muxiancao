@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>母线槽耐压测试怎么做？试验电压标准与判定 - 母线槽.cn</title>
+<meta name="description" content="母线槽耐压测试是出厂与验收必做项目，工频耐压按标准电压施加1分钟。讲清试验电压、方法与判定。">
+<meta name="keywords" content="母线槽耐压测试,母线槽耐压试验,母线槽介电强度,母线槽工频耐压">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:22px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article-wrap">
+  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 母线槽耐压测试</nav>
+  <h1>母线槽耐压测试怎么做？试验电压标准与判定</h1>
+  <div class="meta-line">母线槽.cn 行业参考 · 2026 年更新 · 阅读约 4 分钟</div>
+
+  <p><strong>母线槽耐压测试</strong>（工频耐压/介电强度试验）是验证母线干线系统绝缘水平的核心试验，出厂检验与现场验收都要做。它通过施加高于额定电压的交流电压检验绝缘是否击穿，直接关系到送电安全。本文讲清试验电压标准、方法与判定。</p>
+
+  <h2>为什么必须做耐压测试</h2>
+  <ul>
+    <li><strong>出厂把关</strong>：按产品标准，母线槽出厂检验含工频耐压试验、绝缘电阻测量、接地连续性等项目，逐台或按批次进行；</li>
+    <li><strong>现场验收</strong>：安装完成后送电前须做整段绝缘与耐压检查，发现运输、安装造成的绝缘损伤；</li>
+    <li><strong>安全底线</strong>：绝缘薄弱点会在高电压下暴露，避免投运后发生相间短路或对地击穿事故。</li>
+  </ul>
+
+  <h2>试验电压标准怎么看</h2>
+  <ul>
+    <li><strong>依据标准</strong>：母线干线系统按 GB/T 7251.6 及 GB/T 7251.1 执行，介电强度试验电压按绝缘电压等级从表 10 查取；</li>
+    <li><strong>常见取值</strong>：低压密集型母线槽额定绝缘电压 1000V 级，工频耐压试验电压一般取 2500V 左右（不同标准与电压等级有差异，以产品型式试验报告为准）；</li>
+    <li><strong>再试验降压</strong>：已通过一次耐压后需要复试时，施加电压按规定值的 85% 执行，时间同样保持 1 分钟；</li>
+    <li><strong>更高要求</strong>：部分厂家以高于国标的电压做出厂把关（如 3750V），属于企业内控，验收仍按标准判定。</li>
+  </ul>
+
+  <h2>试验方法与步骤</h2>
+  <ul>
+    <li><strong>试验接线</strong>：按产品说明书连接试验设备，一般对各相导体对地（外壳）及相间施加试验电压；</li>
+    <li><strong>升压</strong>：先将试验电压的 30%-50% 加在试验部位，再在 10-30 秒内逐步升至规定值；</li>
+    <li><strong>保持</strong>：在规定的试验电压下保持 1 分钟；</li>
+    <li><strong>降压断电</strong>：试验结束后逐步降压至零再切断电源，防止突然断电产生过电压；</li>
+    <li><strong>判定</strong>：试验中无击穿、闪络或绝缘损坏即为合格。</li>
+  </ul>
+
+  <h2>现场验收注意事项</h2>
+  <ul>
+    <li><strong>先测绝缘电阻</strong>：耐压前先确认绝缘电阻合格（整段母线送电前绝缘电阻值不应小于标准要求），不合格不升压；</li>
+    <li><strong>断开负载</strong>：耐压时断开插接箱与负载，防止损坏下游设备；</li>
+    <li><strong>人员安全</strong>：试验区域设警戒，按规程放电后再触碰被试母线。</li>
+  </ul>
+
+  <h2>常见问题（FAQ）</h2>
+  <div class="qa"><b>Q1：耐压测试没通过怎么办？</b><p>先确认试验接线与电压取值是否正确，再分段排查：清洁受潮污染部位、处理绝缘损伤段，修复后重新试验，仍不合格的母线段应返厂或更换。</p></div>
+  <div class="qa"><b>Q2：验收时厂家要提供什么试验证明？</b><p>出厂检验报告（含工频耐压与绝缘电阻数据）和型式试验报告（含耐压试验电压），采购时应要求随货提供，并存档备查。</p></div>
+
+  <div class="cta-box">
+    <h2>需要耐压测试服务或检测报告？</h2>
+    <p>母线槽.cn 黄页收录母线槽生产与检测相关企业，可在线联系索取试验报告，也可免费入驻供货。</p>
+    <a class="btn" href="../huangye.html#apply">浏览黄页 / 免费入驻</a>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料：</strong><br>
+    <a href="https://chinacable.obs.cn-north-4.myhuaweicloud.com/uploads/image/20230213/ff5d6965b8eace6f097c616349ddaf02.pdf" target="_blank" rel="noopener">JB/T 8511-2011 空气绝缘母线干线系统（介电强度试验）</a><br>
+    <a href="https://www.ttbz.org.cn/upload/file/20251230/6390269114846075297496363.pdf" target="_blank" rel="noopener">T/CAEE 模块化密集型母线槽技术要求（出厂检验）</a><br>
+    <a href="http://m.jianbiaoku.com/webarbs/book/167035/4841855.shtml" target="_blank" rel="noopener">GB 55024-2022 建筑电气与智能化通用规范（线路检测）</a><br>
+    <a href="母线槽国家标准.html">相关阅读：母线槽国家标准</a><br>
+    <a href="母线槽3C认证.html">相关阅读：母线槽3C认证</a><br>
+    <a href="母线槽绝缘电阻检测.html">相关阅读：母线槽绝缘电阻检测</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>母线槽.cn</h4>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h4>站点导航</h4>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="母线槽是什么.html">母线槽百科</a>
+      <a href="密集型与空气型母线槽的区别.html">选型对比</a>
+      <a href="母线槽厂家怎么选.html">厂家采购指南</a>
+      <a href="母线槽怎么安装.html">安装施工</a>
+      <a href="母线槽和电缆的区别.html">母线槽与电缆对比</a>
+      <a href="母线槽国家标准.html">执行标准</a>
+      <a href="母线槽价格多少钱一米.html">母线槽价格</a>
+      <a href="密集型母线槽规格型号.html">规格型号</a>
+      <a href="母线槽维护保养.html">维护保养</a>
+    </div>
+    <div>
+      <h4>合作推广</h4>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+
+</body>
+</html>
