@@ -1,619 +1,1249 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>母线槽.cn - 母线槽企业黄页 | 免费入驻 审核收录</title>
+
 <meta name="description" content="母线槽.cn 是专注母线槽行业的免费企业黄页，汇集空气型、密集型、耐火、防水防潮、智能、照明母线槽厂家与经销工程企业。免费申请入驻，审核通过自动收录。">
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://miaoda.feishu.cn">
+
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+
 <style>
+
 :root{
+
   --ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;
+
   --accent:#E87A1F;--accent-soft:#FBE9D8;--copper:#B87333;--text:#23303F;--muted:#5B6B7C;
+
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
+
 html{scroll-behavior:smooth}
+
 body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.75;-webkit-font-smoothing:antialiased}
+
 img{max-width:100%;display:block}
+
 a{color:inherit;text-decoration:none}
+
 .container{max-width:1120px;margin:0 auto;padding:0 20px}
+
 /* ===== Header ===== */
+
 .site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+
 .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+
 .brand svg{width:30px;height:30px}
+
 .brand .cn{color:#F2B25C;font-weight:700}
+
 .nav{display:flex;align-items:center;gap:6px}
+
 .nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+
 .nav a:hover{background:rgba(255,255,255,.12)}
+
 .nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+
 .nav .cta{background:var(--accent);color:#fff;font-weight:700}
+
 .nav .cta:hover{background:#D16A15}
+
 /* ===== Hero ===== */
+
 .hero{background:linear-gradient(160deg,#0B2540 0%,#123A5E 60%,#1B4B7A 100%);color:#fff;overflow:hidden}
+
 .hero-inner{display:grid;grid-template-columns:1fr;gap:28px;padding:56px 20px 60px;max-width:1120px;margin:0 auto}
+
 @media(min-width:860px){.hero-inner{grid-template-columns:1.15fr .85fr;align-items:center;padding:72px 20px 80px}}
+
 .hero h1{font-size:2rem;line-height:1.3;font-weight:900;letter-spacing:1px}
+
 @media(min-width:860px){.hero h1{font-size:2.6rem}}
+
 .hero h1 .hl{color:#F7A25C}
+
 .hero p.sub{margin:16px 0 26px;color:#CFE0F2;font-size:1.02rem;max-width:34em}
+
 .hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem}
+
 .btn.solid{background:var(--accent);color:#fff}
+
 .btn.solid:hover{background:#D16A15}
+
 .btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+
 .btn.ghost:hover{background:rgba(255,255,255,.1)}
+
 .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px;max-width:460px}
+
 .stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px 10px;text-align:center}
+
 .stat b{display:block;font-size:1.5rem;color:#F7A25C;font-weight:900}
+
 .stat span{font-size:.8rem;color:#BFD2E6}
+
 .hero-img{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+
 .hero-img img{width:100%;height:100%;object-fit:cover}
+
 .hero-img .tag{position:absolute;left:12px;bottom:12px;background:rgba(11,37,64,.85);color:#fff;font-size:.8rem;padding:6px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.25)}
+
 /* ===== Sections ===== */
+
 section.block{padding:56px 0}
+
 .sec-head{margin-bottom:26px}
+
 .sec-head .eyebrow{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:2px;margin-bottom:8px}
+
 .sec-head h2{font-size:1.6rem;color:var(--ink);font-weight:900}
+
 .sec-head p{margin-top:8px;color:var(--muted);max-width:42em}
+
 /* 黄页预览 */
+
 .yellow-page{background:var(--steel)}
+
 .company-grid{display:grid;grid-template-columns:1fr;gap:16px}
+
 @media(min-width:760px){.company-grid{grid-template-columns:repeat(2,1fr)}}
+
 @media(min-width:1020px){.company-grid{grid-template-columns:repeat(3,1fr)}}
+
 .company-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 16px;display:flex;flex-direction:column;gap:10px;box-shadow:0 4px 14px rgba(11,37,64,.05)}
+
 .company-card .head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+
 .company-card h3{font-size:1rem;color:var(--ink);font-weight:900;line-height:1.5}
+
 .badge{flex-shrink:0;font-size:.72rem;color:var(--navy);background:var(--steel);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-weight:700;white-space:nowrap}
+
 .tags{display:flex;flex-wrap:wrap;gap:6px}
+
 .tag{font-size:.74rem;color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:2px 8px;font-weight:700}
+
 .region{font-size:.84rem;color:var(--muted)}
+
 .desc{font-size:.88rem;color:var(--muted);flex:1}
+
 .contact{border-top:1px dashed var(--line);padding-top:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
 .tel{font-size:.9rem;color:var(--ink);font-weight:700}
+
 .site-link{font-size:.84rem;color:var(--accent);font-weight:700}
+
 .site-link:hover{text-decoration:underline}
+
 .empty-state{background:#fff;border:1px dashed var(--line);border-radius:14px;padding:40px 24px;text-align:center;color:var(--muted)}
+
 .empty-state b{display:block;color:var(--ink);font-size:1.02rem;margin-bottom:6px}
+
 .preview-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;color:var(--muted);font-size:.9rem}
+
 /* 流程 */
+
 .steps{display:grid;grid-template-columns:1fr;gap:16px}
+
 @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+
 .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 20px;position:relative}
+
 .step .num{position:absolute;top:18px;right:18px;font-size:2rem;font-weight:900;color:var(--steel);line-height:1}
+
 .step h3{font-size:1.05rem;color:var(--ink);font-weight:900;margin-bottom:8px}
+
 .step p{color:var(--muted);font-size:.92rem}
+
 /* 文章 */
+
 .articles{display:grid;grid-template-columns:1fr;gap:18px}
+
 @media(min-width:760px){.articles{grid-template-columns:repeat(2,1fr)}}
+
 @media(min-width:760px) and (max-width:1079px){.articles .article-card:last-child{grid-column:1/-1}}
+
 @media(min-width:1080px){.articles{grid-template-columns:repeat(5,1fr)}}
+
 .article-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column}
+
 .article-card:hover{box-shadow:0 14px 34px rgba(11,37,64,.12);transform:translateY(-3px)}
+
 .article-card .thumb{height:170px;overflow:hidden}
+
 .article-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+
 .article-card:hover .thumb img{transform:scale(1.05)}
+
 .article-card .body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+
 .article-card .cat{font-size:.78rem;color:var(--accent);font-weight:700;margin-bottom:6px}
+
 .article-card h3{font-size:1.05rem;color:var(--ink);font-weight:900;line-height:1.5;margin-bottom:8px}
+
 .article-card p{color:var(--muted);font-size:.9rem;flex:1}
+
 .article-card .more{margin-top:14px;color:var(--accent);font-weight:700;font-size:.9rem}
+
 /* CTA */
+
 .cta-band{background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;text-align:center;padding:56px 20px}
+
 .cta-band h2{font-size:1.6rem;font-weight:900;margin-bottom:12px}
+
 .cta-band p{color:#BFD2E6;max-width:38em;margin:0 auto 24px}
+
 /* Footer */
+
 .site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+
 .footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+
 @media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+
 .footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+
 .footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+
 .footer-inner a:hover{color:#F7A25C}
+
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+
 /* 通用 */
+
 .muted{color:var(--muted)}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.article-card,.article-card .thumb img{transition:none}}
+
 </style>
+
 </head>
+
 <body>
 
+
+
 <header class="site-header">
+
   <div class="header-inner">
+
     <a class="brand" href="index.html">
+
       <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+
       <span>母线槽<span class="cn">.cn</span></span>
+
     </a>
+
     <nav class="nav" aria-label="主导航">
+
       <a href="index.html" class="on">首页</a>
+
       <a href="huangye.html">企业黄页</a>
+
       <a href="articles/行业文章.html">行业文章</a>
+
       <a class="cta" href="huangye.html#apply">免费入驻</a>
+
     </nav>
+
   </div>
+
 </header>
 
+
+
 <section class="hero">
+
   <div class="hero-inner">
+
     <div>
+
       <h1>母线槽企业<span class="hl">黄页</span>，<br>让采购找到你</h1>
+
       <p class="sub">母线槽.cn 是专注母线槽行业的免费企业黄页平台：生产厂家、经销代理、工程安装、设计咨询均可免费入驻。提交申请，审核通过后自动收录展示。</p>
+
       <div class="hero-btns">
+
         <a class="btn solid" href="huangye.html#apply">免费申请入驻</a>
+
         <a class="btn ghost" href="huangye.html">浏览企业黄页</a>
+
       </div>
+
       <div class="hero-stats">
+
         <div class="stat"><b>6类</b><span>母线槽产品覆盖</span></div>
+
         <div class="stat"><b>4类</b><span>企业类型收录</span></div>
+
         <div class="stat"><b>全国</b><span>厂商区域覆盖</span></div>
+
       </div>
+
     </div>
+
     <div class="hero-img">
+
       <img src="assets/hero-busway.jpg" alt="密集型母线槽产品实拍图，银灰色铝合金外壳与铜排结构">
+
       <span class="tag">密集型母线槽 · 产品实拍</span>
+
     </div>
+
   </div>
+
 </section>
+
+
 
 <section class="block yellow-page" id="huangye">
+
   <div class="container">
+
     <div class="sec-head">
+
       <div class="eyebrow">BUSWAY YELLOW PAGES</div>
+
       <h2>已收录母线槽企业</h2>
+
       <p>以下为审核通过的母线槽企业名录，数据实时同步自飞书多维表格：申请提交后，经管理员审核通过即自动上架展示。</p>
+
     </div>
+
     <div class="company-grid" id="company-grid"></div>
+
     <div class="empty-state" id="empty-state" hidden>
+
       <b>黄页名录正在完善中</b>
+
       已收录企业将在审核通过后自动展示，欢迎<a href="huangye.html#apply" style="color:var(--accent);font-weight:700">免费申请入驻</a>。
+
     </div>
+
     <div class="preview-foot">
+
       <span>名录数据实时同步自飞书多维表格，审核通过即自动上架。</span>
+
       <a class="btn solid" href="huangye.html">查看全部企业黄页</a>
+
     </div>
+
   </div>
+
 </section>
+
+
 
 <section class="block">
+
   <div class="container">
+
     <div class="sec-head">
+
       <div class="eyebrow">HOW IT WORKS</div>
+
       <h2>三步入驻母线槽黄页</h2>
+
       <p>从申请到上架全自动流转，无需自己维护网站数据。</p>
+
     </div>
+
     <div class="steps">
+
       <div class="step"><span class="num">1</span><h3>填写申请</h3><p>在黄页页点击「免费申请入驻」，用飞书表单填写企业名称、类型、产品、联系方式等信息并提交。</p></div>
+
       <div class="step"><span class="num">2</span><h3>平台审核</h3><p>管理员在多维表格「待审核」视图核对信息，通过或驳回，并填写审核备注。</p></div>
+
       <div class="step"><span class="num">3</span><h3>自动上架</h3><p>审核状态改为「已通过」的瞬间，自动化工作流将企业信息同步到黄页收录表，网站即时展示。</p></div>
+
     </div>
+
   </div>
+
 </section>
+
+
 
 <section class="block steel-bg" style="background:var(--steel)">
+
   <div class="container">
+
     <div class="sec-head">
+
       <div class="eyebrow">KNOWLEDGE</div>
+
       <h2>母线槽行业文章</h2>
+
       <p>从选型到采购，系统了解母线槽产品知识，找到靠谱厂家。<a href="articles/行业文章.html" style="color:var(--accent);font-weight:700;white-space:nowrap">全部文章 →</a></p>
+
     </div>
-    <div class="articles">
-      <a class="article-card" href="articles/母线槽是什么.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽产品结构示意，外壳与铜排"></div>
-        <div class="body">
-          <div class="cat">入门科普</div>
+
+    <section id="articles-section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="eyebrow">最新文章</div>
+        <h2>母线槽行业知识 <span id="articles-count" style="color:var(--muted);font-weight:400;font-size:1rem"></span></h2>
+        <p>母线槽选型、安装、维护、故障排查实用指南。</p>
+      </div>
+      <div id="articles-container" class="articles"></div>
+      <div id="pagination"></div>
+
+<script>
+(function() {
+  const cards = ["<a class=\"article-card\" href=\"articles/母线槽是什么.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽产品结构示意，外壳与铜排\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">入门科普</div>
+
           <h3>母线槽是什么？常见类型与选型要点</h3>
+
           <p>讲清母线槽定义、空气型与密集型等常见类型、适用场景与选型要点。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/密集型与空气型母线槽的区别.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="配电室母线槽安装实景，吊装于天花板的封闭母线"></div>
-        <div class="body">
-          <div class="cat">选型对比</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/密集型与空气型母线槽的区别.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"配电室母线槽安装实景，吊装于天花板的封闭母线\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">选型对比</div>
+
           <h3>密集型与空气型母线槽的区别，怎么选？</h3>
+
           <p>散热、体积、防护、价格逐项对比，附适用场景与选型结论。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽厂家怎么选.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="母线槽厂家车间内码放的成品母线槽"></div>
-        <div class="body">
-          <div class="cat">采购指南</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽厂家怎么选.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"母线槽厂家车间内码放的成品母线槽\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">采购指南</div>
+
           <h3>母线槽厂家怎么选？报价与采购避坑指南</h3>
+
           <p>五维考察厂家，讲清报价影响因素，帮你采购不踩坑。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/busway-complete-guide.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽完整指南封面，分类选型与品牌对比"></div>
-        <div class="body">
-          <div class="cat">置顶推荐 · 完整指南</div>
-          <h3>母线槽完整指南：分类、选型、品牌与选购建议 <span class="badge" style="background:#e63946;color:#fff;padding:1px 6px;border-radius:4px;font-size:12px;vertical-align:middle;">置顶</span></h3>
+
+      </a>","<a class=\"article-card\" href=\"articles/busway-complete-guide.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽完整指南封面，分类选型与品牌对比\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">置顶推荐 · 完整指南</div>
+
+          <h3>母线槽完整指南：分类、选型、品牌与选购建议 <span class=\"badge\" style=\"background:#e63946;color:#fff;padding:1px 6px;border-radius:4px;font-size:12px;vertical-align:middle;\">置顶</span></h3>
+
           <p>密集型/插接式/空气型分类详解、2026价格行情、国标安装规范、品牌推荐与FAQ，一篇搞定母线槽。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽怎么安装.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="配电室吊装于天花板的封闭母线槽安装实景"></div>
-        <div class="body">
-          <div class="cat">安装施工</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽怎么安装.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"配电室吊装于天花板的封闭母线槽安装实景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">安装施工</div>
+
           <h3>母线槽怎么安装？安装步骤与规范要求</h3>
+
           <p>从清点、支架到组对、接地与通电测试，讲清安装步骤与验收要点。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽和电缆的区别.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="密集型母线槽产品外壳与铜排结构示意"></div>
-        <div class="body">
-          <div class="cat">选型对比</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽和电缆的区别.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"密集型母线槽产品外壳与铜排结构示意\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">选型对比</div>
+
           <h3>母线槽和电缆的区别，什么时候用母线槽？</h3>
+
           <p>容量、散热、寿命、扩容逐项对比，附适用场景与选型建议。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽国家标准.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="母线槽厂家车间码放的成品母线槽"></div>
-        <div class="body">
-          <div class="cat">执行标准</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽国家标准.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"母线槽厂家车间码放的成品母线槽\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">执行标准</div>
+
           <h3>母线槽国家标准有哪些？执行标准与3C认证解读</h3>
+
           <p>GB/T 7251.6-2015 现行标准、设计与验收规范、3C 认证要求一文讲清。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽价格多少钱一米.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="密集型母线槽产品外壳与铜排结构示意"></div>
-        <div class="body">
-          <div class="cat">采购参考</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽价格多少钱一米.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"密集型母线槽产品外壳与铜排结构示意\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">采购参考</div>
+
           <h3>母线槽价格多少钱一米？报价影响因素与参考区间</h3>
+
           <p>常见规格参考价区间、6 大价格影响因素与询价避坑要点。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/密集型母线槽规格型号.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="密集型母线槽外壳与铜排结构"></div>
-        <div class="body">
-          <div class="cat">选型参考</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/密集型母线槽规格型号.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"密集型母线槽外壳与铜排结构\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">选型参考</div>
+
           <h3>密集型母线槽规格型号怎么看？常见规格对照</h3>
+
           <p>读懂型号构成，400A-6300A 常见规格对照与三相四线五线选择。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽维护保养.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="配电室吊装于天花板的封闭母线槽运行实景"></div>
-        <div class="body">
-          <div class="cat">运维指南</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽维护保养.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"配电室吊装于天花板的封闭母线槽运行实景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">运维指南</div>
+
           <h3>母线槽维护保养与巡检要点（多久一次、查什么）</h3>
+
           <p>检修周期、停电验电安全流程、测温清洁与绝缘趋势检查全流程。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽十大品牌.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="母线槽十大品牌厂家车间码放的成品母线槽"></div>
-        <div class="body">
-          <div class="cat">品牌推荐</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽十大品牌.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"母线槽十大品牌厂家车间码放的成品母线槽\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">品牌推荐</div>
+
           <h3>母线槽十大品牌有哪些？2026年品牌排行参考</h3>
+
           <p>施耐德、西门子、ABB、伊顿与国内头部品牌盘点，附选型建议。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽和桥架的区别.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="配电室内母线槽与电缆桥架敷设对比实景"></div>
-        <div class="body">
-          <div class="cat">选型对比</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽和桥架的区别.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"配电室内母线槽与电缆桥架敷设对比实景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">选型对比</div>
+
           <h3>母线槽和桥架的区别是什么？一文看懂</h3>
+
           <p>功能、结构、载流量、安装、造价五维度对比，附场景选型建议。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/封闭母线槽是什么.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="封闭母线槽产品外壳与铜排结构示意"></div>
-        <div class="body">
-          <div class="cat">入门科普</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/封闭母线槽是什么.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"封闭母线槽产品外壳与铜排结构示意\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">入门科普</div>
+
           <h3>封闭母线槽是什么？结构、类型与适用场景</h3>
+
           <p>外壳+导电排+绝缘件结构，插接型与馈电型两大类型全解。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/耐火母线槽是什么.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="配电室内耐火母线槽与消防配电回路敷设场景"></div>
-        <div class="body">
-          <div class="cat">消防配电</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/耐火母线槽是什么.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"配电室内耐火母线槽与消防配电回路敷设场景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">消防配电</div>
+
           <h3>耐火母线槽是什么？结构与消防应用场景</h3>
+
           <p>火灾下规定时间保持电路完整性，讲清耐火等级与适用回路。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/密集型母线槽价格.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="密集型母线槽铜排结构与其市场价格参考"></div>
-        <div class="body">
-          <div class="cat">采购价格</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/密集型母线槽价格.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"密集型母线槽铜排结构与其市场价格参考\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">采购价格</div>
+
           <h3>密集型母线槽价格多少钱一米？2026年报价参考</h3>
+
           <p>1250A 密集母线参考价约 2000 元/米上下，拆解 5 个价格因素。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽厂家排名.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="母线槽生产厂家车间码放的成品母线槽"></div>
-        <div class="body">
-          <div class="cat">厂家指南</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽厂家排名.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"母线槽生产厂家车间码放的成品母线槽\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">厂家指南</div>
+
           <h3>母线槽厂家排名前十有哪些？怎么选生产厂家</h3>
+
           <p>威腾、华鹏、亿能等评选名单参考，附查资质验报告的 4 步法。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽报价.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="母线槽项目报价单与配电室敷设场景"></div>
-        <div class="body">
-          <div class="cat">采购价格</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽报价.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"母线槽项目报价单与配电室敷设场景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">采购价格</div>
+
           <h3>母线槽报价怎么看？一份合格报价单包含哪些内容</h3>
+
           <p>计量单位、铜价基准、配件明细等 7 项必看，横向比价不踩坑。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽批发.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="母线槽批发货源厂家车间实景"></div>
-        <div class="body">
-          <div class="cat">采购渠道</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽批发.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"母线槽批发货源厂家车间实景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">采购渠道</div>
+
           <h3>母线槽批发怎么找一手货源？厂家直采渠道与注意事项</h3>
+
           <p>扬中镇江产业集群直采、1688 源头厂筛选与验货避坑清单。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽定制.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="按图纸非标定制的母线槽弯头与直线段"></div>
-        <div class="body">
-          <div class="cat">采购服务</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽定制.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"按图纸非标定制的母线槽弯头与直线段\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">采购服务</div>
+
           <h3>母线槽可以定制吗？非标定做流程与注意事项</h3>
+
           <p>能定什么、4 步定做流程、周期费用与最容易踩的 3 个坑。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽选型.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="配电室母线槽选型敷设实景"></div>
-        <div class="body">
-          <div class="cat">选型参考</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽选型.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"配电室母线槽选型敷设实景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">选型参考</div>
+
           <h3>母线槽选型指南：电流等级、结构形式与防护等级怎么定</h3>
+
           <p>五步选型法：算载流量→定结构→定防护→核电压温升→列配件。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/数据中心母线槽.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="数据中心机房内母线槽末端配电敷设场景"></div>
-        <div class="body">
-          <div class="cat">应用场景</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/数据中心母线槽.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"数据中心机房内母线槽末端配电敷设场景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">应用场景</div>
+
           <h3>数据中心母线槽怎么选？机房供配电方案要点</h3>
+
           <p>固定式与滑轨式怎么选、电流等级与插接箱配置要点全讲清。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽安装规范.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽安装规范施工支架与母线结构"></div>
-        <div class="body">
-          <div class="cat">安装施工</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽安装规范.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽安装规范施工支架与母线结构\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">安装施工</div>
+
           <h3>母线槽安装规范要求有哪些？施工要点与验收标准</h3>
+
           <p>按 GB 50303：绝缘电阻≥20MΩ、支架间距、外壳接地不少于 2 处。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽发热原因.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="配电室内母线槽连接器与测温排查场景"></div>
-        <div class="body">
-          <div class="cat">运维指南</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽发热原因.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"配电室内母线槽连接器与测温排查场景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">运维指南</div>
+
           <h3>母线槽发热原因有哪些？温度过高排查与处理方法</h3>
+
           <p>连接松动、过载、铜铝腐蚀四大原因，附排查顺序与处理建议。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽3C认证.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="母线槽3C认证证书与工厂检测场景"></div>
-        <div class="body">
-          <div class="cat">标准检测</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽3C认证.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"母线槽3C认证证书与工厂检测场景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">标准检测</div>
+
           <h3>母线槽需要3C认证吗？认证要求与证书查验方法</h3>
+
           <p>母线干线系统属 CCC 目录范围，依据 GB 7251.2，附证书查验方法。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽载流量计算.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽载流量计算与铜排截面结构"></div>
-        <div class="body">
-          <div class="cat">选型参考</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽载流量计算.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽载流量计算与铜排截面结构\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">选型参考</div>
+
           <h3>母线槽载流量怎么计算？选型电流计算方法</h3>
+
           <p>I=P/(√3·U·cosφ) 算电流，铜排载流量经验估算与裕量修正。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽连接器.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="母线槽连接器与接头安装场景"></div>
-        <div class="body">
-          <div class="cat">配件采购</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽连接器.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"母线槽连接器与接头安装场景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">配件采购</div>
+
           <h3>母线槽连接器是什么？规格怎么选、安装注意什么</h3>
+
           <p>接头器/膨胀节/插接件类型全解，双力矩螺栓紧固避开发热。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/IP68防水母线槽.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="IP68浇注型母线槽环氧树脂密封结构"></div>
-        <div class="body">
-          <div class="cat">防水选型</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/IP68防水母线槽.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"IP68浇注型母线槽环氧树脂密封结构\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">防水选型</div>
+
           <h3>IP68防水母线槽是什么？浇注型母线槽适用环境</h3>
+
           <p>环氧树脂整体浇注可水下运行，适用船舶化工隧道电厂等场所。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/厂房母线槽.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="工业厂房车间吊装敷设的母线槽"></div>
-        <div class="body">
-          <div class="cat">应用场景</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/厂房母线槽.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"工业厂房车间吊装敷设的母线槽\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">应用场景</div>
+
           <h3>厂房母线槽怎么选？工业厂房配电干线方案</h3>
+
           <p>400A-6300A 大电流快装，插接箱灵活取电，产线扩容不加线。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽温升标准.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="母线槽温升检测与配电室测温场景"></div>
-        <div class="body">
-          <div class="cat">标准检测</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽温升标准.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"母线槽温升检测与配电室测温场景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">标准检测</div>
+
           <h3>母线槽温升标准是多少？GB/T 7251.6 温升限值解读</h3>
+
           <p>导体不超过50K、外壳30K、绝缘件60K，附验收测温方法。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/照明母线槽是什么.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="商场照明母线槽与插接式灯具配电场景"></div>
-        <div class="body">
-          <div class="cat">入门科普</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/照明母线槽是什么.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"商场照明母线槽与插接式灯具配电场景\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">入门科普</div>
+
           <h3>照明母线槽是什么？商场厂房照明配电特点</h3>
+
           <p>400V/20-100A 插接取电不切断主干，适用大开间照明场所。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽价格表.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽价格表与规格参考价对比"></div>
-        <div class="body">
-          <div class="cat">采购价格</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽价格表.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽价格表与规格参考价对比\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">采购价格</div>
+
           <h3>母线槽价格表怎么看？常见规格参考价与影响因素</h3>
+
           <p>常见规格参考区间与 6 大价格影响因素，读懂报价不买贵。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽采购注意事项.html">
-        <div class="thumb"><img src="assets/factory-stack.jpg" alt="母线槽采购验收与质量把关要点"></div>
-        <div class="body">
-          <div class="cat">采购指南</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽采购注意事项.html\">
+
+        <div class=\"thumb\"><img src=\"assets/factory-stack.jpg\" alt=\"母线槽采购验收与质量把关要点\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">采购指南</div>
+
           <h3>母线槽采购注意事项有哪些？避坑清单与验收要点</h3>
+
           <p>材质缩水、3C证书、检测报告、售后逐项核对，采购不踩坑。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽型号规格表.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="母线槽型号规格表与安装尺寸对照"></div>
-        <div class="body">
-          <div class="cat">选型参考</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽型号规格表.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"母线槽型号规格表与安装尺寸对照\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">选型参考</div>
+
           <h3>母线槽型号规格表怎么看？常用型号与参数对照</h3>
+
           <p>型号构成、400A-6300A 常见规格对照与按项目定规格方法。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽电压等级.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽电压等级与绝缘配合选型"></div>
-        <div class="body">
-          <div class="cat">选型参考</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽电压等级.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽电压等级与绝缘配合选型\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">选型参考</div>
+
           <h3>母线槽电压等级有哪些？低压与高压母线怎么选</h3>
+
           <p>400V/690V 低压主流，交流不超 1000V，绝缘配合选型要点。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽绝缘电阻检测.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="兆欧表检测母线槽绝缘电阻"></div>
-        <div class="body">
-          <div class="cat">标准检测</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽绝缘电阻检测.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"兆欧表检测母线槽绝缘电阻\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">标准检测</div>
+
           <h3>母线槽绝缘电阻检测怎么做？标准值与测试步骤</h3>
+
           <p>组对前每段不低于 20MΩ，送电前整段复测，附 5 步测试法。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽安装图.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="母线槽水平与垂直安装示意图"></div>
-        <div class="body">
-          <div class="cat">安装施工</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽安装图.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"母线槽水平与垂直安装示意图\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">安装施工</div>
+
           <h3>母线槽安装图怎么看？常见安装方式与施工要点</h3>
+
           <p>水平、垂直、吊装形式与支吊架间距，看懂关键尺寸照图施工。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽与桥架承重对比.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽与电缆桥架承重结构对比"></div>
-        <div class="body">
-          <div class="cat">对比类</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽与桥架承重对比.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽与电缆桥架承重结构对比\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">对比类</div>
+
           <h3>母线槽与桥架承重对比：结构、荷载与选型</h3>
+
           <p>一个是输电器一个是支撑架，挠度、跨距、自重逐项对比。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽耐压测试.html">
-        <div class="thumb"><img src="assets/install-scene.jpg" alt="母线槽工频耐压试验现场"></div>
-        <div class="body">
-          <div class="cat">标准检测</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽耐压测试.html\">
+
+        <div class=\"thumb\"><img src=\"assets/install-scene.jpg\" alt=\"母线槽工频耐压试验现场\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">标准检测</div>
+
           <h3>母线槽耐压测试怎么做？试验电压标准与判定</h3>
+
           <p>工频耐压按标准电压施加 1 分钟，出厂与验收判定一文讲清。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/高层建筑母线槽.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="高层建筑电气竖井内垂直安装母线槽"></div>
-        <div class="body">
-          <div class="cat">应用场景</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/高层建筑母线槽.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"高层建筑电气竖井内垂直安装母线槽\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">应用场景</div>
+
           <h3>高层建筑母线槽怎么选？竖向干线布置要点</h3>
+
           <p>400A 及以上宜用封闭式母线槽树干式配电，竖井布置与选型要点。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
-      <a class="article-card" href="articles/母线槽弯头.html">
-        <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽L型Z型T型弯头配件"></div>
-        <div class="body">
-          <div class="cat">配件采购</div>
+
+      </a>","<a class=\"article-card\" href=\"articles/母线槽弯头.html\">
+
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽L型Z型T型弯头配件\"></div>
+
+        <div class=\"body\">
+
+          <div class=\"cat\">配件采购</div>
+
           <h3>母线槽弯头（弯通）有哪些类型？规格与价格参考</h3>
+
           <p>L/Z/T/X 型与水平垂直组合，电流匹配与非标定制要点。</p>
-          <span class="more">阅读全文</span>
+
+          <span class=\"more\">阅读全文</span>
+
         </div>
-      </a>
+
+      </a>","<a class=\"article-card\" href=\"articles/muxiancao-tiaozha-yuanyin.html\">
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽跳闸原因分析排查\"></div>
+        <div class=\"body\">
+          <div class=\"cat\">故障排查</div>
+          <h3>母线槽跳闸原因分析：5步法快速判断故障源头</h3>
+          <p>过载、短路、接地故障、接触不良……5个排查步骤帮你快速定位母线槽跳闸原因。</p>
+          <span class=\"more\">阅读全文</span>
+        </div>
+      </a>","<a class=\"article-card\" href=\"articles/muxiancao-guzhang-paizha.html\">
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽常见故障排查步骤\"></div>
+        <div class=\"body\">
+          <div class=\"cat\">故障排查</div>
+          <h3>母线槽常见故障有哪些？完整排查步骤与处理方案</h3>
+          <p>发热、绝缘下降、连接器松动……母线槽常见故障的识别、排查与应急处理指南。</p>
+          <span class=\"more\">阅读全文</span>
+        </div>
+      </a>","<a class=\"article-card\" href=\"articles/tongpai-lupai-muxiancao-qubie.html\">
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"铜排母线槽和铝排母线槽对比\"></div>
+        <div class=\"body\">
+          <div class=\"cat\">选型指南</div>
+          <h3>铜排母线槽和铝排母线槽有什么区别？选铜还是选铝？</h3>
+          <p>导电性、重量、价格、寿命全面对比，帮你根据场景选对材质。</p>
+          <span class=\"more\">阅读全文</span>
+        </div>
+      </a>","<a class=\"article-card\" href=\"articles/gongchang-peidian-gaizao.html\">
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"工厂配电改造母线槽方案\"></div>
+        <div class=\"body\">
+          <div class=\"cat\">工程方案</div>
+          <h3>工厂配电改造如何用母线槽？方案设计与实施要点</h3>
+          <p>传统电缆配电改为母线槽配电的改造流程、设计方案与注意事项。</p>
+          <span class=\"more\">阅读全文</span>
+        </div>
+      </a>","<a class=\"article-card\" href=\"articles/muxiancao-shimingshouchang.html\">
+        <div class=\"thumb\"><img src=\"assets/hero-busway.jpg\" alt=\"母线槽使用寿命与寿命周期\"></div>
+        <div class=\"body\">
+          <div class=\"cat\">技术参数</div>
+          <h3>母线槽使用寿命多长？影响寿命的关键因素详解</h3>
+          <p>设计寿命20-30年，但实际寿命受环境温度、负载率、维护频率影响。</p>
+          <span class=\"more\">阅读全文</span>
+        </div>
+      </a>",
+  ];
+  const perPage = 10;
+  const totalPages = Math.ceil(cards.length / perPage);
+  let currentPage = 1;
+  
+  function renderPage(page) {
+    const start = (page - 1) * perPage;
+    const end = start + perPage;
+    const pageCards = cards.slice(start, end);
+    
+    const container = document.getElementById('articles-container');
+    container.innerHTML = pageCards.join('
+      ');
+    
+    // Update pagination
+    const pagination = document.getElementById('pagination');
+    let html = '<nav class="pagination">';
+    html += '<a class="page-link' + (page === 1 ? ' disabled' : '') + '" href="#" data-page="' + (page - 1) + '">上一页</a>';
+    for (let i = 1; i <= totalPages; i++) {
+      html += '<a class="page-link' + (i === page ? ' active' : '') + '" href="#" data-page="' + i + '">' + i + '</a>';
+    }
+    html += '<a class="page-link' + (page === totalPages ? ' disabled' : '') + '" href="#" data-page="' + (page + 1) + '">下一页</a>';
+    html += '</nav>';
+    pagination.innerHTML = html;
+    
+    // Add click handlers
+    pagination.querySelectorAll('.page-link:not(.disabled)').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const newPage = parseInt(this.dataset.page);
+        if (newPage >= 1 && newPage <= totalPages) {
+          currentPage = newPage;
+          renderPage(currentPage);
+          document.getElementById('articles-section').scrollIntoView({behavior: 'smooth'});
+        }
+      });
+    });
+  }
+  
+  // Initial render
+  renderPage(1);
+  
+  // Show total count
+  document.getElementById('articles-count').textContent = cards.length + ' 篇文章';
+})();
+</script>
     </div>
-  </div>
-</section>
+  </section>
+
+
 
 <section class="cta-band" id="apply">
+
   <div class="container">
+
     <h2>你的企业还没被采购找到？</h2>
+
     <p>免费入驻母线槽.cn 黄页，审核通过后自动上架展示，让更多工程采购、项目方在百度搜索中看到你。</p>
+
     <a class="btn solid" href="https://my.feishu.cn/share/base/shrcnn036BsQG9rwsI1Q5MUOHdg" target="_blank" rel="noopener">立即填写入驻申请</a>
+
   </div>
+
 </section>
 
+
+
 <footer class="site-footer">
+
   <div class="footer-inner">
+
     <div>
+
       <h4>母线槽.cn</h4>
+
       <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+
     </div>
+
     <div>
+
       <h4>站点导航</h4>
+
       <a href="index.html">首页</a>
+
       <a href="huangye.html">企业黄页</a>
+
       <a href="articles/行业文章.html">全部行业文章</a>
+
       <a href="articles/母线槽是什么.html">母线槽百科</a>
+
       <a href="articles/密集型与空气型母线槽的区别.html">选型对比</a>
+
       <a href="articles/母线槽厂家怎么选.html">厂家采购指南</a>
+
       <a href="articles/母线槽怎么安装.html">安装施工</a>
+
       <a href="articles/母线槽和电缆的区别.html">母线槽与电缆对比</a>
+
       <a href="articles/母线槽国家标准.html">执行标准</a>
+
       <a href="articles/母线槽价格多少钱一米.html">母线槽价格</a>
+
       <a href="articles/密集型母线槽规格型号.html">规格型号</a>
+
       <a href="articles/母线槽维护保养.html">维护保养</a>
+
       <a href="articles/母线槽十大品牌.html">品牌排行</a>
+
       <a href="articles/母线槽和桥架的区别.html">母线槽与桥架对比</a>
+
       <a href="articles/封闭母线槽是什么.html">封闭母线槽</a>
+
       <a href="articles/耐火母线槽是什么.html">耐火母线槽</a>
+
       <a href="articles/密集型母线槽价格.html">密集型价格</a>
+
       <a href="articles/母线槽厂家排名.html">厂家排名</a>
+
       <a href="articles/母线槽报价.html">报价指南</a>
+
       <a href="articles/母线槽批发.html">批发货源</a>
+
       <a href="articles/母线槽定制.html">非标定制</a>
+
       <a href="articles/母线槽选型.html">选型指南</a>
+
       <a href="articles/数据中心母线槽.html">数据中心母线</a>
+
       <a href="articles/母线槽安装规范.html">安装规范</a>
+
       <a href="articles/母线槽发热原因.html">发热排查</a>
+
       <a href="articles/母线槽3C认证.html">3C认证</a>
+
       <a href="articles/母线槽载流量计算.html">载流量计算</a>
+
       <a href="articles/母线槽连接器.html">连接器配件</a>
+
       <a href="articles/IP68防水母线槽.html">IP68防水</a>
+
       <a href="articles/厂房母线槽.html">厂房应用</a>
+
       <a href="articles/母线槽温升标准.html">温升标准</a>
+
       <a href="articles/照明母线槽是什么.html">照明母线</a>
+
     </div>
+
     <div>
+
       <h4>合作推广</h4>
+
       <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+
       <a class="article-card" href="articles/muxiancao-tiaozha-yuanyin.html">
         <div class="thumb"><img src="assets/hero-busway.jpg" alt="母线槽跳闸原因分析排查"></div>
         <div class="body">
@@ -660,103 +1290,204 @@ section.block{padding:56px 0}
         </div>
       </a>
     </div>
+
   </div>
+
   <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+
 </footer>
 
+
+
 <script>
+
 // 企业名录数据 —— 由 scripts/build_companies.py 自动同步（勿手改）
+
 const COMPANIES = /*__COMPANIES_JSON__*/[
+
   {
+
     "name": "示例·申城电气设备有限公司",
+
     "type": "生产厂家",
+
     "products": [
+
       "密集型母线槽",
+
       "空气型母线槽"
+
     ],
+
     "region": "上海市",
+
     "intro": "专注密集型母线槽研发与生产，提供配电工程配套服务。",
+
     "tel": "021-61234567",
+
     "website": "https://www.shencheng-demo.cn"
+
   },
+
   {
+
     "name": "示例·镇江母线科技制造厂",
+
     "type": "生产厂家",
+
     "products": [
+
       "密集型母线槽",
+
       "耐火母线槽"
+
     ],
+
     "region": "江苏省镇江市",
+
     "intro": "主营耐火型与密集型母线槽，可按项目定制长度。",
+
     "tel": "0511-85551234",
+
     "website": "https://www.zhenjiang-demo.cn"
+
   },
+
   {
+
     "name": "示例·北京机电工程安装有限公司",
+
     "type": "工程安装",
+
     "products": [
+
       "智能母线槽",
+
       "密集型母线槽"
+
     ],
+
     "region": "北京市",
+
     "intro": "提供母线槽现场安装、测试与运维服务。",
+
     "tel": "010-65551234",
+
     "website": "https://www.bj-demo.cn"
+
   },
+
   {
+
     "name": "示例·浙江照明母线槽厂",
+
     "type": "生产厂家",
+
     "products": [
+
       "照明母线槽"
+
     ],
+
     "region": "浙江省温州市",
+
     "intro": "专注照明母线槽，适用于商场与厂房照明配电。",
+
     "tel": "0577-88881234",
+
     "website": "https://www.zhejiang-demo.cn"
+
   },
+
   {
+
     "name": "示例·广州电力设备经销部",
+
     "type": "经销代理",
+
     "products": [
+
       "空气型母线槽"
+
     ],
+
     "region": "广东省广州市",
+
     "intro": "经销空气型母线槽及低压配电附件。",
+
     "tel": "020-86661234",
+
     "website": ""
+
   },
+
   {
+
     "name": "示例·苏州电气成套有限公司",
+
     "type": "经销代理",
+
     "products": [
+
       "密集型母线槽",
+
       "防水防潮母线槽"
+
     ],
+
     "region": "江苏省苏州市",
+
     "intro": "经销密集型与防水防潮母线槽，提供选型与配送服务。",
+
     "tel": "0512-67551234",
+
     "website": "https://www.suzhou-demo.cn"
+
   }
+
 ];
 
+
+
 function render(){
+
   const grid = document.getElementById('company-grid');
+
   const empty = document.getElementById('empty-state');
+
   if(!COMPANIES.length){ empty.hidden = false; return; }
+
   empty.hidden = true;
+
   grid.innerHTML = COMPANIES.slice(0,6).map(c => {
+
     const tags = (c.products||[]).map(p => '<span class="tag">'+p+'</span>').join('');
+
     const site = c.website ? '<a class="site-link" href="'+c.website+'" target="_blank" rel="noopener">官网 →</a>' : '';
+
     return '<article class="company-card">'
+
       + '<div class="head"><h3>'+c.name+'</h3><span class="badge">'+c.type+'</span></div>'
+
       + '<div class="tags">'+tags+'</div>'
+
       + '<div class="region">'+c.region+'</div>'
+
       + '<p class="desc">'+c.intro+'</p>'
+
       + '<div class="contact"><span class="tel">'+c.tel+'</span>'+site+'</div>'
+
       + '</article>';
+
   }).join('');
+
 }
+
 render();
+
 </script>
+
 </body>
+
 </html>
+
