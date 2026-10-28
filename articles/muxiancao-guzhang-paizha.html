@@ -2,14 +2,100 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>母线槽常见故障有哪些？完整排查步骤与处理方案 - 母线槽.cn</title>
-<meta name="description" content="母线槽接头过热、跳闸、绝缘下降等常见故障怎么办？本文提供6大故障类型详解与5步现场排查SOP，附根治方案与预防清单。">
+<meta name="description" content="母线槽接头过热、跳闸、绝缘下降等常见故障怎么办？本文提供6大故障类型详解与5步现场排查SOP。">
 <meta name="keywords" content="母线槽常见故障,母线槽故障排查,母线槽发热故障,母线槽绝缘故障,母线槽接头过热">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--accent-soft:#FBE9D8;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:22px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap ol{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap ol li{padding-left:30px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap ol li::before{content:counter(item);counter-increment:item;position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-size:.78rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.article-wrap ol{counter-reset:item}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .note{background:#FFF8EF;border:1px solid #F5D5B0;border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:.92rem}
+.article-wrap .figure{margin:20px 0;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.article-wrap .figure figcaption{background:var(--steel);padding:8px 12px;font-size:.82rem;color:var(--muted)}
+.article-wrap table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.92rem}
+.article-wrap th{background:var(--steel);color:var(--ink);font-weight:700;padding:10px 14px;border:1px solid var(--line);text-align:left}
+.article-wrap td{padding:10px 14px;border:1px solid var(--line)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-<header><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 故障排查</header>
-<main>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article-wrap">
+  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 故障排查</nav>
+
+  <div class="meta-line">故障排查指南 · 最后更新：2026年</div>
+
 <h1>母线槽常见故障有哪些？完整排查步骤与处理方案</h1>
+
+  <figure class="figure">
+    <img src="../assets/hero-busway.jpg" alt="母线槽常见故障排查步骤">
+    <figcaption>母线槽相关产品示意</figcaption>
+  </figure>
+
 <p>母线槽作为配电系统的核心设备，长期运行中可能出现各种故障。了解<strong>母线槽常见故障</strong>类型及其排查方法，是保障供电安全的关键。本文系统梳理母线槽的6大常见故障类型，提供5步现场排查SOP，并给出根治方案与预防清单。</p>
 <h2>母线槽6大常见故障类型一览</h2>
 <h3>① 接头过热/温度超标（最高发故障，占比约40%）</h3>
@@ -56,9 +142,44 @@
 <div class="qa"><b>Q2：红外测温正常值是多少？</b><p>正常情况下，母线槽接头温升应低于环境温度30℃，绝对温度一般不超过70℃。若超过此值，需重点检查。</p></div>
 <div class="qa"><b>Q3：绝缘电阻低于多少需要处理？</b><p>低压母线槽绝缘电阻应大于20MΩ，若低于10MΩ需重点关注，低于1MΩ必须停电检修。</p></div>
 <div class="qa"><b>Q4：如何延长母线槽使用寿命？</b><p>定期巡检维护、避免过载运行、保持环境干燥、及时更换老化部件，是延长母线槽寿命的关键。</p></div>
-<div class="cta">需要专业母线槽维保服务？浏览本站企业黄页，查找专业的母线槽安装、维保、检测服务商。</div>
-<div class="refs"><strong>参考资料：</strong><br><a href="https://gf.cabr-fire.com/m/article-35109.htm" target="_blank">民用建筑电气设计标准 GB 51348-2019</a><br><a href="http://m.jianbiaoku.com/webarbs/book/79641/2096535.shtml" target="_blank">建筑电气工程施工质量验收规范 GB 50303-2015</a></div>
+
+  <div class="cta-box">
+    <h2>需要专业的母线槽服务？</h2>
+    <p>浏览本站企业黄页名录，或免费申请入驻，让更多工程采购在搜索中找到你。</p>
+    <a class="btn" href="../huangye.html#apply">免费入驻母线槽.cn 黄页</a>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料：</strong><br>
+    <a href="https://gf.cabr-fire.com/m/article-35109.htm" target="_blank" rel="noopener">民用建筑电气设计标准 GB 51348-2019</a><br>
+    <a href="http://m.jianbiaoku.com/webarbs/book/79641/2096535.shtml" target="_blank" rel="noopener">建筑电气工程施工质量验收规范 GB 50303-2015</a>
+  </div>
 </main>
-<footer>© 2026 母线槽.cn</footer>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>母线槽.cn</h4>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h4>站点导航</h4>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="母线槽是什么.html">母线槽百科</a>
+      <a href="密集型与空气型母线槽的区别.html">选型对比</a>
+      <a href="母线槽厂家怎么选.html">厂家采购指南</a>
+      <a href="母线槽怎么安装.html">安装施工</a>
+      <a href="母线槽和电缆的区别.html">母线槽与电缆对比</a>
+      <a href="母线槽国家标准.html">执行标准</a>
+    </div>
+    <div>
+      <h4>合作推广</h4>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+
 </body>
 </html>
