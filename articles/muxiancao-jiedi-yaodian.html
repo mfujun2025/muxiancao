@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>母线槽接地怎么做？接地电阻标准与施工要点全解析 - 母线槽.cn</title>
+<meta name="description" content="母线槽接地电阻标准是多少？本文详解母线槽外壳接地的正确做法、4种接地方式、5个常见误区及验收checklist，助你一次通过电气验收。">
+<meta name="keywords" content="母线槽接地怎么做,母线槽接地电阻标准,母线槽外壳接地,母线槽PE线连接,母线槽重复接地">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:20px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.table-wrap{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:var(--steel);font-weight:700;color:var(--ink)}
+tr:nth-child(even){background:#FAFCFD}
+.key-points{background:#F7FAFD;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin:0 0 28px 0}
+.key-points strong{display:block;font-size:.95rem;margin-bottom:8px}
+.key-points ul{margin:0;padding-left:20px}
+.key-points li{list-style:disc;padding:3px 0}
+.inline-cta{background:linear-gradient(135deg,#FFF4E6,#FFF8F0);border:1px solid #F0D9B8;border-radius:10px;padding:14px 18px;margin:20px 0}
+.inline-cta p{margin:0 0 8px;font-size:.95rem}
+.inline-cta a{font-weight:700;color:var(--accent)}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+<main class="article-wrap">
+  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 施工验收</nav>
+  <h1>母线槽接地怎么做？接地电阻标准与施工要点全解析</h1>
+  <div class="meta-line">母线槽.cn 行业百科 · 2026 年更新 · 阅读约 12 分钟</div>
+
+  <p>去年，浙江一家机械加工厂发生了一起触电事故——一名工人在巡检时触碰母线槽外壳后倒地。事后排查发现，这根母线槽的<strong>外壳接地</strong>在安装时只做了首端和末端各一次，中间长达 40 米的槽体完全悬空，形成了危险的"悬浮电位"。当绝缘层老化漏电时，整个外壳带电，而漏保因为接地回路不完整未能及时切断。</p>
+
+  <p>这起事故的根源，正是<strong>母线槽接地怎么做</strong>这个问题没有被认真对待。母线槽接地不是"接一下就行"，而是有明确的电阻标准、施工规范和验收要求。本文将系统拆解母线槽接地的必要性、电阻标准、4 种正确做法、5 个常见误区以及验收 checklist，帮你一次通过电气验收。</p>
+
+  <div class="key-points">
+    <strong>关键要点</strong>
+    <ul>
+      <li>母线槽外壳全线接地电阻应≤0.1Ω（GB 7251.1），建筑总接地电阻≤4Ω（一般场所）/≤1Ω（高要求场所）</li>
+      <li>4 种正确做法：专用 PE 线全线连通、外壳跨接、接地干线连接、重复接地，缺一不可</li>
+      <li>接地失效会导致触电、设备损坏、火灾、腐蚀、误动作 5 种严重后果</li>
+      <li>接地电阻测试必须用接地电阻测试仪（三端子法），万用表测不准</li>
+      <li>送电前必检 8 项，多花 10 分钟验收，少赔百万损失</li>
+    </ul>
+  </div>
+
+  <h2>母线槽为什么必须可靠接地？</h2>
+  <p>很多人把接地当成"走个形式"，认为母线槽有金属外壳就够了。实际上，外壳存在的意义恰恰是"万一内部绝缘失效，电流通过接地回路安全泄放"。没有可靠接地，金属外壳就从"保护罩"变成了"带电体"。</p>
+
+  <h3>防触电：绝缘故障时漏电电流泄放路径</h3>
+  <p>当母线槽内部导体绝缘损坏、铜排碰到外壳时，漏电电流会流经外壳。如果外壳可靠接地，漏电流会通过 PE 线回到电源中性点，形成低阻抗回路，触发上游断路器或漏保动作。如果外壳未接地或接地电阻过大，漏电流无处泄放，外壳电位持续升高，人一旦触碰就会触电。</p>
+
+  <h3>配合上游漏保快速切断故障电路</h3>
+  <p>漏电保护器的动作逻辑是检测火线与零线电流差值。当漏电流通过接地回路流走时，火线电流大于零线电流，差值达到 30mA（家用/商用）或 100mA（工业）时跳闸。但这个逻辑有个前提——漏电流必须"有路可走"。如果母线槽外壳未接地，漏电流无法形成回路，漏保根本检测不到电流差，也就不会跳闸。这就是为什么"外壳不接地，漏保等于摆设"。</p>
+
+  <h3>减少电磁干扰，提高系统稳定性</h3>
+  <p>母线槽在大电流运行时会产生较强的电磁场。可靠接地的外壳相当于一个电磁屏蔽层，可以将部分电磁干扰导入大地，减少对周边敏感设备（PLC、传感器、通讯设备）的干扰。对于数据中心、半导体厂房等对电磁环境要求高的场所，这一点尤为关键。</p>
+
+  <h3>接地失效的 5 种典型后果</h3>
+  <ul>
+    <li><strong>触电伤亡</strong>：外壳带电，人员触碰致死致残，这是最直接的后果</li>
+    <li><strong>设备损坏</strong>：漏电电流通过其他金属管线"借路"泄放，烧毁相邻设备</li>
+    <li><strong>电气火灾</strong>：漏电流在接触不良点产生电弧，引燃周围可燃物</li>
+    <li><strong>电化学腐蚀</strong>：杂散电流通过建筑钢筋泄放，加速钢筋锈蚀</li>
+    <li><strong>保护误动/拒动</strong>：接地回路异常导致保护装置逻辑混乱，该跳的不跳，不该跳的乱跳</li>
+  </ul>
+
+  <div class="inline-cta">
+    <p>想了解母线槽安装全流程规范？参见本站<a href="../articles/busway-complete-guide.html">母线槽安装规范与施工要点</a>，接地只是其中一道关键工序。</p>
+  </div>
+
+  <h2>母线槽接地电阻标准（合规底线）</h2>
+  <p>接地电阻是接地效果的量化指标，电阻越小，泄流能力越强。不同场景、不同接地系统型式下的标准有差异，必须对照执行。</p>
+
+  <h3>母线槽外壳全线接地电阻≤0.1Ω（GB 7251.1）</h3>
+  <p>根据 GB 7251.1《低压成套开关设备和控制设备》的要求，母线槽外壳与接地系统之间的电阻应≤0.1Ω。这个数值非常小，意味着外壳与接地干线之间的电气连接必须非常可靠——任何松动、腐蚀、截面不足都会使电阻超标。</p>
+
+  <h3>建筑总接地电阻≤4Ω（一般建筑）/≤1Ω（高要求场所）</h3>
+  <p>建筑总接地电阻是整个接地系统的基准值：</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th>场所类型</th><th>总接地电阻要求</th><th>典型场景</th></tr>
+      <tr><td>一般建筑</td><td>≤4Ω</td><td>普通厂房、办公楼、住宅</td></tr>
+      <tr><td>高要求场所</td><td>≤1Ω</td><td>数据中心、手术室、通信枢纽、精密制造车间</td></tr>
+      <tr><td>防静电场所</td><td>≤10Ω</td><td>易燃易爆车间（如化工、粉尘环境）</td></tr>
+    </table>
+  </div>
+
+  <h3>不同接地系统型式的电阻要求差异</h3>
+  <p>国内低压配电系统主要有 TN-S、TN-C-S、TT 三种型式，母线槽接地做法有差异：</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th>系统型式</th><th>PE 线与 N 线关系</th><th>母线槽接地做法</th><th>接地电阻要求</th></tr>
+      <tr><td>TN-S</td><td>PE、N 全程分开</td><td>PE 线全线连通，外壳接 PE 线</td><td>≤0.1Ω（外壳至 PE）</td></tr>
+      <tr><td>TN-C-S</td><td>前段 PEN 合一，后段分开</td><td>母线槽段 PE、N 分开后，外壳接 PE 线</td><td>≤0.1Ω（外壳至 PE）</td></tr>
+      <tr><td>TT</td><td>PE 线独立，电源端直接接地</td><td>外壳接 PE 线，PE 线接至独立接地极</td><td>≤4Ω（外壳至独立接地极）</td></tr>
+    </table>
+  </div>
+
+  <h2>母线槽接地的 4 种正确做法</h2>
+  <p>接地不是"接一根线"那么简单，而是要从"全线连通、多点泄流、可靠连接"三个维度综合设计。以下是 4 种必须落实的做法。</p>
+
+  <h3>做法一：专用 PE 线全线连通（起始端+末端各接地一次）</h3>
+  <p>母线槽应配置专用 PE 排（接地铜排），与相线排并行安装。PE 排应在母线槽<strong>起始端</strong>和<strong>末端</strong>各接地一次，确保全线电气连通。PE 排截面不应小于相线排截面的 1/2，且不小于 50mm²（铜排）。</p>
+
+  <h3>做法二：外壳跨接（每节槽体用≥4mm²铜导线跨接）</h3>
+  <p>母线槽各节外壳之间通过螺栓连接，但螺栓连接的电气导通性并不可靠（接触面可能氧化、螺栓可能松动）。因此，每节槽体之间必须用<strong>≥4mm² 黄绿色铜导线</strong>进行跨接，确保外壳电气连续性。跨接线应使用专用的接线端子或线鼻子，禁止直接缠绕。</p>
+
+  <h3>做法三：接地干线连接（≥25mm²黄绿色接地线接至建筑接地干线）</h3>
+  <p>母线槽的接地端子应通过<strong>≥25mm² 黄绿色多股铜芯线</strong>连接至建筑接地干线（接地母线排）。连接点应选择在接地干线距母线槽最近的引出点，减少引线长度和电阻。连接处应使用线鼻子压接，螺栓紧固并加弹簧垫片。</p>
+
+  <h3>做法四：重复接地（每 10-30m 设一处，防悬浮电位）</h3>
+  <p>对于长度较长的母线槽（超过 30 米），仅在首末端接地会导致中间段电位偏高——因为电流流经 PE 排会产生压降。规范要求每隔<strong>10-30 米</strong>设一处重复接地，将中间段外壳电位"锚定"在大地电位，防止悬浮电位危险。这也是前面浙江工厂事故的教训所在。</p>
+
+  <h2>接地施工的 5 个常见误区与解决方案</h2>
+  <p>接地施工看似简单，实际操作中误区不少。以下 5 个误区是验收不合格的高发点。</p>
+
+  <h3>误区一：仅首末端接地，中间段悬空→悬浮电位</h3>
+  <p>这是最常见也最危险的误区。施工方为了省事，只在母线槽首端和末端接地，中间段外壳完全悬空。一旦中间段绝缘失效，外壳带电但无泄流路径，整段槽体都是"带电体"。<strong>解决方案</strong>：每 10-30m 增设一处重复接地，跨接线必须逐节连通。</p>
+
+  <h3>误区二：用普通电线替代跨接线→老化断裂</h3>
+  <p>有些施工方用普通 BV 线（单芯硬线）做外壳跨接线，而非专用黄绿双色软铜线。普通电线绝缘层老化后容易断裂，且没有黄绿标识难以识别。<strong>解决方案</strong>：使用≥4mm² 黄绿双色多股软铜线，线鼻子压接，专用端子固定。</p>
+
+  <h3>误区三：接地极与建筑物基础未隔离→杂散电流腐蚀</h3>
+  <p>在 TT 系统中，如果接地极直接打入建筑基础钢筋上，漏电电流会通过钢筋泄放，长期运行造成钢筋电化学腐蚀。<strong>解决方案</strong>：接地极应与建筑基础钢筋电气隔离，使用独立接地极或等电位联结端子箱过渡。</p>
+
+  <h3>误区四：螺栓未用弹簧垫片→震动松动</h3>
+  <p>母线槽运行中会发热膨胀、冷却收缩，加上设备震动，普通螺栓容易松动。接地连接一旦松动，电阻瞬间增大，接地保护失效。<strong>解决方案</strong>：所有接地连接螺栓必须使用<strong>弹簧垫片</strong>和平垫片组合，扭矩达到规范值（M8 螺栓≥12N·m，M10 螺栓≥20N·m）。</p>
+
+  <h3>误区五：用万用表测接地电阻→不准，必须用接地电阻测试仪</h3>
+  <p>很多人验收时拿万用表量一下"有通就行"，这是完全错误的做法。万用表测的是直流导通电阻，而接地电阻是工频交流电阻，包含土壤电阻、接触电阻等复杂因素。万用表显示"0.1Ω"不代表接地电阻合格。<strong>解决方案</strong>：必须使用<strong>接地电阻测试仪</strong>（钳形或三端子法），按规范方法测试。</p>
+
+  <h2>接地电阻测试方法（三端子法实操）</h2>
+  <p>接地电阻测试是验收的关键环节，必须由专业人员使用专用仪器按规范操作。</p>
+
+  <h3>测试仪器选择：接地电阻测试仪（非万用表）</h3>
+  <p>应选用钳形接地电阻测试仪或三端子接地电阻测试仪。钳形表适合在不打断接地回路的情况下测量，三端子法精度更高，适合验收检测。仪器应在检定有效期内，精度不低于 2.0 级。</p>
+
+  <h3>测试步骤：清理测试点→连接测试线→读取数据→判断合格</h3>
+  <ol style="margin:0 0 16px 0;padding-left:22px;list-style:decimal">
+    <li>清理测试点：去除母线槽外壳和接地干线连接处的油漆、锈迹，露出金属表面</li>
+    <li>连接测试线：三端子法需连接电压极（P）、电流极（C）和待测接地极（E）；钳形法则直接钳住接地回路</li>
+    <li>读取数据：仪器自动输出测试电流并显示电阻值，记录读数</li>
+    <li>判断合格：对比标准值（母线槽外壳至接地干线≤0.1Ω；建筑总接地≤4Ω 或≤1Ω），不合格需整改复测</li>
+  </ol>
+
+  <h3>测试点选择：母线槽末端外壳与接地干线之间</h3>
+  <p>验收测试应在<strong>母线槽末端外壳与接地干线之间</strong>进行，这是全线接地回路的最远点，电阻最大。如果最远点合格，中间各点自然合格。对于长度超过 30 米的母线槽，建议在中间段和末端各测一次。</p>
+
+  <div class="inline-cta">
+    <p>接地检测只是验收的一部分，母线槽绝缘电阻同样关键。参见<a href="muxiancao-guzhang-paizha.html">母线槽常见故障排查</a>，了解绝缘下降的处理方法和检测周期。</p>
+  </div>
+
+  <h2>接地验收 checklist（送电前必检 8 项）</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th style="width:40px">序号</th><th>验收项目</th><th>合格标准</th><th>检查方法</th></tr>
+      <tr><td>1</td><td>PE 排全线连通</td><td>PE 排连续贯通，无断裂</td><td>目测 + 导通测试</td></tr>
+      <tr><td>2</td><td>外壳跨接线</td><td>每节≥4mm² 黄绿双色铜导线，线鼻子压接</td><td>目测 + 截面测量</td></tr>
+      <tr><td>3</td><td>首末端接地</td><td>起始端、末端各接地一次</td><td>目测</td></tr>
+      <tr><td>4</td><td>重复接地</td><td>每 10-30m 一处，长槽段不少于 3 处</td><td>目测 + 间距测量</td></tr>
+      <tr><td>5</td><td>接地干线连接</td><td>≥25mm² 黄绿线接至接地干线，线鼻子压接</td><td>目测 + 截面测量</td></tr>
+      <tr><td>6</td><td>螺栓紧固</td><td>弹簧垫片齐全，扭矩达标</td><td>抽检力矩</td></tr>
+      <tr><td>7</td><td>接地电阻测试</td><td>外壳至接地干线≤0.1Ω</td><td>接地电阻测试仪</td></tr>
+      <tr><td>8</td><td>标识与记录</td><td>接地连接点有标识，测试记录归档</td><td>目测 + 文档检查</td></tr>
+    </table>
+  </div>
+
+  <h2>结论</h2>
+  <p>母线槽接地是一条"看不见的安全线"——它平时不显山不露水，一旦出事就是人命关天的大事。接地电阻≤0.1Ω 的达标要求，背后是 PE 排全线连通、外壳跨接、接地干线连接、重复接地 4 种做法的层层保障。施工中最容易踩的 5 个误区——中间段悬空、跨接线不规范、接地极未隔离、螺栓无弹垫、用万用表测电阻——每一个都可能让整套接地系统形同虚设。</p>
+  <p>送电验收时多花 10 分钟逐项核查，远比事故后赔偿百万划算。接地做好了，母线槽才能安心运行十年二十年。</p>
+
+  <h2>常见问题（FAQ）</h2>
+  <div class="qa">
+    <b>Q1：母线槽接地电阻多少合格？</b>
+    <p>母线槽外壳至接地干线的接地电阻应≤0.1Ω（GB 7251.1）；建筑总接地电阻一般场所≤4Ω，高要求场所（数据中心、手术室等）≤1Ω。测试必须用接地电阻测试仪，不能用万用表。</p>
+  </div>
+  <div class="qa">
+    <b>Q2：万用表能测接地电阻吗？</b>
+    <p>不能。万用表测的是直流导通电阻，而接地电阻是工频交流电阻，包含土壤电阻、接触电阻等因素。万用表显示"通"不代表接地电阻合格，必须使用钳形或三端子接地电阻测试仪按规范方法测量。</p>
+  </div>
+  <div class="qa">
+    <b>Q3：母线槽外壳必须接地吗？</b>
+    <p>必须。母线槽金属外壳接地是强制性要求，目的是在绝缘失效时将漏电流泄放至大地，触发漏保跳闸，防止人员触电。不接地的母线槽外壳在绝缘故障时会变成带电体，极其危险。</p>
+  </div>
+  <div class="qa">
+    <b>Q4：母线槽中间段需要重复接地吗？</b>
+    <p>需要。长度超过 30 米的母线槽，仅首末端接地会导致中间段电位偏高。规范要求每 10-30 米设一处重复接地，防止中间段形成悬浮电位。长距离母线槽建议不少于 3 处重复接地。</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>需要专业母线槽安装与接地施工服务？</h2>
+    <p>浏览本站企业黄页，查找具备电气施工资质的母线槽安装、检测服务商，也可免费入驻让采购直接找到你。</p>
+    <a class="btn" href="../huangye.html#apply">进入企业黄页 / 免费入驻</a>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料：</strong><br>
+    <a href="https://gf.cabr-fire.com/m/article-35109.htm" target="_blank" rel="noopener">民用建筑电气设计标准 GB 51348-2019 · 8.10 母线槽布线</a><br>
+    <a href="http://m.jianbiaoku.com/webarbs/book/79641/2096535.shtml" target="_blank" rel="noopener">建筑电气工程施工质量验收规范 GB 50303-2015 · 母线槽安装</a><br>
+    <a href="https://www.gb688.cn" target="_blank" rel="noopener">低压成套开关设备和控制设备 GB 7251.1</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>母线槽.cn</h4>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h4>站点导航</h4>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="../articles/what-is-busway.html">母线槽百科</a>
+      <a href="../articles/choose-manufacturer.html">厂家采购指南</a>
+      <a href="../articles/specs-model.html">规格型号</a>
+      <a href="../articles/busway-complete-guide.html">安装施工</a>
+      <a href="muxiancao-guzhang-paizha.html">故障排查</a>
+    </div>
+    <div>
+      <h4>合作推广</h4>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "母线槽接地怎么做？接地电阻标准与施工要点全解析",
+  "description": "母线槽接地电阻标准是多少？本文详解母线槽外壳接地的正确做法、4种接地方式、5个常见误区及验收checklist，助你一次通过电气验收。",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "datePublished": "2026-10-28",
+  "mainEntityOfPage": "https://母线槽.cn/articles/muxiancao-jiedi-yaodian.html",
+  "about": "母线槽接地,母线槽接地电阻标准,母线槽外壳接地,母线槽PE线连接,母线槽重复接地"
+}
+</script>
+</body>
+</html>
