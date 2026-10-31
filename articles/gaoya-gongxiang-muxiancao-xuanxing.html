@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>高压共箱母线槽选型全指南：发电厂到变电站全场景方案 - 母线槽.cn</title>
+<meta name="description" content="高压共箱母线槽怎么选？详解共箱vs离相封闭母线槽对比表，涵盖发电厂发电机出口、主变连接、厂用变配电场景技术参数与GB/T 8349标准要求。">
+<meta name="keywords" content="高压共箱母线槽,共箱封闭母线槽,离相封闭母线槽,发电厂母线槽,变压器母线槽">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:20px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap ol{margin:0 0 16px 0;padding-left:22px}
+.article-wrap ol li{position:static;padding:0;margin-bottom:6px;list-style:decimal}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.table-wrap{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:var(--steel);font-weight:700;color:var(--ink)}
+tr:nth-child(even){background:#FAFCFD}
+.key-points{background:#F7FAFD;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin:0 0 28px 0}
+.key-points strong{display:block;font-size:.95rem;margin-bottom:8px}
+.key-points ul{margin:0;padding-left:20px}
+.key-points li{list-style:disc;padding:3px 0}
+.inline-cta{background:linear-gradient(135deg,#FFF4E6,#FFF8F0);border:1px solid #F0D9B8;border-radius:10px;padding:14px 18px;margin:20px 0}
+.inline-cta p{margin:0 0 8px;font-size:.95rem}
+.inline-cta a{font-weight:700;color:var(--accent)}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+<main class="article-wrap">
+  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 高压电力</nav>
+  <h1>高压共箱母线槽选型全指南：从发电厂到变电站的场景化方案</h1>
+  <div class="meta-line">母线槽.cn 行业指南 · 2026 年更新 · 阅读约 16 分钟</div>
+
+  <p>高压母线槽选型错误可能导致短路爆炸——10kV 以上的电力动脉，容不得半点马虎。2021 年某电厂 10kV 共箱母线因绝缘子爬电距离不足发生相间闪络，母线烧蚀、机组被迫停机抢修，直接损失数百万元。事后复盘发现，这批母线槽的绝缘配合和动热稳定性校验都出了问题。<strong>高压共箱母线槽</strong>是发电厂、变电站的"生命线"设备，额定电压 3.6kV–35kV、额定电流 400A–6300A，选型逻辑与低压母线槽完全不同。本文以"共箱 vs 离相"对比表为核心，把高压母线槽的选型方案、技术参数和验收要求一次讲透。</p>
+
+  <div class="key-points">
+    <strong>关键要点</strong>
+    <ul>
+      <li>高压共箱母线槽执行 GB/T 8349 标准，额定电压 3.6kV–35kV、额定电流 400A–6300A，三相导体封闭在同一金属外壳内，外壳多点接地屏蔽</li>
+      <li>共箱 vs 离相的核心分水岭是机组容量：100MW 以下机组用共箱（经济性好），200MW 及以上大型机组用离相封闭母线（相间故障率低、磁场对称）</li>
+      <li>绝缘方式三选一：空气绝缘（成本低，≤12kV）、环氧树脂浇注（局放小）、SF6 气体绝缘（35kV 大容量）；选型看电压等级与安装环境</li>
+      <li>动热稳定性校验是高压母线槽的"必答题"：短路耐受电流与峰值耐受电流必须满足系统短路容量要求，外壳作为接地导体时截面积专项核算</li>
+      <li>验收必查：GB/T 8349 型式试验报告（绝缘耐压、动热稳定、温升）、绝缘子/绝缘件局放试验报告、母线槽防护等级与防腐证书</li>
+    </ul>
+  </div>
+
+  <h2>高压共箱母线槽概述</h2>
+
+  <h3>什么是高压共箱母线槽</h3>
+  <p>高压共箱母线槽（又称共箱封闭母线槽）是将三相交流母线导体封闭在同一个金属外壳内的高压配电装置，执行 GB/T 8349《金属封闭母线》标准。与低压母线槽最大的不同是：电压等级高（3.6kV–35kV）、绝缘依赖空气间隙或绝缘子支撑、外壳承担电场屏蔽和机械防护双重功能。三相导体同箱敷设，相间用隔板隔离（隔相共箱）或不隔离（不隔相共箱），外壳全连后多点接地。</p>
+
+  <h3>与低压母线槽的核心差异</h3>
+  <ul>
+    <li><strong>电压等级</strong>：低压母线槽 400V 为主；高压共箱母线槽 3.6kV–35kV，绝缘配合要求完全不同</li>
+    <li><strong>绝缘方式</strong>：低压靠固体绝缘层；高压以空气绝缘为主（电气间隙 125mm 起步），绝缘子/绝缘件支撑</li>
+    <li><strong>外壳功能</strong>：低压外壳防护为主；高压外壳兼作电场屏蔽层和接地导体，外壳感应电压、涡流发热是专项课题</li>
+    <li><strong>动热稳定</strong>：高压系统短路容量大（20kA–50kA），母线槽必须通过动热稳定试验；低压短路耐受要求低得多</li>
+    <li><strong>应用场景</strong>：低压用于建筑配电；高压用于发电厂发电机出口、主变连接、厂用变高压配电等电力基建核心环节</li>
+  </ul>
+
+  <div class="inline-cta">
+    <p>高压母线槽选型前，建议先补足低压基础。参见本站<a href="../articles/母线槽是什么.html">母线槽是什么</a>和<a href="../articles/母线槽选型.html">母线槽选型指南</a>，理解导体、绝缘、外壳的基本逻辑后再读本文。</p>
+  </div>
+
+  <h2>共箱 vs 离相封闭母线槽对比</h2>
+
+  <h3>结构差异</h3>
+  <p>共箱母线槽三相导体封闭在同一外壳内，相间用隔板隔离；离相封闭母线槽每相导体有独立外壳，各相外壳间留有空气间隙隔离。结构差异决定了两种产品的电气性能和应用定位。</p>
+
+  <h3>成本与体积对比</h3>
+  <ul>
+    <li><strong>共箱</strong>：单外壳结构，材料省、造价低；三相同箱导致体积紧凑，适合路径短的厂内配电</li>
+    <li><strong>离相</strong>：三相三个外壳，材料与造价约为共箱的 1.5–2 倍；单相独立外壳体积大但相间绝缘裕度大</li>
+  </ul>
+
+  <h3>磁场与短路耐受对比</h3>
+  <ul>
+    <li><strong>磁场</strong>：共箱三相导体同箱，外壳感应涡流较大，大容量时外壳发热明显；离相每相独立外壳，磁场对称、外壳涡流损耗小</li>
+    <li><strong>短路耐受</strong>：离相各相独立，一相故障不影响其他相；共箱相间距离近，短路电动力对绝缘子和导体支撑考验更大，需加强动热稳定设计</li>
+    <li><strong>相间故障率</strong>：离相结构天然隔离相间，故障率显著低于共箱；200MW 及以上机组规范强制采用离相</li>
+  </ul>
+
+  <h3>选型决策树</h3>
+  <ol>
+    <li><strong>机组容量</strong>：200MW 及以上大型发电机组 → 离相封闭母线槽（规范要求）；100MW 以下中小型机组 → 共箱母线槽（经济性优）</li>
+    <li><strong>电压等级</strong>：≤12kV 厂用配电 → 共箱为主；35kV 主变连接 → 优先离相或 SF6 绝缘</li>
+    <li><strong>安装环境</strong>：户外污秽地区 → 外壳 IP54 以上、防腐涂层；户内干燥环境 → IP54 基本配置</li>
+    <li><strong>短路容量</strong>：系统短路容量大 → 动热稳定专项核算，必要时加大导体截面或采用双母线</li>
+  </ol>
+
+  <h3>迷你案例：1000MW 机组发电机出口母线槽选型</h3>
+  <p>某火电厂 1000MW 机组项目，发电机出口至主变之间额定电压 20kV、额定电流 5000A。按规范选型离相封闭母线槽：每相独立外壳、全连式接地、外壳涡流损耗低；动热稳定按系统 50kA 短路容量校验，峰值耐受电流 125kA；绝缘采用环氧浇注绝缘子支撑。投运后温升稳定、局放测试合格。这个案例印证了行业共识：<strong>大型机组发电机出口，离相封闭母线槽是规范选择，共箱方案在安全性上无法替代</strong>。</p>
+
+  <h2>三大应用场景选型方案</h2>
+
+  <h3>发电厂发电机出口回路</h3>
+  <ul>
+    <li><strong>规格</strong>：15–24kV 电压等级、4000–6300A 电流，机组容量决定电压等级</li>
+    <li><strong>选型</strong>：200MW 以上机组用离相封闭母线槽；100MW 以下可用共箱</li>
+    <li><strong>绝缘</strong>：空气绝缘为主，绝缘子支撑；大容量机组可选环氧浇注绝缘件降低局放</li>
+    <li><strong>动热稳定</strong>：发电机出口短路容量大，必须通过动热稳定试验</li>
+  </ul>
+
+  <h3>主变压器低压侧连接</h3>
+  <ul>
+    <li><strong>规格</strong>：10–35kV、2500–6300A，连接主变低压侧与高压开关柜</li>
+    <li><strong>选型</strong>：35kV 优先离相或 SF6 绝缘；10kV 可用共箱</li>
+    <li><strong>绝缘</strong>：空气绝缘（10kV）或 SF6 气体绝缘（35kV 大容量）</li>
+    <li><strong>伸缩</strong>：主变运行时温升大，母线槽需设置膨胀节吸收热胀冷缩</li>
+  </ul>
+
+  <h3>厂用变压器高压配电</h3>
+  <ul>
+    <li><strong>规格</strong>：6–10kV、630–2500A，厂用变高压侧至厂用电系统</li>
+    <li><strong>选型</strong>：共箱母线槽为主，经济性最优</li>
+    <li><strong>分支</strong>：厂用负荷分散，母线槽需设置分支箱和插接单元</li>
+    <li><strong>防护</strong>：户内 IP54，户外 IP55 并做防腐涂层</li>
+  </ul>
+
+  <h2>核心技术参数要求</h2>
+
+  <h3>额定电压与电流等级</h3>
+  <ul>
+    <li><strong>额定电压</strong>：3.6kV、6.3kV、10.5kV、13.8kV、15.75kV、18kV、20kV、24kV、35kV（GB/T 8349 系列）</li>
+    <li><strong>额定电流</strong>：400A、630A、1000A、1250A、1600A、2000A、2500A、3150A、4000A、5000A、6300A</li>
+    <li><strong>选型逻辑</strong>：电压等级按系统标称电压匹配；电流按发电机/变压器额定电流×1.1 裕量选取</li>
+  </ul>
+
+  <h3>绝缘方式选择（环氧树脂/SF6/绝缘子）</h3>
+  <div class="table-wrap">
+    <table>
+      <tr><th>绝缘方式</th><th>适用电压</th><th>优点</th><th>缺点</th><th>典型场景</th></tr>
+      <tr><td>空气绝缘+绝缘子</td><td>≤12kV</td><td>成本低、维护方便</td><td>受湿度污秽影响大</td><td>厂用变高压配电</td></tr>
+      <tr><td>环氧树脂浇注绝缘</td><td>6–35kV</td><td>局放小、耐污秽</td><td>工艺要求高</td><td>大容量机组出口</td></tr>
+      <tr><td>SF6 气体绝缘</td><td>12–35kV</td><td>绝缘裕度大、体积紧凑</td><td>需监测气体压力</td><td>35kV 主变连接</td></tr>
+    </table>
+  </div>
+
+  <h3>动热稳定性校验</h3>
+  <p>动热稳定是高压母线槽选型的"必答题"，校验内容包括：</p>
+  <ul>
+    <li><strong>短路耐受电流</strong>：按系统最大短路容量核算，持续时间 1 秒；常见值 20kA–50kA</li>
+    <li><strong>峰值耐受电流</strong>：短路电流峰值（含冲击系数），常见 50kA–125kA</li>
+    <li><strong>外壳核算</strong>：外壳作为接地导体时，截面积和机械强度需专项核算，满足短路电动力要求</li>
+    <li><strong>绝缘子支撑</strong>：绝缘子的抗弯、抗扭强度按短路电动力核算，安全系数≥2</li>
+  </ul>
+
+  <h3>防护等级与环境适应性</h3>
+  <ul>
+    <li><strong>防护等级</strong>：户内 IP54 起步，户外 IP55 以上；外壳防护等级证书随货提供</li>
+    <li><strong>防腐</strong>：户外及沿海项目外壳做防腐涂层，通过盐雾试验</li>
+    <li><strong>环境温度</strong>：户外 -25℃~+40℃；高寒地区注意绝缘材料低温性能</li>
+    <li><strong>海拔</strong>：安装场地海拔不超过 2000 米，高海拔需修正绝缘配合</li>
+  </ul>
+
+  <h2>安装与维护要点</h2>
+
+  <h3>水平/垂直安装规范</h3>
+  <ul>
+    <li><strong>水平安装</strong>：法兰口朝外，支架间距按厂家图纸，跨距内挠度不超标</li>
+    <li><strong>垂直安装</strong>：法兰口朝内，固定支架与防晃支架分段设置，穿越楼板处加防振装置</li>
+    <li><strong>安装偏差</strong>：水平偏差≤2mm/m，垂直偏差≤3mm/m，超差需调整支架</li>
+    <li><strong>绝缘测试</strong>：安装完毕后逐段测量绝缘电阻，合格后方可送电</li>
+  </ul>
+
+  <h3>膨胀节设置要求</h3>
+  <p>高压母线槽导体温升大（满载温升 60–70K），热胀冷缩必须用膨胀节吸收：直线段超过 40 米设置伸缩节；穿越建筑物伸缩缝、沉降缝处必须设置；主变连接段因主变温升大，膨胀节裕量专项核算。膨胀节处做好密封，防止潮气侵入。</p>
+
+  <h3>软连接与减震设计</h3>
+  <p>变压器、发电机运行振动会传递到母线槽，接口处采用<strong>软连接（铜编织带）</strong>吸收振动；母线槽本体加装减震器，对绝缘子和导体实现弹性支持；外壳之间加橡胶垫减振。软连接截面积按额定电流选取，连接螺栓力矩按厂家要求紧固。</p>
+
+  <h2>共箱 vs 离相对照表</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>对比维度</th><th>共箱封闭母线槽</th><th>离相封闭母线槽</th></tr>
+      <tr><td>结构</td><td>三相导体共用一个外壳</td><td>每相独立外壳，相间隔离</td></tr>
+      <tr><td>适用机组</td><td>100MW 以下中小型机组</td><td>200MW 及以上大型机组</td></tr>
+      <tr><td>造价</td><td>较低（单外壳）</td><td>较高（三外壳，约1.5–2倍）</td></tr>
+      <tr><td>相间故障率</td><td>较高</td><td>低（相间天然隔离）</td></tr>
+      <tr><td>外壳涡流</td><td>较大</td><td>小（各相独立）</td></tr>
+      <tr><td>典型应用</td><td>厂用变高压配电、10kV 主干</td><td>发电机出口、35kV 主变连接</td></tr>
+      <tr><td>规范要求</td><td>GB/T 8349 共箱系列</td><td>GB/T 8349 离相系列</td></tr>
+    </table>
+  </div>
+
+  <div class="inline-cta">
+    <p>高压母线槽安装验收有专项规范。延伸阅读本站<a href="../articles/母线槽安装规范.html">母线槽安装规范</a>与<a href="../articles/母线槽国家标准.html">母线槽国家标准</a>，核对动热稳定试验报告与绝缘配合要求。</p>
+  </div>
+
+  <h2>常见问题（FAQ）</h2>
+  <div class="qa">
+    <b>Q1：高压共箱母线槽和低压母线槽有什么区别？</b>
+    <p>三个核心区别：一是电压等级，高压 3.6kV–35kV 对低压 400V，绝缘配合完全不同；二是绝缘方式，高压以空气绝缘+绝缘子为主，低压靠固体绝缘层；三是动热稳定，高压系统短路容量大，母线槽必须通过动热稳定试验，低压无此强制要求。选型时不能拿低压母线槽的逻辑套高压场景。</p>
+  </div>
+  <div class="qa">
+    <b>Q2：什么情况下必须用离相封闭母线槽？</b>
+    <p>三个场景必须用离相：一是 200MW 及以上大型发电机组发电机出口（行业规范要求，相间故障率控制）；二是 35kV 大容量主变连接（绝缘裕度与散热要求）；三是系统短路容量特别大的项目（相间隔离降低故障扩大风险）。100MW 以下中小型机组厂用配电用共箱即可。</p>
+  </div>
+  <div class="qa">
+    <b>Q3：SF6 气体绝缘母线槽有什么优缺点？</b>
+    <p>优点：绝缘裕度大、介质强度高、体积紧凑，适合 35kV 大容量场景；缺点：需要监测气体压力（泄漏会影响绝缘）、维护成本高于空气绝缘、环保回收要求高。选型时优先考虑空气绝缘或环氧浇注绝缘，仅在电压等级高、安装空间紧张的 35kV 场景才选 SF6 方案。</p>
+  </div>
+  <div class="qa">
+    <b>Q4：高压母线槽验收要重点看哪些文件？</b>
+    <p>至少五份：一是 GB/T 8349 型式试验报告（绝缘耐压、动热稳定、温升）；二是绝缘子/绝缘件局放试验报告；三是外壳防护等级与防腐证书；四是母线槽出厂合格证与安装记录；五是现场绝缘电阻测试记录。大项目建议委托第三方抽检动热稳定性和局放性能。</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>有发电厂/变电站高压母线槽项目？选型前先对一遍对照表</h2>
+    <p>浏览本站企业黄页，查找有电力基建业绩的高压母线槽厂家，或免费入驻让专业采购直接找到你。</p>
+    <a class="btn" href="../huangye.html#apply">进入企业黄页 / 免费入驻</a>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料：</strong><br>
+    <a href="https://www.ybzhan.cn/chanpin/13995033.html" target="_blank" rel="noopener">GB/T 8349 金属封闭母线槽标准：共箱/离相分类与额定电压电流系列</a><br>
+    <a href="https://www.busductfactory.com?p=177/" target="_blank" rel="noopener">High-Voltage Segregated-Phase Enclosed Busduct 技术参数（3.15–35kV）</a><br>
+    <a href="http://yzlsjt.cn/mxc/8.html" target="_blank" rel="noopener">扬州联胜电气：高压共箱封闭母线槽结构性能与绝缘配置</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>母线槽.cn</h4>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h4>站点导航</h4>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="../articles/母线槽是什么.html">母线槽百科</a>
+      <a href="../articles/母线槽选型.html">选型指南</a>
+      <a href="../articles/母线槽国家标准.html">国家标准</a>
+      <a href="../articles/母线槽安装规范.html">安装规范</a>
+      <a href="jiaozhu-muxiancao-xuanxing.html">浇注母线槽选型</a>
+      <a href="zhineng-xiaomuxiancao-xuanxing.html">智能小母线选型</a>
+    </div>
+    <div>
+      <h4>合作推广</h4>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "高压共箱母线槽选型全指南：从发电厂到变电站的场景化方案",
+  "description": "高压共箱母线槽怎么选？详解共箱vs离相封闭母线槽对比表，涵盖发电厂发电机出口、主变连接、厂用变配电场景技术参数与GB/T 8349标准要求。",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "datePublished": "2026-10-31",
+  "mainEntityOfPage": "https://母线槽.cn/drafts/gaoya-gongxiang-muxiancao-xuanxing.html",
+  "about": "高压共箱母线槽,共箱封闭母线槽,离相封闭母线槽,发电厂母线槽,变压器母线槽"
+}
+</script>
+</body>
+</html>
