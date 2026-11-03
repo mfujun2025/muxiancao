@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>母线槽插接箱选型与安装：分支配电取电的完整方案 - 母线槽.cn</title>
+<meta name="description" content= + desc + >
+<meta name="keywords" content= + keywords + >
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:20px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap ol{margin:0 0 16px 0;padding-left:22px}
+.article-wrap ol li{position:static;padding:0;margin-bottom:6px;list-style:decimal}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.table-wrap{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:var(--steel);font-weight:700;color:var(--ink)}
+tr:nth-child(even){background:#FAFCFD}
+.key-points{background:#F7FAFD;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin:0 0 28px 0}
+.key-points strong{display:block;font-size:.95rem;margin-bottom:8px}
+.key-points ul{margin:0;padding-left:20px}
+.key-points li{list-style:disc;padding:3px 0}
+.inline-cta{background:linear-gradient(135deg,#FFF4E6,#FFF8F0);border:1px solid #F0D9B8;border-radius:10px;padding:14px 18px;margin:20px 0}
+.inline-cta p{margin:0 0 8px;font-size:.95rem}
+.inline-cta a{font-weight:700;color:var(--accent)}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+<main class="article-wrap">  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 安装施工</nav>
+  <h1>母线槽插接箱选型与安装：分支配电取电的完整方案</h1>
+  <div class="meta-line">母线槽.cn 行业指南 · 2026 年更新 · 阅读约 15 分钟</div>
+
+  <p>母线槽的核心优势之一是"插接取电"——<strong>在母线槽任意位置插入插接箱即可引出分支回路，无需切断干线电源</strong>。这个优势让母线槽在分期扩建、设备增加等场景中比电缆方案灵活得多。但插接箱的选型和安装如果不当，轻则取电容量不足、温升超标，重则带电插拔引发弧光短路。本文从插接箱类型、电流等级选择、断路器配合、安装位置、验收要点五个维度，把母线槽插接箱的选型与安装一次讲透。</p>
+
+  <div class="key-points">
+    <strong>关键要点</strong>
+    <ul>
+      <li>插接箱核心功能：在母线槽上插入取电口，引出分支回路为下级设备供电，无需切断干线电源</li>
+      <li>选型核心参数：额定电流（与母线槽匹配）、断路器规格（分断能力+脱扣曲线）、插接方式（手动/自动）</li>
+      <li>断路器配合：插接箱断路器分断能力≥安装位置预期短路电流，脱扣曲线与负载类型匹配（配电型/电动机型）</li>
+      <li>安装位置要求：插接箱间距≥1m，避开弯头/变径/伸缩节，插拔必须在断电状态下进行</li>
+      <li>验收要点：插接箱电流等级、断路器规格、安装位置、绝缘电阻、通电试运行逐项检查</li>
+    </ul>
+  </div>
+
+  <h2>插接箱的基本结构与功能</h2>
+
+  <h3>结构组成</h3>
+  <p>插接箱由以下核心部件组成：</p>
+  <ul>
+    <li><strong>插头</strong>：与母线槽插口配合的导电插头，插入母线槽取电</li>
+    <li><strong>箱体</strong>：容纳断路器和接线端子的外壳，提供防护和绝缘</li>
+    <li><strong>断路器</strong>：分支回路的保护装置，提供过载、短路、漏电保护</li>
+    <li><strong>接线端子</strong>：连接下级电缆的接线端子，通常为铜排或电缆接线端</li>
+    <li><strong>操作手柄</strong>：插拔操作手柄，部分型号带挂锁功能</li>
+  </ul>
+
+  <h3>工作原理</h3>
+  <p>插接箱的工作原理是：插头插入母线槽的插口，与母线槽内的铜排接触取电，电流通过插头→断路器→接线端子→下级电缆的路径传输。插接箱的断路器提供分支回路的保护，过载或短路时断路器跳闸，不影响干线供电。</p>
+
+  <h3>与电缆分支的对比优势</h3>
+  <div class="table-wrap">
+    <table>
+      <tr><th>对比项</th><th>插接箱取电</th><th>电缆分支</th></tr>
+      <tr><td>取电灵活性</td><td>任意位置插入，灵活增减</td><td>需提前预留，改扩建困难</td></tr>
+      <tr><td>施工停电</td><td>仅需断开本分支回路</td><td>需切断干线电源，影响其他回路</td></tr>
+      <tr><td>施工时间</td><td>插入即用，分钟级</td><td>电缆敷设+终端制作，小时级</td></tr>
+      <tr><td>空间占用</td><td>箱体尺寸小，安装在母线槽侧面</td><td>需预留电缆敷设空间</td></tr>
+      <tr><td>扩容能力</td><td>预留插口，随时增加分支</td><td>需重新敷设电缆</td></tr>
+      <tr><td>成本</td><td>插接箱成本较高</td><td>电缆+桥架成本较低</td></tr>
+    </table>
+  </div>
+
+  <div class="inline-cta">
+    <p>母线槽整体优势怎么理解？先看本站<a href="../articles/母线槽是什么.html">母线槽是什么</a>，再结合本文了解插接箱的具体选型。</p>
+  </div>
+
+  <h2>插接箱类型与规格</h2>
+
+  <h3>按电流等级分类</h3>
+  <div class="table-wrap">
+    <table>
+      <tr><th>电流等级</th><th>典型应用</th><th>断路器规格</th><th>箱体尺寸</th><th>适用场景</th></tr>
+      <tr><td>100A</td><td>照明回路、小型设备</td><td>100A断路器</td><td>小型箱体</td><td>商业建筑照明</td></tr>
+      <tr><td>160A</td><td>小型配电、插座回路</td><td>160A断路器</td><td>小型箱体</td><td>办公楼、商场</td></tr>
+      <tr><td>250A</td><td>中型配电、动力回路</td><td>250A断路器</td><td>中型箱体</td><td>厂房车间、设备供电</td></tr>
+      <tr><td>400A</td><td>大型配电、主干分支</td><td>400A断路器</td><td>中型箱体</td><td>工业园区、商业综合体</td></tr>
+      <tr><td>630A</td><td>大型动力、主干分支</td><td>630A断路器</td><td>大型箱体</td><td>大型厂房、数据中心</td></tr>
+      <tr><td>800A</td><td>超大型配电</td><td>800A断路器</td><td>大型箱体</td><td>特大型项目</td></tr>
+    </table>
+  </div
+
+  <h3>按插接方式分类</h3>
+  <ul>
+    <li><strong>手动插接式</strong>：通过操作手柄手动插入/拔出，结构简单、成本低，适用于不频繁操作的场景</li>
+    <li><strong>带挂锁式</strong>：操作手柄带挂锁功能，防止误操作或非授权操作，适用于安全要求高的场景</li>
+    <li><strong>自动切换式</strong>：带自动切换功能，主电源故障时自动切换到备用电源，适用于重要负荷</li>
+  </ul>
+
+  <h3>按断路器类型分类</h3>
+  <ul>
+    <li><strong>微型断路器（MCB）</strong>：适用于100A以下小电流回路，分断能力6–10kA，脱扣曲线B/C型</li>
+    <li><strong>塑壳断路器（MCCB）</strong>：适用于100A–630A中大电流回路，分断能力35–100kA，脱扣曲线可调</li>
+    <li><strong>漏电保护断路器（RCD/RCBO）</strong>：带漏电保护功能，适用于插座回路、人员可触及的回路</li>
+  </ul>
+
+  <h2>插接箱选型核心要点</h2>
+
+  <h3>要点一：电流等级匹配</h3>
+  <p>插接箱的额定电流需与母线槽匹配，且满足分支回路的负载需求：</p>
+  <ul>
+    <li><strong>插接箱电流≤母线槽电流</strong>：插接箱额定电流不能超过母线槽的额定电流</li>
+    <li><strong>插接箱电流≥分支负载电流</strong>：插接箱额定电流需满足分支回路的最大负载电流，建议预留20%裕量</li>
+    <li><strong>多路插接箱总电流≤母线槽电流</strong>：同一母线槽段上所有插接箱的总电流不能超过母线槽额定电流</li>
+  </ul>
+
+  <h3>要点二：断路器选型</h3>
+  <p>断路器是插接箱的核心保护部件，选型需考虑以下因素：</p>
+  <ul>
+    <li><strong>分断能力</strong>：断路器分断能力≥安装位置预期短路电流，详见本站<a href="muxiancao-duanlu-shoukong-qiangdu.html">母线槽短路耐受强度</a></li>
+    <li><strong>脱扣曲线</strong>：配电型负载选C型曲线，电动机型负载选D型曲线，照明回路选B型曲线</li>
+    <li><strong>漏电保护</strong>：插座回路、人员可触及回路必须选带漏电保护的断路器（30mA）</li>
+    <li><strong>极数</strong>：三相负载选3P或4P，单相负载选2P</li>
+  </ul>
+
+  <h3>要点三：插接箱数量与位置</h3>
+  <p>插接箱的数量和位置规划是设计阶段的关键：</p>
+  <ul>
+    <li><strong>负载分析</strong>：统计所有分支回路的负载电流，确定每个插接箱的电流等级</li>
+    <li><strong>位置规划</strong>：根据设备位置确定插接箱安装位置，尽量靠近负载中心</li>
+    <li><strong>间距要求</strong>：相邻插接箱间距≥1m，便于操作和维护</li>
+    <li><strong>裕量预留</strong>：建议预留20%–30%的插口裕量，应对后期设备增加</li>
+    <li><strong>避免集中</strong>：避免在同一母线槽段上集中安装大量插接箱，导致该段过载</li>
+  </ul>
+
+  <h3>选型对照表：场景×插接箱配置</h3>
+  <div class="table-wrap">
+    <table>
+      <tr><th>应用场景</th><th>典型插接箱电流</th><th>断路器类型</th><th>插接箱间距</th><th>裕量建议</th></tr>
+      <tr><td>商业建筑照明</td><td>100A–160A</td><td>MCB（B型+漏电）</td><td>≥1m</td><td>20%</td></tr>
+      <tr><td>办公楼插座</td><td>100A–160A</td><td>MCB（B型+漏电）</td><td>≥1m</td><td>20%</td></tr>
+      <tr><td>厂房车间动力</td><td>250A–400A</td><td>MCCB（C/D型）</td><td>≥1.5m</td><td>25%</td></tr>
+      <tr><td>数据中心末端</td><td>100A–250A</td><td>MCB（C型+漏电）</td><td>≥1m</td><td>30%</td></tr>
+      <tr><td>商业综合体</td><td>160A–400A</td><td>MCB/MCCB</td><td>≥1m</td><td>25%</td></tr>
+      <tr><td>大型厂房主干分支</td><td>400A–630A</td><td>MCCB（C/D型）</td><td>≥1.5m</td><td>25%</td></tr>
+    </table>
+  </div>
+
+  <div class="inline-cta">
+    <p>不确定分支回路需要多大容量？先看本站<a href="../articles/母线槽载流量计算.html">母线槽载流量计算</a>，再结合<a href="../articles/母线槽选型.html">母线槽选型</a>确定整体方案。</p>
+  </div>
+
+  <h2>插接箱安装要点</h2>
+
+  <h3>安装位置要求</h3>
+  <ul>
+    <li><strong>避开特殊部位</strong>：插接箱避开弯头、变径、伸缩节等特殊部位，这些部位母线槽结构不连续，取电可靠性低</li>
+    <li><strong>直线段安装</strong>：插接箱优先安装在母线槽直线段，确保取电可靠</li>
+    <li><strong>操作空间</strong>：插接箱安装位置预留足够的操作空间（≥0.5m），便于插拔操作和维护</li>
+    <li><strong>标识清晰</strong>：每个插接箱标注回路编号、电流等级、对应负载，便于运维管理</li>
+  </ul>
+
+  <h3>安装步骤</h3>
+  <ol>
+    <li>断电确认：确认母线槽和插接箱回路断电，验电确认无电压</li>
+    <li>安装位置标记：根据设计图纸标记插接箱安装位置</li>
+    <li>母线槽开孔：在母线槽外壳上开插接孔（如未预开），确保孔径与插头匹配</li>
+    <li>插入插头：将插接箱插头对准母线槽插口，均匀用力插入，确保接触良好</li>
+    <li>固定箱体：将插接箱箱体固定在母线槽或支架上，确保牢固</li>
+    <li>接线：将下级电缆连接至插接箱接线端子，确保力矩合规</li>
+    <li>绝缘测试：测试插接箱绝缘电阻，确认≥0.5MΩ（低压）</li>
+    <li>通电试运行：合闸送电，空载运行1小时，监测电压、电流、温升</li>
+  </ol>
+
+  <h3>安全操作规程</h3>
+  <ul>
+    <li><strong>严禁带电插拔</strong>：插接箱插拔必须在断电状态下进行，带电插拔可能产生弧光短路，灼伤操作人员</li>
+    <li><strong>验电确认</strong>：插拔前使用验电器确认母线槽无电压，挂"禁止合闸"警示牌</li>
+    <li><strong>操作顺序</strong>：先断开插接箱断路器→再断开母线槽上级断路器→验电→插拔操作</li>
+    <li><strong>恢复顺序</strong>：先插入插头→固定箱体→接线→测试绝缘→合闸送电</li>
+    <li><strong>防护装备</strong>：操作人员佩戴绝缘手套、护目镜，使用绝缘工具</li>
+  </ul>
+
+  <h3>迷你案例：某商业综合体分期扩建的插接箱方案</h3>
+  <p>某商业综合体一期建成时，母线槽预留了30%的插口裕量（未安装插接箱）。二期扩建时，新增餐饮区和影院需要增加分支回路，直接在预留插口上安装插接箱即可取电，无需切断干线电源，施工仅用2天完成（电缆方案至少需要7天停电施工）。这个案例验证了一件事：<strong>母线槽插接箱的预留裕量，是分期扩建灵活性的核心保障</strong>。</p>
+
+  <h2>插接箱验收要点</h2>
+
+  <h3>验收检查项目</h3>
+  <ul>
+    <li><strong>电流等级</strong>：插接箱额定电流与设计一致，且不超过母线槽额定电流</li>
+    <li><strong>断路器规格</strong>：断路器型号、极数、分断能力、脱扣曲线与设计一致</li>
+    <li><strong>安装位置</strong>：插接箱位置与设计图纸一致，避开特殊部位</li>
+    <li><strong>绝缘电阻</strong>：插接箱绝缘电阻≥0.5MΩ（低压），使用兆欧表测试</li>
+    <li><strong>接线力矩</strong>：接线端子螺栓力矩符合标准值，接线牢固</li>
+    <li><strong>标识清晰</strong>：每个插接箱标注回路编号、电流等级、对应负载</li>
+    <li><strong>通电试运行</strong>：空载运行1小时→逐步带载→满载运行，监测温升、电压、电流</li>
+  </ul>
+
+  <h3>验收标准依据</h3>
+  <ul>
+    <li>GB 50303-2015《建筑电气工程施工质量验收规范》</li>
+    <li>GB 50150-2016《电气装置安装工程电气设备交接试验标准》</li>
+    <li>GB 7251.6-2015《低压成套开关设备和控制设备》</li>
+  </ul>
+
+  <h2>常见问题（FAQ）</h2>
+  <div class="qa">
+    <b>Q1：母线槽插接箱可以带电插拔吗？</b>
+    <p>严禁。带电插拔插接箱可能产生弧光短路，灼伤操作人员，损坏母线槽和插接箱。正确的操作流程是：先断开插接箱断路器→再断开母线槽上级断路器→验电确认无电压→插拔操作→恢复送电。部分厂家宣传"带电插拔"功能，但这仅限于特定型号且需严格按操作规程执行，一般项目不建议尝试。</p>
+  </div>
+  <div class="qa">
+    <b>Q2：插接箱可以插多少个？</b>
+    <p>同一母线槽段上插接箱的总电流不能超过母线槽额定电流。例如2000A母线槽上，所有插接箱总电流不能超过2000A。此外，相邻插接箱间距≥1m（便于操作维护），避免在同一母线槽段上集中安装大量插接箱导致该段过载。建议设计时统计所有分支负载，合理分配插接箱位置和电流等级。</p>
+  </div>
+  <div class="qa">
+    <b>Q3：插接箱断路器怎么选？</b>
+    <p>断路器选型考虑三个因素：①分断能力≥安装位置预期短路电流；②脱扣曲线与负载类型匹配（配电型C型、电动机D型、照明B型）；③漏电保护（插座回路、人员可触及回路必须30mA漏电保护）。极数：三相负载选3P或4P，单相负载选2P。断路器规格需与插接箱电流等级匹配。</p>
+  </div>
+  <div class="qa">
+    <b>Q4：插接箱安装位置有什么要求？</b>
+    <p>四个要求：①优先安装在母线槽直线段，避开弯头、变径、伸缩节等特殊部位；②相邻插接箱间距≥1m（便于操作维护）；③安装位置预留≥0.5m操作空间；④每个插接箱标注回路编号、电流等级、对应负载。插接箱位置尽量靠近负载中心，减少下级电缆长度。</p>
+  </div>
+  <div class="qa">
+    <b>Q5：母线槽插接箱需要定期维护吗？</b>
+    <p>需要。建议每半年检查一次：①插头与母线槽接触面清洁、无氧化；②断路器操作灵活、无卡阻；③接线端子力矩复核；④箱体密封完好、无进水；⑤标识清晰可读。在负载率高、环境恶劣的场景中，检查频率建议提高至每季度一次。详见<a href="../articles/母线槽维护保养.html">母线槽维护保养</a>。</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>正在做母线槽配电方案？插接箱选型先规划好</h2>
+    <p>浏览本站企业黄页，查找提供插接箱和母线槽整体方案的厂家，或免费入驻让 EPC 总包在采购时直接找到你。</p>
+    <a class="btn" href="../huangye.html#apply">进入企业黄页 / 免费入驻</a>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料：</strong><br>
+    <a href="https://www.gb688.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=GB%2050303" target="_blank" rel="noopener">GB 50303-2015《建筑电气工程施工质量验收规范》</a><br>
+    <a href="https://www.gb688.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=GB%2050150" target="_blank" rel="noopener">GB 50150-2016《电气装置安装工程电气设备交接试验标准》</a><br>
+    <a href="https://www.gb688.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=GB%207251.6" target="_blank" rel="noopener">GB 7251.6-2015《低压成套开关设备和控制设备》</a>
+  </div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>母线槽.cn</h4>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h4>站点导航</h4>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="../articles/母线槽是什么.html">母线槽百科</a>
+      <a href="../articles/母线槽厂家怎么选.html">厂家采购指南</a>
+      <a href="../articles/密集型母线槽规格型号.html">规格型号</a>
+      <a href="../articles/母线槽怎么安装.html">安装施工</a>
+    </div>
+    <div>
+      <h4>合作推广</h4>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline":  + title + ,
+  "description":  + desc + ,
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "datePublished":  + date + ,
+  "mainEntityOfPage": "https://母线槽.cn/articles/muxiancao-chaji-xiang-xuanxing.html",
+  "about":  + keywords + 
+}
+</script>
+</body>
+</html>
