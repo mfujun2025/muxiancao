@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>母线槽每米重量多少？各规格重量表与支吊架荷载计算 - 母线槽.cn</title>
+<meta name="description" content="母线槽每米重量多少？本文汇总250A-6300A各规格四线制与五线制每米重量参考区间，拆解导体材质、线制、外壳对自重的影响，给出水平支吊架静荷载计算、吊杆与膨胀螺栓选型、垂直竖井弹簧支架压缩量公式及楼板承重复核要点。">
+<meta name="keywords" content="母线槽每米重量,母线槽重量表,2000A母线槽多重,母线槽支吊架荷载计算,母线槽弹簧支架压缩量,五线制母线槽重量">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:20px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap ol{margin:0 0 16px 0;padding-left:22px}
+.article-wrap ol li{position:static;padding:0;margin-bottom:6px;list-style:decimal}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.table-wrap{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:var(--steel);font-weight:700;color:var(--ink)}
+tr:nth-child(even){background:#FAFCFD}
+.key-points{background:#F7FAFD;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin:0 0 28px 0}
+.key-points strong{display:block;font-size:.95rem;margin-bottom:8px}
+.key-points ul{margin:0;padding-left:20px}
+.key-points li{list-style:disc;padding:3px 0}
+.inline-cta{background:linear-gradient(135deg,#FFF4E6,#FFF8F0);border:1px solid #F0D9B8;border-radius:10px;padding:14px 18px;margin:20px 0}
+.inline-cta p{margin:0 0 8px;font-size:.95rem}
+.inline-cta a{font-weight:700;color:var(--accent)}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+  <link rel="canonical" href="https://xn--ubwp2bz56a.cn/articles/muxiancao-zhongliang-hezai-jisuan.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="母线槽每米重量多少？各规格重量表与支吊架荷载计算 - 母线槽.cn" />
+  <meta property="og:description" content="母线槽每米重量多少？本文汇总250A-6300A各规格四线制与五线制每米重量参考区间，拆解导体材质、线制、外壳对自重的影响，给出水平支吊架静荷载计算、吊杆与膨胀螺栓选型、垂直竖井弹簧支架压缩量公式及楼板承重复核要点。" />
+  <meta property="og:url" content="https://xn--ubwp2bz56a.cn/articles/muxiancao-zhongliang-hezai-jisuan.html" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+<main class="article-wrap">  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 结构计算</nav>
+  <h1>母线槽每米重量多少？各规格重量表与支吊架荷载计算</h1>
+  <div class="meta-line">母线槽.cn 行业指南 · 2026 年更新 · 阅读约 16 分钟</div>
+
+  <p>母线槽每米重量算不清，支吊架迟早要出问题。某项目 2500A 五线制母线槽走竖井敷设，施工按经验每 2 m 设一副支架，却没人把干线自重、插接箱集中荷载和弹簧支架压缩量算进去；投运半年后膨胀螺栓松动、整段干线向下位移，连接器被拉出间隙，最后停电拆开重装。它从来不是产品样本末尾那一列可有可无的数字，而是结构提资、支吊架选型、吊装方案和楼板承重复核的共同起点。本文把散落在各家样本 PDF 里的重量数据整成一张可对照的表，再给出水平静荷载、吊杆与膨胀螺栓选型、垂直竖井弹簧压缩量公式的逐项算法和完整算例，最后列一份采购阶段该向厂家要哪些文件的清单。</p>
+
+  <div class="key-points"><strong>关键要点</strong><ul>
+    <li>密集型母线槽每米重量大致随电流等级从 400A 的约 10 kg/m 增长到 5000A 的约 89～100 kg/m，五线制通常比四线制重 10%～13%（<strong>按项目结构设计要求与规范取值</strong>）。</li>
+    <li>水平支吊架单跨静荷载按 <strong>W = 每米重量 × 支架间距 + 附件／插接箱重量</strong> 计算，再乘安全系数校核吊杆、膨胀螺栓与楼板／钢结构承载力。</li>
+    <li>垂直竖井弹簧支架压缩量公式 <strong>H = 120 － W/(K×n)</strong>（K 常用 3 kgf/mm；此处 H 为弹簧压缩后目标高度，与母线外形高度无关），W 为该层母线自重加该层所有设备重量，n 为弹簧根数。</li>
+    <li>影响自重的五个变量：导体材质（铜／铝）、电流等级与导体排数、线制（四线／五线／100%N+50%PE）、外壳材质（钢／铝合金）、防护等级与浇注树脂。</li>
+    <li>重量偏差是识别「虚标导体截面」的低成本线索：同规格实测明显轻于样本值，应追问导体材质与截面，必要时用卡尺实测比对。</li>
+  </ul></div>
+
+  <h2>为什么必须算清母线槽每米重量</h2>
+  <p>在电气专业眼里，重量是样本参数；在结构、施工和物流眼里，它是设计输入。同一条干线，四个专业各要一个答案。</p>
+
+  <h3>结构荷载校核（楼板、钢结构、吊点）</h3>
+  <p>大电流密集型母线槽每米可达数十甚至上百公斤，一段 6 m 的干线加上插接箱，单点吊挂荷载轻易超过 0.5 kN。楼板、屋面、钢结构次梁与吊点的承载力必须按实际集中荷载复核，尤其是改造项目——老厂房原有的吊点往往按电缆桥架设计，远低于母线槽需求。竖井垂直敷设时，整段自重最终累积到每层固定支架上，更要单独算。结构专业要的不是「大概多重」，而是<strong>每米重量、支架间距、单点最大反力、吊点位置</strong>四个数。</p>
+
+  <h3>支吊架选型与间距设计</h3>
+  <p>支架间距不是越密越安全，也不是照抄「2 m」就行。间距决定单跨荷载，荷载反过来决定吊杆直径、膨胀螺栓规格、支架型钢截面与楼板反力。电流等级越高、线制越多、插接箱越密，间距越要收紧；大跨度厂房若必须做到 6 m 跨，就得换成加强型支架或桁架式托架，并重新核算挠度。把这些算清楚，才能避免导语里那种「按经验设支架、半年后螺栓松动」的返工。</p>
+
+  <h3>垂直竖井弹簧支架与伸缩补偿</h3>
+  <p>垂直敷设时，母线槽自重沿高度累积，若每层都刚性固定，热胀冷缩产生的轴向力无处释放，会顶坏连接器与楼板预埋件。常规做法是<strong>每层设固定支架承担该段自重，配合弹簧支架提供弹性支撑与伸缩补偿</strong>。弹簧根数与压缩量必须按该层实际重量算，不能凭「一层装四个」的经验。这一块的计算公式看似简单，但 W 的取法最容易错，后面有专门一节逐项拆解。</p>
+
+  <h3>运输、吊装与现场搬运方案</h3>
+  <p>单节标准段常见长度 2～3 m，2000A 以上五线制一节就接近百公斤，5000A 规格更重。运输车辆载重、卸货叉车吨位、现场二次搬运通道、吊装点位置与吊装带宽度，都要按实际单节重量定。吊装时若直接用钢丝绳兜挂外壳，容易让外壳变形、内部绝缘隔板移位，须用吊装带并在受力点加护角。重量数据不准，轻则工人搬不动，重则吊装变形影响后续防护等级与绝缘性能。</p>
+
+  <h3>与桥架／电缆方案承重对比的定位</h3>
+  <p>方案比选阶段常被问「母线槽是不是比桥架重很多」。这个问题的答案取决于电流等级与敷设方式，不能一概而论。若项目正在做敷设方案比选，可另看<a href="../articles/母线槽与桥架承重对比.html">母线槽与桥架承重对比</a>；本文只讨论<strong>母线槽自身的重量数据与由其派生的支吊架荷载计算</strong>，不做两种方案的横向比较，避免把两套口径混在一起。</p>
+
+  <h2>母线槽每米重量参考数据表</h2>
+  <p>这一节是全文的数据基础。先把口径说清，再给表，最后给使用边界。</p>
+
+  <h3>数据口径说明（四线制／五线制、100%N／50%PE、铜导体、密集型）</h3>
+  <p>不同厂商样本的重量口径差别很大，比对前必须对齐四件事：<strong>线制</strong>（三相四线 vs 三相五线）、<strong>N 与 PE 的配置</strong>（100%N + 50%PE 是常见五线制配置，也有 100%N + 100%PE 的重型配置）、<strong>导体材质</strong>（铜还是铝）、<strong>产品形态</strong>（密集型、空气型、浇注型）。下表以<strong>铜导体密集型、四线制与常规五线制</strong>为基准；同一电流等级下，空气型通常更轻、浇注型明显更重。所有数值均为跨品牌综合的<strong>典型参考值／区间，以厂家样本／型式试验报告为准</strong>，不能直接当作某一项目的结算或结构计算终值。</p>
+
+  <h3>250A～6300A 每米重量区间概览</h3>
+  <p>从公开厂商样本看，四线制大致从 400A 的约 10 kg/m 增长到 5000A 的约 89～91 kg/m；五线制对应约 10.8 kg/m 到 99.8 kg/m；3150A～4000A 区间的部分国内系列标称可达 90～134 kg/m，差异主要来自导体排数与外壳结构。也就是说，<strong>从 400A 到 5000A，自重能差出近十倍</strong>。电流等级与型号规格的对应关系，可对照<a href="../articles/母线槽型号规格表.html">母线槽型号规格表</a>快速定位，再把对应规格的重量代入后面的荷载公式。以上均为<strong>按项目结构设计要求与规范取值</strong>。</p>
+
+  <h3>【对照表 1】额定电流 × 外形高度 × 四线制重量 × 五线制重量 × 弹簧支架根数</h3>
+  <p>下表只列<strong>同一品牌、同一产品形态、同一线制</strong>口径下可核验的公开样本锚点（ABB WavePro-II 系列手册：400A 10.0/10.8、1000A 16.6/18.4、2000A 35.1/39.4、3200A 53.6/60.1、5000A 88.6/99.8 kg/m，前为四线制、后为五线制）。中间规格与 6300A 请<strong>向厂家索取对应型号样本的每米重量与外形尺寸图</strong>，本站不提供跨品牌混合或无出处的通用参考区间；弹簧支架根数按厂家支架选型表确定。</p>
+
+  <div class="table-wrap"><table>
+    <caption>母线槽每米重量样本锚点（同品牌同线制口径，kg/m）</caption>
+    <thead><tr><th scope="col">额定电流</th><th scope="col">外形高度 (mm)</th><th scope="col">四线制重量 (kg/m)</th><th scope="col">五线制重量 (kg/m)</th><th scope="col">弹簧支架根数</th></tr></thead>
+    <tbody>
+      <tr><td>400A</td><td>向厂家索取</td><td>10.0</td><td>10.8</td><td>按选型表</td></tr>
+      <tr><td>1000A</td><td>向厂家索取</td><td>16.6</td><td>18.4</td><td>按选型表</td></tr>
+      <tr><td>2000A</td><td>向厂家索取</td><td>35.1</td><td>39.4</td><td>按选型表</td></tr>
+      <tr><td>3200A</td><td>向厂家索取</td><td>53.6</td><td>60.1</td><td>按选型表</td></tr>
+      <tr><td>5000A</td><td>向厂家索取</td><td>88.6</td><td>99.8</td><td>按选型表</td></tr>
+      <tr><td>6300A</td><td>向厂家索取</td><td>需厂家确认</td><td>需厂家确认</td><td>按选型表</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>空气型／浇注型／高压共箱型的重量差异</h3>
+  <p>产品形态对自重的影响不亚于电流等级。<strong>空气型</strong>导体间留空气间隙、外壳较薄，同电流等级通常比密集型轻，但外形尺寸更大、防护与散热表现不同；<strong>环氧树脂浇注型</strong>把导体整体包覆在树脂里，重量显著高于密集型（IP67／IP68 场景常见），对支吊架与楼板荷载的要求要单独算；<strong>高压共箱型</strong>壳体大、绝缘距离要求高，自重与吊装方案又是另一套量级。做结构提资时，务必确认用的是哪一个系列的重量表，不能拿密集型的数据去给浇注型算支架。</p>
+
+  <h3>数据使用声明：典型参考值，以厂家样本与实测为准</h3>
+  <p>再强调一次使用边界：上表用于<strong>方案阶段的荷载初判与量级校核</strong>，不能替代施工图阶段的结构计算。正式提资前必须向厂家索取<strong>本项目具体型号、具体线制、具体防护等级</strong>的每米重量数据与外形尺寸图，并核对数据对应的型式试验报告样品结构；到货后抽样称重或用卡尺实测导体截面复核。厂家样本标称值与实测偏差超出合理范围（如 ±10% 以上，属<strong>按项目结构设计要求与规范取值</strong>）时，应暂停支架安装并查明原因。</p>
+
+  <div class="inline-cta"><p>重量数据填进结构提资表之后，紧接着要定支架间距与吊点做法——这一步的规范依据比经验值更重要。</p><p>支架间距、固定方式与安装工艺的条文要求，可对照<a href="../articles/母线槽安装规范.html">母线槽安装规范与支架间距要求</a>，把计算结果和规范条文对齐后再出图。</p></div>
+
+  <h2>影响母线槽每米重量的五个变量</h2>
+  <p>同样是 2000A，不同方案报出来的每米重量可能差出三成。差异来自下面五个变量，逐个拆开就知道该向厂家追问什么。</p>
+
+  <h3>导体材质（铜 vs 铝，密度与截面差异）</h3>
+  <p>铜密度约 8.9 g/cm³，铝约 2.7 g/cm³，但铝的电阻率更高，达到同样载流量需要更大的截面积，因此「铝一定轻很多」并不绝对——通常仍能减轻，但幅度取决于截面放大比例与外壳尺寸。材质还影响接头处理、热膨胀系数、短路耐受与长期可靠性，不能只按重量决策。导体材质对载流量、温升与重量的综合影响，可延伸阅读<a href="../articles/tongpai-lupai-muxiancao-qubie.html">铜排与铝排母线槽的区别</a>。到货时用卡尺实测排宽排厚，是核对材质与截面最直接的手段。</p>
+
+  <h3>电流等级与导体排数（单排／双排／三排）</h3>
+  <p>电流越大，导体总截面积越大。厂家有两种实现路径：加厚加宽单排铜排，或改用双排、三排并联。排数增加不仅增加导体重量，还要增加绝缘隔板、支撑件与外壳高度，重量往往呈阶梯式跳变——这解释了为什么重量表里某些电流档之间会出现明显跳跃。看样本时留意「每相排数 × 排宽 × 排厚」这一组数据，它比单独的 kg/m 更能说明结构设计是否合理。</p>
+
+  <h3>线制（三相四线、三相五线、100%N + 50%PE）</h3>
+  <p>四线制为 L1/L2/L3 + N（或 PEN），五线制再加独立 PE。常见配置是 <strong>100%N + 50%PE</strong>，即 N 排截面与相线相同、PE 排约为相线一半；谐波密集场合会用到 200%N 或 100%PE，重量进一步上升。从公开样本看，五线制通常比四线制重约 10%～13%（<strong>按项目结构设计要求与规范取值</strong>）。报价比选时若一家报四线、一家报五线，重量、单价与支架荷载都不具可比性，必须先把线制拉平。</p>
+
+  <h3>外壳材质（钢制 vs 铝合金型材）</h3>
+  <p>钢制外壳强度高、成本低，但自重大；铝合金型材外壳可明显减重，同时改善散热与耐腐蚀，缺点是材料成本高、局部承载与接地连续性设计要更细致。外壳往往占整条母线槽重量的相当比例，所以「换铝合金外壳能轻多少」这个问题，答案通常比想象中可观，但必须由厂家给出对应系列的实际数据，不能按密度差简单折算。减重对高层竖井、大跨度厂房与既有结构改造尤其有价值。</p>
+
+  <h3>防护等级、浇注树脂与附加结构</h3>
+  <p>防护等级从 IP40 提到 IP65，会增加密封条、加强型材与防水紧固件；提到 IP68 采用整体浇注后，树脂成为主要增重来源。此外，耐火母线槽的隔热层、防火封堵附件、智能监测模块、加厚插接箱等都会叠加重量。做荷载计算时，应把<strong>直线段本体、连接器、插接箱、始端箱</strong>分别取值，尤其插接箱属于集中荷载，不能平摊到每米里忽略掉。</p>
+
+  <h2>由母线槽每米重量计算水平支吊架静荷载</h2>
+  <p>这是结构提资阶段最常被要求出具的一张计算书。公式不复杂，难在取值口径。</p>
+
+  <h3>单跨荷载 W = 每米重量 × 支架间距 + 附件／插接箱重量</h3>
+  <p>基本式是 <strong>W = q × L + ΣW<sub>附</sub></strong>，其中 q 为每米重量（kg/m），L 为支架间距（m），ΣW<sub>附</sub> 为该跨范围内的连接器、插接箱、始端箱、弯头与附件重量之和。注意两点：其一，插接箱是<strong>集中荷载</strong>，若恰好落在跨中，对支架与吊杆的不利影响大于均布荷载，宜按最不利位置单独校核；其二，多根并列敷设时要按<strong>实际根数叠加</strong>，不能只算一根再「差不多乘个系数」。计算结果的单位换算到 kN 时，按 1 kgf ≈ 9.8 N 取。</p>
+
+  <h3>支架间距选取（常用 1.5～2 m，大跨度 6 m 的适用条件）</h3>
+  <p>常规水平敷设间距多在 <strong>1.5～2 m</strong>，电流等级大、插接箱密集或有振动时取下限（<strong>按项目结构设计要求与规范取值</strong>）。若因柱距或工艺布局必须做到 6 m 大跨度，不能简单把间距拉长三倍——荷载翻三倍、挠度按更高次幂增长，需要改用加强型托架、桁架式支架或增设中间吊点，并单独校核挠度与外壳变形。大跨度方案必须由厂家出具对应的支架选型表或计算书，不能由施工方现场凭经验加密了事。</p>
+
+  <h3>吊杆直径、膨胀螺栓承载力与安全系数</h3>
+  <p>算出单跨荷载后，按支架形式分配各吊点反力（常见双吊杆均分），再乘<strong>安全系数</strong>（常规静荷载常取 1.5 左右，具体按项目结构设计要求与规范取值，属<strong>按项目结构设计要求与规范取值</strong>），得到每个吊杆与膨胀螺栓的设计拉力。选螺栓时要核对<strong>基材强度（混凝土标号）、锚固深度、边距、钻孔质量与抗震要求</strong>，不能只看产品样本上的极限承载力。螺栓紧固力矩同样要按厂家表格执行（4.8 级常见参考：M6 约 5、M8 约 13、M10 约 20、M12 约 35、M16 约 85、M20 约 170 N·m，允许误差 &lt;±10%，均为<strong>按项目结构设计要求与规范取值</strong>），力矩不足是后期支架松动的高频原因。</p>
+
+  <h3>多根并列敷设的荷载叠加与支架共用限制</h3>
+  <p>同一路由并列两三根大电流干线时，总荷载很可观。是否允许共用一副支架，要核对支架型钢的承载、吊点反力与楼板局部承压，不能因为「支架看起来够宽」就共用。并列敷设还会带来检修空间、散热间距与插接箱操作面的问题，这些都应在提资图上一并标注。改造项目遇到的老吊点，尤其要重新验算，不能直接沿用原桥架支架。</p>
+
+  <h3>完整算例（2000A、五线制、2 m 间距）</h3>
+  <p>已知：2000A 五线制密集型每米重量 q = 39.4 kg/m（<strong>按项目结构设计要求与规范取值</strong>），支架间距 L = 2 m，该跨内有一台插接箱重 25 kg、连接器及附件合计 6 kg。则均布部分 q×L = 39.4×2 = 78.8 kg，附件合计 31 kg，单跨静荷载 W = 78.8 + 31 = <strong>109.8 kgf ≈ 1.08 kN</strong>。取安全系数 1.5，设计荷载约 <strong>1.62 kN</strong>；双吊杆均分，每根吊杆拉力约 <strong>0.81 kN</strong>。据此选吊杆直径、膨胀螺栓规格与支架型钢，并核对混凝土标号、锚固深度与边距是否满足。若把间距改成 1.5 m、或插接箱恰好落在跨中，都要重新代入公式算一遍——这就是「先有重量、后有支架」的完整链条。</p>
+
+  <h2>垂直竖井：由母线槽每米重量算弹簧支架</h2>
+  <p>竖井是重量问题最集中的部位：自重沿高度累积，热胀冷缩又要释放，两者靠固定支架与弹簧支架配合解决。</p>
+
+  <h3>垂直敷设的自重累积效应</h3>
+  <p>水平敷设时每跨荷载被各个支架分担；垂直敷设时，若没有中间承托，整段自重会向下累积到最底部的固定点，可能远超单个支架的承载能力。因此规范要求<strong>按楼层分段承托</strong>：每层设置固定支架承担该层母线槽自重与该层所有设备重量，层与层之间靠弹簧支架与伸缩节吸收位移。计算时 W 取「该层母线长度 × 每米重量 + 该层插接箱等设备重量」，而不是整栋楼的总重。</p>
+
+  <h3>每层固定支架与弹簧支架的作用</h3>
+  <p>两者分工不同，不能互相替代：<strong>固定支架</strong>把该段自重与设备重量传给建筑结构，是主要承力件；<strong>弹簧支架</strong>提供弹性支撑，允许母线槽随温度变化轴向伸缩，避免刚性约束产生附加应力顶坏连接器或楼板。弹簧数量与刚度必须与该层荷载匹配——太多太硬等于刚性固定，太少太软则压缩量过大、母线槽下沉。楼板预埋件、支架型钢与锚栓同样要按该层反力校核。</p>
+
+  <h3>弹簧压缩量公式 H = 120 － W/(K×n) 逐项释义（H 为弹簧压缩后高度，非外形高度）</h3>
+  <p>厂商样本常见的弹簧支架压缩量公式为：</p>
+  <p><strong>H = 120 － W / (K × n)</strong></p>
+  <p>其中 <strong>W</strong> 为该层母线槽自重加该层所有设备重量（kgf），按 W = 每米重量 × 楼层高度 + 该层插接箱／始端箱等设备重量计算；<strong>K</strong> 为单根弹簧的刚度系数，常见取 3 kgf/mm；<strong>n</strong> 为弹簧根数；<strong>120</strong> 为与弹簧自由高度及安装尺寸相关的基准常数（mm），由厂家支架结构确定；<strong>H</strong> 为安装后弹簧的剩余高度／压缩后的目标尺寸。公式里最容易出错的是 W 的取法——漏掉插接箱等集中设备重量，或误把整栋楼总重当成该层重量，都会让 n 选错、压缩量算偏。上述 K、120 等参数均为<strong>按项目结构设计要求与规范取值</strong>，不同系列支架必须套用本厂数据。</p>
+
+  <h3>弹簧根数选取与楼层高度的关系</h3>
+  <p><strong>算例</strong>：某层高 4.5 m，2000A 五线制 q = 39.4 kg/m，该层插接箱等设备合计 60 kg，K = 3 kgf/mm，拟选 n = 4 根。则 W = 39.4×4.5 + 60 = 177.3 + 60 = <strong>237.3 kgf</strong>；压缩量 W/(K×n) = 237.3/(3×4) ≈ <strong>19.8 mm</strong>；H = 120 － 19.8 ≈ <strong>100.2 mm</strong>。若该值超出厂家允许的压缩范围，应增加弹簧根数 n 或改选刚度更大的弹簧，再重算。层高越大、电流等级越高、插接箱越多，W 越大，所需 n 越多——这就是为什么大电流竖井常常见到一层布置四根甚至更多弹簧。根数最终要落在厂家支架选型表给出的规格档位上，不能取非标值。</p>
+
+  <h3>与伸缩节、热胀冷缩补偿的配合</h3>
+  <p>弹簧支架解决的是「允许伸缩」，但伸缩量本身还要靠<strong>伸缩节</strong>吸收。设计时要核对：该段母线的计算热伸长量、伸缩节的额定补偿量、弹簧支架的允许位移范围，三者匹配才不会在季节温差下把连接器拉出间隙。竖井穿楼板节点还要兼顾防火封堵与防水，且不能把母线槽刚性卡死在楼板里——封堵材料若硬化后形成刚性约束，弹簧支架就形同虚设。这几处节点做法应在详图里一次定死。</p>
+
+  <h2>母线槽每米重量对应的结构复核与施工要点</h2>
+  <p>算完荷载，还要把结论交到结构与施工两个专业手里，并守住几条规范红线。</p>
+
+  <h3>楼板／钢结构承重复核与土建提资</h3>
+  <p>提资文件应包含：各段每米重量、支架间距与吊点平面位置、每个吊点的最大反力（含安全系数）、竖井每层固定支架反力、预留预埋件规格与位置、大跨度或集中荷载部位的加强要求。改造项目还要附既有结构承载力复核结论。数据给得越具体，结构与施工返工越少；只给一句「母线槽约 40 kg/m」的提资，往往到吊装阶段才暴露问题。</p>
+
+  <h3>规范背景：承力钢构件上不得熔焊支架／热加工开孔</h3>
+  <p>GB 50303-2015《建筑电气工程施工质量验收规范》第 10.2.1 条相关要求明确：除设计要求外，<strong>承力建筑钢构件上不得熔焊连接母线槽支架，也不得热加工开孔</strong>。原因是现场焊接与气割会削弱构件截面、影响结构受力与防腐层。施工上应采用夹具、抱箍、螺栓连接或预留连接件等机械固定方式；确需焊接时必须经结构设计确认并有书面依据。这条属于验收硬要求，支架方案阶段就要写进施工说明。</p>
+
+  <h3>吊装点设置、吊装带保护与外壳防变形</h3>
+  <p>单节重量决定吊装点数量与位置：长节段应两点或多点起吊，吊点间距按厂家说明书取，避免单点起吊造成母线弯曲。必须使用<strong>柔性吊装带并在棱角处加护角</strong>，禁止用钢丝绳直接兜挂外壳；起吊过程保持水平、避免冲击；临时堆放要垫平、控制叠放层数。外壳一旦变形，密封、防护等级与内部绝缘隔板位置都会受影响，后续再校直往往得不偿失。</p>
+
+  <div class="inline-cta"><p>到这里算的都是<strong>常规静荷载</strong>：自重、附件、吊杆、膨胀螺栓与弹簧支架。设防地区还有另一套侧向／纵向地震作用要单独计算，两者不能互相替代。</p><p>抗震设防要求与支撑配置，可对照<a href="../articles/muxiancao-kangzhen-zhiguapaijia.html">母线槽抗震支吊架</a>一文，把常规承重支架与抗震支撑分开出图、分开验收。</p></div>
+
+  <h3>抗震支吊架与常规承重支架的关系</h3>
+  <p>常规承重支架承担竖向自重，抗震支撑承担地震时的侧向与纵向作用，规范依据、计算模型、构件形式与验收资料都不同。实际工程里两者常在空间上冲突，需要在综合管线排布阶段一起定位。切勿把「装了抗震支架」当作已复核竖向荷载，也别以为常规支架加密就能替代抗震设防——静荷载算完，地震作用工况另算，这是两条独立的线。</p>
+
+  <h3>安装验收中的支架检查项</h3>
+  <p>验收清单至少列：支架间距与图纸一致、吊杆规格与紧固力矩符合厂家表格、膨胀螺栓锚固深度与边距合格、承力钢构件无现场熔焊／热加工开孔痕迹、竖井弹簧支架根数与压缩后的 H 值符合计算书、伸缩节未被刚性卡死、并列敷设支架未违规共用、外壳无吊装变形、插接箱部位已单独承托。每项拍照留痕并与计算书一并归档，后期增容或事故追溯时才有据可查。</p>
+
+  <h2>采购与招标阶段的母线槽每米重量条款</h2>
+  <p>把重量与荷载要求前置到招标文件，比施工阶段再补数据省事得多。</p>
+
+  <h3>要求厂家提供每米重量数据与外形尺寸图</h3>
+  <p>技术规格书里写清：提供<strong>本项目具体型号、线制、防护等级</strong>对应的每米重量表（四线／五线分列）、外形尺寸图（含 H、W、安装孔位与吊点位置）、连接器与插接箱单件重量、水平支架间距建议与垂直弹簧支架选型表。数据须与型式试验报告的样品结构一致，并注明是否含包装。缺任一项，结构提资就只能靠估算，风险全部留给施工阶段。</p>
+
+  <h3>重量偏差与「虚标导体截面」的关联识别</h3>
+  <p>重量是最便宜的验真线索。同型号、同线制、同电流等级的产品，若到货实测明显轻于样本标称（比如低 10% 以上，属<strong>按项目结构设计要求与规范取值</strong>），常见原因是导体截面缩水、以铝代铜、外壳减薄或排数减少。核对动作：抽样称重、用卡尺实测导体排宽排厚、对照型式试验报告样品照片与结构描述、必要时要求出具材质证明。某项目正是通过一批货整体偏轻顺藤摸瓜，发现导体截面未按样本生产，避免了后续满载温升超标。称重记录应并入到货验收资料。报告本身的 CMA／CNAS 资质标识、编号可查性、结论对应型号与覆盖规格怎么审，见<a href="../articles/muxiancao-xingshi-shiyan-baogao.html">母线槽型式试验报告的 10 项参数与真伪核验</a>。</p>
+
+  <h3>运输、卸货与二次搬运费用估算</h3>
+  <p>大电流规格单节接近或超过百公斤，涉及叉车吨位、吊装设备、楼层内二次搬运通道与人工配置，这些费用在报价阶段常被漏算。招标文件宜要求厂家提供<strong>单节长度、单节重量、包装尺寸与卸货要求</strong>，由施工方据此核算机械台班与搬运措施费。高层竖井项目还要说明垂直运输方式（塔吊、施工电梯或人工葫芦），避免设备到场却上不了楼。</p>
+
+  <h3>【对照表 2】选型阶段需向厂家索取的重量／荷载相关文件清单</h3>
+  <p>下表可直接作为核对母线槽每米重量相关文件的技术规格书附件清单。所有数据均须标注为<strong>按项目结构设计要求与规范取值</strong>，并与投标型号一一对应。</p>
+
+  <div class="table-wrap"><table>
+    <thead><tr><th>文件／数据项</th><th>用途</th><th>应包含的字段</th><th>核验要点</th></tr></thead>
+    <tbody>
+      <tr><td>各规格每米重量表</td><td>结构提资、支架荷载初算</td><td>电流等级、线制、四线／五线 kg/m、是否含附件</td><td>型号与投标一致，四线五线分列</td></tr>
+      <tr><td>外形尺寸图</td><td>路由净空、吊点与孔位定位</td><td>H／W、安装孔距、吊点位置、单节长度</td><td>与到货实物实测比对</td></tr>
+      <tr><td>连接器／插接箱单件重量</td><td>集中荷载与跨中校核</td><td>各型号单重、安装位置、最大插接箱重量</td><td>不可均摊进每米重量忽略</td></tr>
+      <tr><td>水平支吊架间距与单跨荷载建议</td><td>支架与吊杆选型</td><td>推荐间距、大跨度条件、单跨荷载限值</td><td>与本项目柱距、挠度要求匹配</td></tr>
+      <tr><td>垂直竖井弹簧支架选型表</td><td>弹簧根数与压缩量计算</td><td>K 值、基准常数、允许压缩范围、根数档位</td><td>W 取该层自重＋该层设备重量</td></tr>
+      <tr><td>螺栓紧固力矩表</td><td>支架与连接器安装</td><td>各规格力矩值、允许误差、螺栓强度等级</td><td>力矩扳手现场复核并留痕</td></tr>
+      <tr><td>型式试验报告（结构／机械性能部分）</td><td>核对样品结构一致性</td><td>样品型号、结构照片、导体规格、机械试验结论</td><td>型号、导体排数与到货实物一致</td></tr>
+      <tr><td>导体材质与截面说明</td><td>重量偏差追溯、载流量复核</td><td>材质、每相排数、排宽×排厚、总截面积</td><td>卡尺实测，警惕虚标截面</td></tr>
+      <tr><td>吊装点与运输包装说明</td><td>吊装方案与搬运费核算</td><td>单节重量、吊点数量与位置、包装尺寸、堆放限制</td><td>吊装带保护，禁止钢丝绳兜挂</td></tr>
+      <tr><td>防火封堵与伸缩节节点详图</td><td>竖井与穿楼板节点</td><td>节点做法、允许位移量、封堵材料</td><td>不得把母线槽刚性卡死</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>常见问题 FAQ</h2>
+  <div class="faq">
+    <h3>Q1：2000A 母线槽每米大概多重？</h3>
+    <p>铜导体密集型 2000A 常见约 35 kg/m（四线制）与 39 kg/m 左右（五线制），不同系列因排数、外壳材质与防护等级会有出入，公开样本亦有偏高的标称值（<strong>按项目结构设计要求与规范取值</strong>）。注意五线制、100%PE、浇注型都会明显更重。算支架荷载时要用<strong>本项目具体型号</strong>的数据，并另外加上插接箱等集中荷载，不能用这个区间值直接出施工图。</p>
+
+    <h3>Q2：五线制比四线制重多少？</h3>
+    <p>常见配置为 100%N + 50%PE，公开样本显示五线制通常比四线制重约 10%～13%，例如 400A 从约 10.0 增至 10.8 kg/m、2000A 从 35.1 增至 39.4 kg/m、5000A 从 88.6 增至 99.8 kg/m（均为<strong>按项目结构设计要求与规范取值</strong>）。若采用 200%N（谐波密集场合）或 100%PE，增重更多。比选报价时务必先把线制拉平，否则重量、单价与支架荷载都不具可比性。</p>
+
+    <h3>Q3：母线槽支架间距一般设多少，怎么算？</h3>
+    <p>常规水平敷设多在 1.5～2 m，大电流、插接箱密集或有振动时取下限（<strong>按项目结构设计要求与规范取值</strong>）。计算用 <strong>W = 每米重量 × 支架间距 + 附件／插接箱重量</strong>，再乘安全系数校核吊杆、膨胀螺栓与楼板反力。例如 2000A 五线制、2 m 间距、跨内插接箱 25 kg 与附件 6 kg，单跨静荷载约 109.8 kgf ≈ 1.08 kN，取 1.5 系数后约 1.62 kN，双吊杆各约 0.81 kN。6 m 大跨度不能简单拉长间距，需加强支架并单独校核挠度。</p>
+
+    <h3>Q4：垂直竖井的弹簧支架根数怎么确定？</h3>
+    <p>按 <strong>H = 120 － W/(K×n)</strong> 反算。W 为该层母线自重（每米重量 × 楼层高度）加该层插接箱等设备重量，K 为单根弹簧刚度（常见 3 kgf/mm），n 为弹簧根数，120 为厂家支架结构决定的基准常数，支架参数按厂家选型表与项目结构设计要求取值。例如层高 4.5 m、q = 39.4 kg/m、设备 60 kg，则 W = 237.3 kgf，取 n = 4 时压缩量约 19.8 mm、H ≈ 100.2 mm。若 H 超出允许范围，就增加 n 或换刚度更大的弹簧，并落在厂家选型表的规格档位上。</p>
+
+    <h3>Q5：铝合金外壳能减轻多少重量？</h3>
+    <p>铝合金型材外壳相对钢制外壳可明显减重，同时改善散热与耐腐蚀，但具体幅度取决于系列结构与外壳在总重中的占比，不能按铜铝密度差简单折算。唯一可靠的做法是向厂家索取<strong>同一电流等级、同一线制下钢制与铝合金两个系列</strong>的每米重量数据再对比（<strong>按项目结构设计要求与规范取值</strong>）。减重对高层竖井、大跨度厂房与既有结构改造尤其有价值，但要同步核对成本、接地连续性与局部承载设计。</p>
+
+    <h3>Q6：母线槽每米重量会不会影响楼板承重，需要结构复核吗？</h3>
+    <p>需要，尤其是大电流规格、多根并列、竖井垂直敷设与改造项目。应按每米重量、支架间距计算每个吊点的最大反力（含安全系数），连同吊点平面位置、预埋件规格提资给结构专业复核楼板或钢结构承载力；竖井还要按层核算固定支架反力。改造项目不能直接沿用原桥架吊点。此外 GB 50303-2015 第 10.2.1 条要求承力建筑钢构件上不得熔焊支架或热加工开孔，支架固定方式须在方案阶段一并确定。</p>
+  </div>
+
+  <h2>结语</h2>
+  <p>母线槽每米重量是<strong>设计输入，不是样本附注</strong>。把它算清的链条其实很短：先向厂家拿到本项目型号、线制、防护等级对应的每米重量与外形尺寸图，再用 W = q×L + 附件重量 算水平单跨荷载、校核吊杆与膨胀螺栓，竖井另按 H = 120 － W/(K×n) 定弹簧根数，最后把吊点反力提资给结构专业并守住「承力钢构件不得熔焊开孔」这类规范红线。全程最贵的错误，是把重量当成一个可以「差不多」的经验值。</p>
+  <p>给正在做施工图或招标的团队一份可执行的清单：按对照表 1 定位本项目电流等级的量级；用对照表 2 逐项向厂家索取九类文件；把水平算例与竖井算例里的公式各代入一次本项目的真实参数；到货后抽样称重并用卡尺实测导体截面，把结果并入验收资料。四步做完，支架松动、吊点超载、竖井位移这几类问题基本都能挡在投运之前。</p>
+
+  <div class="cta-box"><h2>需要各规格重量数据表或支吊架荷载校核协助？</h2><p>母线槽.cn 可按项目电流等级、线制与敷设方式，对接厂家提供每米重量表、外形尺寸图、弹簧支架选型表与荷载计算依据，协助完成结构提资。</p><a class="btn" href="../huangye.html#apply">进入企业黄页 / 免费入驻</a></div>
+
+  <div class="refs"><strong>参考资料：</strong><br>
+    <a href="https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2016/art_17339_226436.html" target="_blank" rel="noopener">GB 50303-2015《建筑电气工程施工质量验收规范》（住建部公告）</a><br>
+    <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C09C8DDFAD467798FAAE736B9E97CEB1" target="_blank" rel="noopener">GB/T 7251.6-2015《低压成套开关设备和控制设备 第6部分：母线干线系统》</a><br>
+    <a href="https://www.mohurd.gov.cn/gongkai/fdzdgknr/bzgf/index.html" target="_blank" rel="noopener">GB 50981-2014《建筑机电工程抗震设计规范》（住建部标准公告）</a>
+  </div>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>母线槽.cn</h4>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h4>站点导航</h4>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="../articles/母线槽是什么.html">母线槽百科</a>
+      <a href="../articles/母线槽厂家怎么选.html">厂家采购指南</a>
+      <a href="../articles/密集型母线槽规格型号.html">规格型号</a>
+      <a href="../articles/母线槽怎么安装.html">安装施工</a>
+    </div>
+    <div>
+      <h4>合作推广</h4>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "母线槽每米重量多少？各规格重量表与支吊架荷载计算",
+  "description": "母线槽每米重量多少？本文汇总250A-6300A各规格四线制与五线制每米重量参考区间，拆解导体材质、线制、外壳对自重的影响，给出水平支吊架静荷载计算、吊杆与膨胀螺栓选型、垂直竖井弹簧支架压缩量公式及楼板承重复核要点。",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "datePublished": "2026-11-06",
+  "mainEntityOfPage": "https://母线槽.cn/articles/muxiancao-zhongliang-hezai-jisuan.html",
+  "about": "母线槽每米重量,母线槽重量表,2000A母线槽多重,母线槽支吊架荷载计算,母线槽弹簧支架压缩量,五线制母线槽重量"
+}
+</script>
+</body>
+</html>

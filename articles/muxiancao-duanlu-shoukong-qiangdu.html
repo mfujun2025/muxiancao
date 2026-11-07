@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>母线槽短路耐受强度与峰值电流：选型校验的核心技术参数 - 母线槽.cn</title>
-<meta name="description" content= + desc + >
-<meta name="keywords" content= + keywords + >
+<meta name="description" content="母线槽短路耐受强度怎么校验？本文详解Icu/Ics参数含义、峰值电流计算方法，附不同电流等级短路耐受对照表、校验流程与标准依据（GB 7251.6）。">
+<meta name="keywords" content="母线槽短路耐受强度,母线槽峰值电流,母线槽Icu,母线槽短路电流,母线槽动热稳定">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://miaoda.feishu.cn">
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
@@ -71,6 +71,11 @@ tr:nth-child(even){background:#FAFCFD}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+  <link rel="canonical" href="https://xn--ubwp2bz56a.cn/articles/muxiancao-duanlu-shoukong-qiangdu.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="母线槽短路耐受强度与峰值电流：选型校验的核心技术参数 - 母线槽.cn" />
+  <meta property="og:description" content="母线槽短路耐受强度怎么校验？本文详解Icu/Ics参数含义、峰值电流计算方法，附不同电流等级短路耐受对照表、校验流程与标准依据（GB 7251.6）。" />
+  <meta property="og:url" content="https://xn--ubwp2bz56a.cn/articles/muxiancao-duanlu-shoukong-qiangdu.html" />
 </head>
 <body>
 <header class="site-header">
@@ -100,7 +105,7 @@ tr:nth-child(even){background:#FAFCFD}
       <li>峰值电流（Ipk）是短路电流的第一个半波峰值，约为Icu的2.2–2.5倍，电动力与峰值电流平方成正比</li>
       <li>校验核心：母线槽的Icu≥系统预期短路电流，峰值耐受电流≥Ipk，动热稳定同时满足</li>
       <li>不同电流等级母线槽的典型Icu值：400A级≥30kA、1000A级≥50kA、2500A级≥65kA、4000A级≥80kA</li>
-      <li>标准依据：GB 7251.6-2015《低压成套开关设备和控制设备》、GB 50150-2016《电气装置安装工程电气设备交接试验标准》</li>
+      <li>标准依据：GB/T 7251.6-2015《低压成套开关设备和控制设备》、GB 50150-2016《电气装置安装工程电气设备交接试验标准》</li>
     </ul>
   </div>
 
@@ -231,7 +236,7 @@ tr:nth-child(even){background:#FAFCFD}
   <h2>常见问题（FAQ）</h2>
   <div class="qa">
     <b>Q1：母线槽短路耐受强度怎么校验？</b>
-    <p>校验分三步：第一步计算系统预期短路电流I_k和峰值电流I_pk；第二步查找母线槽的Icu/Ics参数；第三步比对Ics≥I_k、峰值耐受电流≥I_pk、I²t耐受值≥系统预期I²t值。建议预留10%–20%裕量。校验依据GB 7251.6-2015标准。</p>
+    <p>校验分三步：第一步计算系统预期短路电流I_k和峰值电流I_pk；第二步查找母线槽的Icu/Ics参数；第三步比对Ics≥I_k、峰值耐受电流≥I_pk、I²t耐受值≥系统预期I²t值。建议预留10%–20%裕量。校验依据GB/T 7251.6-2015标准。</p>
   </div>
   <div class="qa">
     <b>Q2：Icu和Ics有什么区别？选型看哪个？</b>
@@ -243,7 +248,7 @@ tr:nth-child(even){background:#FAFCFD}
   </div>
   <div class="qa">
     <b>Q4：母线槽短路耐受强度的型式试验怎么做的？</b>
-    <p>短路耐受强度型式试验在专用试验站进行：将母线槽样品接入短路试验回路，通过大电流发生器产生预期短路电流，测量短路电流波形、峰值电流、I²t值，检查试验后母线槽的状态（铜排变形、连接器损坏、绝缘性能等）。试验依据GB 7251.6-2015，报告由第三方检测机构出具。</p>
+    <p>短路耐受强度型式试验在专用试验站进行：将母线槽样品接入短路试验回路，通过大电流发生器产生预期短路电流，测量短路电流波形、峰值电流、I²t值，检查试验后母线槽的状态（铜排变形、连接器损坏、绝缘性能等）。试验依据GB/T 7251.6-2015，报告由第三方检测机构出具。</p>
   </div>
   <div class="qa">
     <b>Q5：母线槽短路耐受强度和动热稳定是什么关系？</b>
@@ -258,11 +263,12 @@ tr:nth-child(even){background:#FAFCFD}
 
   <div class="refs">
     <strong>参考资料：</strong><br>
-    <a href="https://www.gb688.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=GB%207251.6" target="_blank" rel="noopener">GB 7251.6-2015《低压成套开关设备和控制设备》</a><br>
+    <a href="https://www.gb688.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=GB%207251.6" target="_blank" rel="noopener">GB/T 7251.6-2015《低压成套开关设备和控制设备》</a><br>
     <a href="https://www.gb688.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=GB%2050150" target="_blank" rel="noopener">GB 50150-2016《电气装置安装工程电气设备交接试验标准》</a><br>
     <a href="https://www.gb688.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=GB%2050303" target="_blank" rel="noopener">GB 50303-2015《建筑电气工程施工质量验收规范》</a>
   </div>
 
+</main>
 <footer class="site-footer">
   <div class="footer-inner">
     <div>
@@ -289,8 +295,8 @@ tr:nth-child(even){background:#FAFCFD}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline":  + title + ,
-  "description":  + desc + ,
+  "headline": "母线槽短路耐受强度与峰值电流：选型校验的核心技术参数",
+  "description": "母线槽短路耐受强度怎么校验？本文详解Icu/Ics参数含义、峰值电流计算方法，附不同电流等级短路耐受对照表、校验流程与标准依据（GB 7251.6）。",
   "inLanguage": "zh-CN",
   "author": {
     "@type": "Organization",
@@ -300,9 +306,9 @@ tr:nth-child(even){background:#FAFCFD}
     "@type": "Organization",
     "name": "母线槽.cn"
   },
-  "datePublished":  + date + ,
+  "datePublished": "2026-11-03",
   "mainEntityOfPage": "https://母线槽.cn/articles/muxiancao-duanlu-shoukong-qiangdu.html",
-  "about":  + keywords + 
+  "about": "母线槽短路耐受强度,母线槽峰值电流,母线槽Icu,母线槽短路电流,母线槽动热稳定"
 }
 </script>
 </body>
