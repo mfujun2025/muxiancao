@@ -65,7 +65,7 @@ tr:nth-child(even){background:#FAFCFD}
 .site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
 .footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
 @media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
-.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner h3{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
 .footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
 .footer-inner a:hover{color:#F7A25C}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
@@ -137,7 +137,8 @@ tr:nth-child(even){background:#FAFCFD}
   <p>下表按母线槽工程常见等级汇总，可直接用于方案评审时横向比对。成本影响一列为相对量级，用于判断「是否值得为高一档买单」。表中数值为<strong>典型参考值，以厂家样本／型式试验报告为准</strong>。</p>
 
   <div class="table-wrap"><table>
-    <thead><tr><th>IP 等级</th><th>第一位／第二位含义</th><th>主要试验方法</th><th>典型产品形态</th><th>成本与选型影响</th></tr></thead>
+    <caption>IP 等级 × 防护能力 × 试验方法 × 产品形态 × 成本影响 对照表</caption>
+    <thead><tr><th scope="col">IP 等级</th><th scope="col">第一位／第二位含义</th><th scope="col">主要试验方法</th><th scope="col">典型产品形态</th><th scope="col">成本与选型影响</th></tr></thead>
     <tbody>
       <tr><td>IP30</td><td>防 ≥2.5 mm 固体／无防水</td><td>IP3X 试具</td><td>空气型或开孔外壳密集型</td><td>基准价，散热最好，仅干燥洁净室内</td></tr>
       <tr><td>IP40</td><td>防 ≥1.0 mm 固体／无防水</td><td>IP4X 试具</td><td>带盖板密集型，普通搭接</td><td>略高于 IP30，配电室、机房常用</td></tr>
@@ -176,7 +177,8 @@ tr:nth-child(even){background:#FAFCFD}
   <p>把上面五类工况细化为可套用的决策矩阵。表中等级与类型为<strong>典型参考值，以厂家样本／型式试验报告为准</strong>，实际定级还需结合项目技术规格书与消防、防爆要求。</p>
 
   <div class="table-wrap"><table>
-    <thead><tr><th>环境工况</th><th>推荐 IP 等级</th><th>推荐母线槽类型</th><th>需附加的措施</th></tr></thead>
+    <caption>环境工况 × 推荐 IP 等级 × 推荐类型 × 附加措施 对照表</caption>
+    <thead><tr><th scope="col">环境工况</th><th scope="col">推荐 IP 等级</th><th scope="col">推荐母线槽类型</th><th scope="col">需附加的措施</th></tr></thead>
     <tbody>
       <tr><td>干燥洁净配电室、数据中心机房</td><td>IP30～IP40</td><td>空气型／普通密集型</td><td>温湿度控制，预留载流余量，无需防水</td></tr>
       <tr><td>一般工业厂房（粉尘、偶发溅水）</td><td>IP54</td><td>封闭型材密集型</td><td>密封条、搭接处防溅，分区提级</td></tr>
@@ -288,11 +290,11 @@ tr:nth-child(even){background:#FAFCFD}
 <footer class="site-footer">
   <div class="footer-inner">
     <div>
-      <h4>母线槽.cn</h4>
+      <h3>母线槽.cn</h3>
       <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
     </div>
     <div>
-      <h4>站点导航</h4>
+      <h3>站点导航</h3>
       <a href="../index.html">首页</a>
       <a href="../huangye.html">企业黄页</a>
       <a href="../articles/母线槽是什么.html">母线槽百科</a>
@@ -301,7 +303,7 @@ tr:nth-child(even){background:#FAFCFD}
       <a href="../articles/母线槽怎么安装.html">安装施工</a>
     </div>
     <div>
-      <h4>合作推广</h4>
+      <h3>合作推广</h3>
       <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
     </div>
   </div>
