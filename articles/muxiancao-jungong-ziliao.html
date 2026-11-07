@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>母线槽竣工资料清单怎么整理？责任矩阵与归档 - 母线槽.cn</title>
+<meta name="description" content="母线槽竣工资料分产品合规、安装过程、检测结论三类证据链。本文给出责任矩阵、四类资料清单与验收归档口径。">
+<meta name="keywords" content="母线槽竣工资料,母线槽竣工图,母线槽开箱记录,母线槽检测报告,母线槽验收资料">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:20px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap ol{margin:0 0 16px 0;padding-left:22px}
+.article-wrap ol li{position:static;padding:0;margin-bottom:6px;list-style:decimal}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.table-wrap{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:var(--steel);font-weight:700;color:var(--ink)}
+tr:nth-child(even){background:#FAFCFD}
+.key-points{background:#F7FAFD;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin:0 0 28px 0}
+.key-points strong{display:block;font-size:.95rem;margin-bottom:8px}
+.key-points ul{margin:0;padding-left:20px}
+.key-points li{list-style:disc;padding:3px 0}
+.inline-cta{background:linear-gradient(135deg,#FFF4E6,#FFF8F0);border:1px solid #F0D9B8;border-radius:10px;padding:14px 18px;margin:20px 0}
+.inline-cta p{margin:0 0 8px;font-size:.95rem}
+.inline-cta a{font-weight:700;color:var(--accent)}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+  <link rel="canonical" href="https://xn--ubwp2bz56a.cn/articles/muxiancao-jungong-ziliao.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="母线槽竣工资料清单怎么整理？责任矩阵与归档 - 母线槽.cn" />
+  <meta property="og:description" content="母线槽竣工资料分产品合规、安装过程、检测结论三类证据链。本文给出责任矩阵、四类资料清单与验收归档口径。" />
+  <meta property="og:url" content="https://xn--ubwp2bz56a.cn/articles/muxiancao-jungong-ziliao.html" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+<main class="article-wrap">  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 竣工资料</nav>
+  <h1>母线槽竣工资料清单怎么整理？从开箱记录到检测报告的归档逻辑</h1>
+  <div class="meta-line">母线槽.cn 行业指南 · 2026 年发布 · 阅读约 15 分钟</div>
+
+  <p>典型场景示意：某项目竣工审计，母线槽资料袋里只有一份合格证，开箱记录、温升报告、绝缘测试全缺，验收卡了三周、尾款拖了半年。母线槽竣工资料不是把发票塞进档案盒，而是按责任矩阵把「产品合规、安装过程、检测结论」三类证据链补齐。很多施工队重安装轻归档，最后卡在审计与质保。本文按「先认同归档常被忽视 → 给你一份责任矩阵 → 拆解四类资料与验收口径」的思路，把竣工资料从清单、组卷到移交讲清楚。</p>
+
+  <p class="cta-title" style="font-size:1.12rem;font-weight:900;color:var(--ink);margin:28px 0 12px;border-left:4px solid var(--accent);padding-left:12px">母线槽竣工资料是指在安装工程完成后，证明产品合规、施工过程受控与检测结果合格的全部文件集合，是验收与质保的依据。</p>
+
+  <div class="key-points"><strong>关键要点</strong><ul>
+    <li>竣工资料分三类证据链：产品合规文件、安装过程记录、检测与验收结论，缺一类都过不了审计。</li>
+    <li>用「资料类别 × 出具方 × 形成时点 × 签字归档」责任矩阵管理，避免漏项与版本错乱。</li>
+    <li>型式试验报告、3C 证书、出厂检验报告须与实物型号一致；开箱与绝缘测试记录须真实可追溯。</li>
+  </ul></div>
+
+  <h2>为什么竣工资料常被拖到验收前才补</h2>
+  <p>资料归档不创造价值，却能在验收与审计时卡住整条线。正因为它「平时没人看」，才最容易被牺牲在安装忙季。很多项目把归档当成「收尾琐事」，安装高峰时全员扑在进度上，资料员兼职兼顾，结果开箱记录漏填、报告拖到竣工前才找厂家补。等验收节点逼近，缺一份就卡全流程，返工成本远高于当初随手记录。</p>
+  <h3>三类证据链：产品合规 / 安装过程 / 检测结论</h3>
+  <p>产品合规证明「装的是什么」，安装过程证明「怎么装的」，检测结论证明「装得合格」。三类环环相扣，断一环就无法形成闭环证据。型式试验与 3C 的关系详见<a href="../articles/母线槽3C认证.html">母线槽 3C 认证与型式试验报告</a>。</p>
+  <h3>缺资料的典型代价：验收卡、尾款拖、质保扯</h3>
+  <p>开箱记录缺失，到货损伤说不清责任；检测报告缺失，验收通不过；合格证与实物型号不符，质保被拒。每一样都直接转化为工期与现金流损失，且往往在竣工结算阶段才集中爆发。更隐蔽的是「竣工备案与消防验收」环节，资料不齐建设单位无法完成竣工验收备案，进而影响房产证办理与投入使用，连锁影响远超单笔尾款。</p>
+  <h3>谁该在什么时候收集</h3>
+  <p>产品文件随货到场即收，施工记录当日填，检测报告在工序完成后即时归档。责任矩阵（见 H2-4）把「谁出、何时出、谁来签」钉死，是最省心的做法。建议把资料收集写进施工周计划与工序交接单：上道工序不交记录，下道工序不接；监理的签认时点与支付节点挂钩，从机制上避免「没人管」。</p>
+
+  <h2>母线槽竣工资料四类资料逐类拆解</h2>
+  <p>下面按四类资料给出内容与出处，便于对照收集。每一类都对应一个责任主体与形成时点。</p>
+  <h3>① 产品合格证明文件</h3>
+  <p>含型式试验报告、3C 证书、出厂检验报告、合格证。注意报告型号须与投标及实物一致，编号可查询。报告解读可参考<a href="../articles/muxiancao-xingshi-shiyan-baogao.html">母线槽型式试验报告的参数解读与真伪核验</a>。缺少任一项，产品合规性就缺一块拼图。</p>
+  <h3>② 施工记录类</h3>
+  <p>含开箱检验记录、支吊架安装记录、连接紧固力矩记录、隐蔽工程验收记录。这些记录与<a href="../articles/muxiancao-chengpin-baohu.html">到货验收记录和产品合格文件</a>共同构成过程证据，也是后期质保追溯的第一手材料。</p>
+  <h3>③ 检测与试验报告</h3>
+  <p>含绝缘电阻测试、耐压试验、接地连续性、相序核对记录。耐压试验的方法与判据见母线槽耐压测试方法；检测项目清单见母线槽验收检测项目。每一条记录都应能追溯到当次工序。</p>
+  <h3>④ 竣工图与变更文件</h3>
+  <p>反映实际施工的竣工图、设计变更单、签证单、旧版作废标记。竣工图须与深化图及现场一致，参见母线槽安装规范与工序要求。它与深化图的区别在于「反映变更」而非「原始设计」。竣工图编制宜采用「深化图 + 变更图层」的方式，把每次签证叠加标注，避免重新描图引入新错；旧版图纸统一盖作废章并单独留存，防止现场误用。</p>
+
+  <h2>【核心对照表】母线槽竣工资料责任矩阵</h2>
+  <p>下表把四类资料细化为可勾选的文件清单，标注出具方、形成时点与签字归档去向。具体表式与组卷要求按项目所在地资料管理规程调整。</p>
+  <div class="table-wrap"><table>
+    <caption>母线槽竣工资料责任矩阵（按项目资料管理规程调整）</caption>
+    <thead><tr><th scope="col">资料类别 / 文件</th><th scope="col">出具方</th><th scope="col">形成时点</th><th scope="col">签字主体与归档去向</th></tr></thead>
+    <tbody>
+      <tr><td>型式试验报告</td><td>厂家 / 检测机构</td><td>供货前</td><td>监理核验，归产品证明卷</td></tr>
+      <tr><td>3C 证书</td><td>厂家</td><td>供货前</td><td>监理核验，归产品证明卷</td></tr>
+      <tr><td>出厂检验报告 / 合格证</td><td>厂家</td><td>随货</td><td>开箱签收，归产品证明卷</td></tr>
+      <tr><td>开箱检验记录</td><td>施工 / 监理</td><td>到货当日</td><td>双方签认，归施工记录卷</td></tr>
+      <tr><td>支吊架与紧固记录</td><td>施工单位</td><td>安装过程</td><td>技术负责人签，归施工记录卷</td></tr>
+      <tr><td>隐蔽工程验收记录</td><td>施工 / 监理</td><td>隐蔽前</td><td>监理签认，归隐蔽验收卷</td></tr>
+      <tr><td>绝缘 / 耐压 / 接地测试</td><td>检测单位</td><td>工序完成</td><td>检测人签，归检测报告卷</td></tr>
+      <tr><td>竣工图与变更签证</td><td>施工 / 设计</td><td>竣工阶段</td><td>各方签认，归竣工图卷</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:.86rem;color:var(--muted)">注：上表为通用框架，具体资料名称、份数与组卷规则以项目所在地资料管理规程与合同约定为准。</p>
+
+  <h2>验收口径：哪些报告必须原件、哪些可复印件</h2>
+  <p>审计尺度因项目而异，但有几条硬杠杠。</p>
+  <h3>型式试验报告与 3C 证书的核验要点</h3>
+  <p>报告编号可查、型号与实物一致、覆盖本项目规格。只交 3C 证书没有型式试验数据的，无法证明短路耐受等关键性能。核验方法见 H2-2 ①。</p>
+  <h3>绝缘与耐压测试记录的可追溯性</h3>
+  <p>记录须有测点、环境、仪表编号与检测人签字，能追溯到当次工序。无签字或后补的记录，审计通常不予认可。测试做法见 H2-2 ③。</p>
+  <h3>竣工图与现场一致性的核查</h3>
+  <p>竣工图须反映所有变更，旧版标记作废。抽查现场走向、插接箱位置与图纸不符的，整卷资料可信度受影响。</p>
+
+  <h2>组卷、移交与质保衔接</h2>
+  <p>资料齐了还要会组卷、会移交，否则照样卡验收。</p>
+  <h3>按责任矩阵分卷与目录编制</h3>
+  <p>按产品证明、施工记录、检测报告、竣工图分卷，编目录与页码，做到「目录能查到每一份」。这与深化设计的竣工图归档一脉相承，详见<a href="../articles/muxiancao-shenhua-sheji.html">母线槽深化设计的竣工图归档要求</a>。</p>
+  <h3>电子版与纸质版的同步归档</h3>
+  <p>电子版便于检索与备份，纸质版用于签章原件。两者目录须一致，避免「电子有、纸质缺」。移交时建议附一份总目录清单，便于接收方清点。电子文件宜按「项目—分部—资料类别」三级目录命名，扫描件分辨率满足归档要求；云备份与本地双份，防止单一介质损坏导致资料灭失。</p>
+  <h3>质保期内的资料调取与补充</h3>
+  <p>质保索赔、增容改造时都要调取原始资料。资料缺失会让责任认定陷入扯皮，所以归档是质保的前置条件而非收尾工作。建议在移交时同步移交电子版检索说明。例如质保期内插接箱故障，需调取当时的绝缘测试与紧固力矩记录判断是安装问题还是产品问题；没有这些记录，厂家与施工方互相推诿，最终损失由业主承担。</p>
+
+  <h2>常见漏项与自查清单</h2>
+  <p>把最容易丢的文件列成一张自查表，验收前逐项打勾，比临时补资料稳得多。</p>
+  <h3>产品类易漏：报告编号不可查、型号不符</h3>
+  <p>核对报告编号能否在机构官网查到、结论型号与实物铭牌是否一致。型号差一个后缀、报告对不上实物，是最高频的废标与拒保原因，应在到货即核验。</p>
+  <h3>过程类易漏：开箱记录与隐蔽验收缺失</h3>
+  <p>开箱记录当日填、隐蔽前验收当日签，这两条最容易被「忙忘了」。它们恰恰是到货损伤与隐蔽工程质量的责任凭证，缺一不可。</p>
+  <h3>检测类易漏：仪表编号与签字不全</h3>
+  <p>绝缘、耐压、接地测试记录必须有仪表编号与检测人签字。后补无签字的记录在审计环节最容易被打回，应在工序完成时当场签认。</p>
+
+  <h2>常见问题 FAQ</h2>
+  <div class="qa">
+    <b>Q1：母线槽竣工资料一般包含哪几类文件？</b>
+    <p>分产品合格证明、施工记录、检测报告、竣工图四类，详见 H2-2 与 H2-4 责任矩阵；缺一类都难以形成闭环证据。</p>
+    <b>Q2：型式试验报告可以用 3C 证书替代吗？</b>
+    <p>不能。3C 是准入证书，不含 Icw、温升等实测数据；型式试验报告才是性能证据，二者须同时归档，详见 H2-2 ①。</p>
+    <b>Q3：开箱记录缺失会有什么后果？</b>
+    <p>到货损伤的责任无法认定，质保可能被拒，验收与尾款都受影响，详见 H2-1 代价说明与 H2-2 ②。</p>
+    <b>Q4：绝缘测试记录怎样才符合审计要求？</b>
+    <p>须有测点、环境、仪表编号与检测人签字，能追溯当次工序；后补无签字通常不被认可，详见 H2-4 验收口径。</p>
+    <b>Q5：竣工图要和深化图完全一致吗？</b>
+    <p>不要求一致，但必须反映实际变更并作废旧版；抽查现场与图不符会拖累整卷资料可信度，详见 H2-4 核查小节。</p>
+  </div>
+
+  <p class="cta-title" style="font-size:1.12rem;font-weight:900;color:var(--ink);margin:34px 0 14px;border-left:4px solid var(--accent);padding-left:12px">结语</p>
+  <p>母线槽竣工资料的本质，是用文件把「装了什么、怎么装的、装得合格吗」三件事说清楚。最省心的办法是开工就按 H2-4 的责任矩阵建表，随工随填、随完随签，别等验收前熬夜补。把这份清单写进项目资料管理计划，指定每类文件的收集责任人与时限，验收与质保就不会被资料卡脖子。</p>
+
+  <div class="cta-box">
+    <p class="cta-title" style="font-size:1.25rem;font-weight:900;color:#fff;margin:0 0 10px">需要一份可直接用于组卷的资料责任矩阵模板？</p>
+    <p>母线槽.cn 汇总了四类竣工资料的文件清单、出具方与归档去向，支持按项目资料管理规程套用。</p>
+    <a class="btn" href="../huangye.html#apply">进入企业黄页 / 免费入驻</a>
+  </div>
+
+  <div class="refs"><strong>参考资料：</strong><br>
+    <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C09C8DDFAD467798FAAE736B9E97CEB1" target="_blank" rel="noopener">GB/T 7251.6-2015《低压成套开关设备和控制设备 第6部分：母线干线系统》（产品标准背景）</a><br>
+    <a href="https://www.mohurd.gov.cn/gongkai/fdzdgknr/bzgg/index.html" target="_blank" rel="noopener">住房城乡建设部 · 工程建设标准公告（建筑电气验收标准背景查阅）</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h3>母线槽.cn</h3>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h3>站点导航</h3>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="../articles/母线槽是什么.html">母线槽百科</a>
+      <a href="../articles/母线槽厂家怎么选.html">厂家采购指南</a>
+      <a href="../articles/密集型母线槽规格型号.html">规格型号</a>
+      <a href="../articles/母线槽怎么安装.html">安装施工</a>
+    </div>
+    <div>
+      <h3>合作推广</h3>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "母线槽竣工资料清单怎么整理？从开箱记录到检测报告的归档逻辑",
+  "description": "母线槽竣工资料分产品合规、安装过程、检测结论三类证据链。本文给出责任矩阵、四类资料清单与验收归档口径。",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "datePublished": "2026-11-07",
+  "mainEntityOfPage": "https://xn--ubwp2bz56a.cn/articles/muxiancao-jungong-ziliao.html",
+  "about": [
+    "母线槽竣工资料",
+    "母线槽竣工图",
+    "母线槽开箱记录",
+    "母线槽检测报告",
+    "母线槽验收资料"
+  ]
+}
+</script>
+</body>
+</html>
