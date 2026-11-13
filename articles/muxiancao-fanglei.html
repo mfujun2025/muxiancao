@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>母线槽防雷怎么做？浪涌保护与等电位连接措施 - 母线槽.cn</title>
+<meta name="description" content="母线槽防雷怎么做？本文讲清雷电危害路径与母线槽的防雷薄弱点，拆解等电位连接、浪涌保护器SPD选型与安装、接地配合三项核心措施，给出多雷环境防护与检测验收要点，附防雷措施对照表，帮多雷地区项目守住防雷底线。">
+<meta name="keywords" content="母线槽防雷,母线槽防雷接地,母线槽浪涌保护,母线槽SPD选型,母线槽等电位连接,母线槽避雷">
+<link rel="canonical" href="https://xn--ubwp2bz56a.cn/articles/muxiancao-fanglei.html">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="母线槽防雷怎么做？浪涌保护与等电位连接措施" />
+<meta property="og:description" content="母线槽防雷怎么做？本文讲清雷电危害路径与母线槽的防雷薄弱点，拆解等电位连接、浪涌保护器SPD选型与安装、接地配合三项核心措施，给出多雷环境防护与检测验收要点，附防雷措施对照表，帮多雷地区项目守住防雷底线。" />
+<meta property="og:url" content="https://xn--ubwp2bz56a.cn/articles/muxiancao-fanglei.html" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:20px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap ol{margin:0 0 16px 0;padding-left:22px}
+.article-wrap ol li{position:static;padding:0;margin-bottom:6px;list-style:decimal}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box .cta-title{font-size:1.25rem;font-weight:900;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.table-wrap{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:var(--steel);font-weight:700;color:var(--ink)}
+tr:nth-child(even){background:#FAFCFD}
+.key-points{background:#F7FAFD;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin:0 0 28px 0}
+.key-points strong{display:block;font-size:.95rem;margin-bottom:8px}
+.key-points ul{margin:0;padding-left:20px}
+.key-points li{list-style:disc;padding:3px 0}
+.inline-cta{background:linear-gradient(135deg,#FFF4E6,#FFF8F0);border:1px solid #F0D9B8;border-radius:10px;padding:14px 18px;margin:20px 0}
+.inline-cta p{margin:0 0 8px;font-size:.95rem}
+.inline-cta a{font-weight:700;color:var(--accent)}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+<main class="article-wrap">  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 防雷保护</nav>
+<h1>母线槽防雷怎么做？浪涌保护与等电位连接措施</h1>
+  <div class="meta-line">母线槽.cn 行业指南 · 2026 年发布 · 阅读约 10 分钟</div>
+
+  <p>母线槽防雷在多雷地区不是可选项。一次雷击带来的浪涌可以从进线端一路窜到干线末端，击穿绝缘、损坏插接箱内的电子元件，严重时造成整条干线停运。母线槽防雷和母线槽接地是两件相关但不同的事：接地是基础安全配置，防雷是针对雷电过电压的专项防护，只做接地不做防雷的项目，在雷雨季节照样吃亏。本文讲清雷电对母线槽的危害路径，拆解等电位连接、浪涌保护器（SPD）配置、接地配合三项核心措施，并给出多雷环境的专项防护、检测验收与维护要点。防雷标准只述名称与原则，具体条文数值以现行标准原文为准。</p>
+
+  <div class="key-points"><strong>关键要点</strong><ul>
+    <li>母线槽的雷电薄弱点在进线端、竖井干线与接电子元件的插接单元，浪涌沿线路传导危害远不止被击中的那一处。</li>
+    <li>防雷三件套：等电位连接消除电位差，SPD 泄放浪涌，接地系统提供泄放通路，三者缺一不可。</li>
+    <li>SPD 的通流容量、响应时间等参数为厂商宣称值，选型结合保护配合逐级核对，以产品说明书与设计文件为准。</li>
+    <li>防雷要按「分级保护」布局：总进线、分支干线、精密设备端逐级配置，靠前泄放大能量、靠后精细保护。</li>
+  </ul></div>
+
+  <h2>母线槽为什么需要防雷</h2>
+  <p>很多用户觉得母线槽敷设在建筑内部，跟雷电沾不上边。事实恰恰相反——母线槽正是建筑内浪涌传导的一条主干道，防雷薄弱点就藏在它的结构特点里。</p>
+  <h3>雷电的危害路径：直击、感应与浪涌侵入</h3>
+  <p>雷电危害母线槽的路径有三条：直击雷作用于建筑防雷系统时，雷电流经引下线与接地装置入地，周边导体感应出强电磁场；感应雷击在供电线路上感应出过电压，随电源进线侵入配电系统；浪涌侵入则是最常见的日常威胁——雷雨天气电网波动与操作过电压叠加，沿母线槽干线传导，逐级冲击所连接的设备。</p>
+  <h3>母线槽的雷电薄弱点</h3>
+  <p>三个部位最需要防护：一是进线端，直接承受从电源侧传来的浪涌，是第一道防线所在；二是竖井内的垂直干线，长度长、覆盖楼层多，浪涌传导范围大；三是插接箱与智能监测等含电子元件的单元，电子器件耐受过电压的能力远低于电力部件，往往电力部分无恙、电子模块先坏。薄弱点明确了，防护资源的投放就有了优先级。</p>
+  <h3>防雷与接地的区别</h3>
+  <p>母线槽接地解决的是故障电流的安全导通与人身防护，是常备的基础配置；母线槽防雷针对的是雷击浪涌这种瞬态高能量冲击，靠 SPD 与等电位措施把过电压限制在设备可承受的水平。接地是防雷的组成部分——浪涌总要经接地系统泄放——但只做接地、不做 SPD 与等电位，防雷就是不完整的。两者关系与各自做法，见<a href="muxiancao-jiedi-yaodian.html">母线槽接地</a>要点。</p>
+
+  <h2>防雷的核心措施</h2>
+  <p>母线槽防雷没有玄学，就是三项措施的有机结合。先看总览，再逐项展开。</p>
+  <div class="table-wrap"><table>
+    <caption>防雷措施对照表</caption>
+    <thead><tr><th scope="col">措施</th><th scope="col">作用</th><th scope="col">配置位置</th><th scope="col">检查要点</th></tr></thead>
+    <tbody>
+      <tr><td>等电位连接</td><td>消除雷电时的电位差，防止反击放电</td><td>进线端、竖井干线、跨楼层连接处</td><td>连接导通性与截面、是否可靠压接</td></tr>
+      <tr><td>SPD 浪涌保护</td><td>泄放浪涌电流，限制过电压</td><td>总进线、分支干线、设备端分级配置</td><td>状态指示窗、级间配合、安装距离</td></tr>
+      <tr><td>接地配合</td><td>为浪涌提供低阻抗泄放通路</td><td>外壳接地、PE 干线、接地端子</td><td>接地连续性、连接点无锈蚀松动</td></tr>
+      <tr><td>密封防护</td><td>降低受潮引发的综合风险</td><td>室外段、潮湿区段</td><td>密封件老化、防护等级达标</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:.86rem;color:var(--muted)">注：配置原则为行业通行做法，具体项目按设计文件与现行防雷标准执行，本文不引具体条文数值。</p>
+  <h3>等电位连接：消除电位差是防雷的地基</h3>
+  <p>雷击时不同部位导体间会出现瞬时电位差，电位差大到一定程度就会击穿空气放电，这就是「反击」——设备没被雷直接打中，却被自身系统内的放电打坏。等电位连接用导体把母线槽外壳、支架、桥架、进线钢管等金属体连成一体，雷击时大家「一起抬升」，电位差消失，反击路径就不存在了。连接点要可靠压接、去除防腐涂层保证金属接触，并定期检查导通性。</p>
+  <h3>SPD 浪涌保护器的选型与安装</h3>
+  <p>SPD 相当于浪涌的泄洪闸：平时呈现高阻抗不影响供电，浪涌到来瞬间导通泄放，把电压钳制在设备可承受范围。选型要考虑保护水平与被保护设备的耐受配合、级间距离配合（前后级 SPD 要协调动作而不是互相干扰）、以及安装回路容量。具体参数逐级核对厂商说明书与设计文件，通流容量等标称值均为厂商宣称口径，不同产品差异很大，不宜跨型号横向比较。</p>
+  <h3>接地系统的配合</h3>
+  <p>SPD 泄放的浪涌电流最终要经接地系统入地，接地阻抗越低、通路越短，钳位效果越好。母线槽外壳接地要保证全程连续，跨接部位不得依赖油漆涂层导电；竖井干线逐层与建筑接地系统做等电位连接。接地系统的施工与检测细节，见<a href="muxiancao-jiedi-yaodian.html">母线槽接地</a>，本文不再重复。</p>
+
+  <h2>SPD 的分级配置与运维</h2>
+  <p>SPD 用得好不好，一半在选型安装，一半在分级布局与后期监测。</p>
+  <h3>分级保护：从总进线到设备端</h3>
+  <p>成熟做法是按「总进线—分支干线—精密设备端」分级配置：总进线级泄放大部分雷电流能量，中间级进一步钳制，末级为含电子元件的设备提供精细保护。三级之间的能量分配靠参数与安装距离配合实现，跳级配置或参数倒挂都会让前级「抢不到活」、后级「扛不住压」。改造项目至少应保证总进线与重要设备端两级到位。</p>
+  <h3>安装位置与接线要求</h3>
+  <p>SPD 应尽量靠近被保护设备安装，接线短而直——引线过长会显著削弱钳位效果，这是现场最常见的安装缺陷。进线端 SPD 是母线槽防雷的起点，装在始端箱或进线柜内；分支级装在插接箱或楼层配电箱。接线端子按说明书力矩紧固，连接截面按设计要求选取。</p>
+  <h3>SPD 的监测与更换</h3>
+  <p>SPD 是「牺牲性」器件，泄放过浪涌后性能会衰减直至失效，必须定期检查状态指示窗，变色或报警即更换。带遥信触点的 SPD 可接入在线监测系统实现远程告警，监测手段见<a href="muxiancao-zhineng-jiance.html">母线槽智能监测</a>。雷雨季节前后各做一次专项检查；SPD 自身故障引发的跳闸也不罕见，排查与处理思路见<a href="muxiancao-qiangxiu.html">SPD 故障的抢修</a>要点。更换时选同型号同参数，不要随意用参数不明的替代品。</p>
+
+  <h2>多雷环境的专项防护</h2>
+  <p>在雷暴日多的地区，母线槽防雷还要叠加环境适应性措施，重点是防潮防腐蚀与防雷协同。</p>
+  <h3>室外与潮湿区段的防护配合</h3>
+  <p>室外敷设段与潮湿区段的母线槽，绝缘受潮后耐受浪涌的能力明显下降，同样强度的浪涌更容易击穿。这类区段要同步提高防护等级配置，保持密封完好，避免「防雷配置到位、绝缘却先被潮气打穿」的组合失误。防护等级怎么按环境选配，见<a href="muxiancao-fanghu-dengji-xuanxing.html">母线槽防护等级</a>。</p>
+  <h3>密封结构与防腐的协同</h3>
+  <p>防雷与防腐在密封这件事上是联动的：密封失效既进潮气也进腐蚀介质，等电位连接点锈蚀则导通性下降，两个问题互为放大器。沿海与化工环境的防雷改造，应同时核查外壳防腐状态与等电位连接点金属接触面，处理方法见<a href="muxiancao-fangfu.html">防腐外壳的防雷接地</a>配合要点。防腐做得好，防雷措施才能长期有效。</p>
+  <h3>雷雨季节的运行管理</h3>
+  <p>多雷地区建议建立雷雨季节管理机制：入夏前完成 SPD 状态检查、等电位连接导通测试与接地检测；雷暴预警期间关注智能监测的浪涌记录；每次强雷暴过后抽查进线端 SPD 与保护动作记录。把雷雨应对从「事后抢修」转为「季节性巡防」，是多雷地区最划算的投入。</p>
+
+  <h2>防雷的检测与验收</h2>
+  <p>防雷措施装完不等于有效，验收检测是确认防线真正成立的最后一关。</p>
+  <h3>接地电阻检测</h3>
+  <p>接地检测是防雷验收的基础项：测量接地电阻是否符合设计要求，检查接地干线全程连续、连接点无锈蚀松动。防雷接地的合格判据按设计文件与相关标准执行，不同场所要求不同，本文不引具体数值。检测记录归档，作为后续年检的基线。</p>
+  <h3>SPD 状态与级间配合核查</h3>
+  <p>验收时逐台核查 SPD：型号参数与设计一致、状态指示正常、安装距离与接线满足配合要求、后备保护装置配置到位。用浪涌记录仪或智能监测系统验证保护动作正常，比只看指示窗更有说服力。</p>
+  <h3>纳入整体电气验收体系</h3>
+  <p>防雷验收不应孤立进行，要与母线槽整体验收检测合并执行：绝缘测试、接地连续性、温升试验一并做，一次停电窗口完成全部项目。完整的验收项目清单与合格判据框架，见<a href="muxiancao-yanshou-jiance.html">母线槽验收检测</a>。</p>
+
+  <h2>防雷的维护与标准依据</h2>
+  <p>防雷是长周期事务，维护节奏与标准依据都应写进运维制度。</p>
+  <h3>定期检查要点</h3>
+  <p>防雷维护的固定动作：SPD 状态窗检查（雷雨季加密）、等电位连接点导通与锈蚀检查、接地干线连续性抽测、密封与绝缘状态核查。检查结果记入台账，与历次数据对比。发现 SPD 失效立即更换，发现连接点劣化按防腐修复流程处理，不要等到雷季才发现防线已经空了。</p>
+  <h3>标准依据与信息获取</h3>
+  <p>母线槽产品本身执行 GB/T 7251.6-2015 与 GB/T 7251.1-2023 两项现行标准（见文末参考资料）。建筑物防雷设计相关的国家标准（如《建筑物防雷设计规范》GB 50057）与浪涌保护器相关标准（如 GB/T 18802.1）属工程建设与产品配套标准，其具体条文数值以标准原文为准，本文不引用；标准发布与公告信息可查询住房城乡建设部标准公告栏目（见文末链接）。获取现行有效版本，永远以官方发布渠道为准。</p>
+  <h3>与接地篇的层级分工</h3>
+  <p>最后厘清分工：接地解决「故障电流怎么安全入地」，属于基础施工与验收范畴，做法见母线槽接地专题；防雷解决「雷击浪涌怎么被限制与泄放」，属于专项防护范畴，即本文内容。两者共用接地系统但目标不同，改造或验收时按两套清单分别核查，避免「以为做了接地就等于做了防雷」的认知误区。</p>
+
+  <h2>常见问题（FAQ）</h2>
+  <div class="qa"><b>Q1：母线槽为什么要防雷？</b><p>因为母线槽是建筑内浪涌传导的主干道：雷击与电网波动产生的过电压会沿干线传导，击穿绝缘、损坏插接箱与智能模块内的电子元件。多雷地区不做防雷专项，等于让整条干线裸奔。</p></div>
+  <div class="qa"><b>Q2：母线槽防雷的 SPD 怎么选？</b><p>按「总进线—分支—设备端」分级配置，选型关注保护水平与设备耐受的配合、级间配合与安装位置。通流容量等标称参数是厂商宣称口径，逐级核对产品说明书与设计文件，不跨型号硬比较。</p></div>
+  <div class="qa"><b>Q3：SPD 应该装在哪里？</b><p>总进线端装第一级，分支干线与楼层配电处装中间级，含电子元件的设备端装末级。SPD 尽量靠近被保护设备，接线短而直——引线过长会明显削弱保护效果。</p></div>
+  <div class="qa"><b>Q4：母线槽防雷和接地是什么关系？</b><p>接地是防雷的组成部分：浪涌最终经接地系统泄放，接地连续性与低阻抗是防雷有效的前提。但只做接地不做等电位连接与 SPD，防雷不完整。两者目标不同，验收按两套清单分别核查。</p></div>
+  <div class="qa"><b>Q5：多雷地区母线槽要注意什么？</b><p>建立雷雨季节管理机制：季前完成 SPD 检查、等电位导通测试与接地检测；雷暴过后抽查进线端 SPD 与动作记录；室外潮湿区段同步做好密封与防腐，避免绝缘受潮放大浪涌危害。</p></div>
+
+  <div class="cta-box">
+    <p class="cta-title">多雷地区项目？把防雷清单排进验收</h2>
+    <p>用上面的防雷措施对照表逐项核查设计文件与现场配置，再通过本站企业黄页找到有防雷配套经验的母线槽厂家与工程服务商，或免费入驻让多雷地区客户直接找到你。</p>
+    <a class="btn" href="../huangye.html#apply">进入企业黄页 / 免费入驻</a>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料：</strong><br>
+    <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C09C8DDFAD467798FAAE736B9E97CEB1" target="_blank" rel="noopener">GB/T 7251.6-2015《低压成套开关设备和控制设备 第 6 部分：母线干线系统（母线槽）》全文（国家标准全文公开系统）</a><br>
+    <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=DDC142C7F26B5CA1AB759DAA1855E0F2" target="_blank" rel="noopener">GB/T 7251.1-2023《低压成套开关设备和控制设备 第 1 部分：总则》全文（国家标准全文公开系统）</a><br>
+    <a href="https://www.mohurd.gov.cn/gongkai/fdzdgknr/bzgg/index.html" target="_blank" rel="noopener">住房城乡建设部标准公告栏目（建筑物防雷等工程建设类标准发布信息）</a>
+  </div></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h3>母线槽.cn</h3>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h3>站点导航</h3>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="../articles/母线槽是什么.html">母线槽百科</a>
+      <a href="../articles/母线槽厂家怎么选.html">厂家采购指南</a>
+      <a href="../articles/密集型母线槽规格型号.html">规格型号</a>
+      <a href="../articles/母线槽怎么安装.html">安装施工</a>
+    </div>
+    <div>
+      <h3>合作推广</h3>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+      <a href="https://400.xn--fiqs8s/" target="_blank" rel="noopener">400.中国</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "母线槽防雷怎么做？浪涌保护与等电位连接措施",
+  "description": "母线槽防雷怎么做？本文讲清雷电危害路径与母线槽的防雷薄弱点，拆解等电位连接、浪涌保护器SPD选型与安装、接地配合三项核心措施，给出多雷环境防护与检测验收要点，附防雷措施对照表，帮多雷地区项目守住防雷底线。",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "datePublished": "2026-11-13",
+  "mainEntityOfPage": "https://xn--ubwp2bz56a.cn/articles/muxiancao-fanglei.html",
+  "about": [
+    "母线槽防雷",
+    "母线槽防雷接地",
+    "母线槽浪涌保护",
+    "母线槽SPD选型",
+    "母线槽等电位连接",
+    "母线槽避雷"
+  ]
+}
+</script>
+</body>
+</html>
