@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>母线槽与变压器连接怎么做？低压侧出线做法全解析 - 母线槽.cn</title>
+<meta name="description" content="母线槽与变压器连接怎么做？本文聚焦低压侧出线，讲清法兰与过渡铜排的连接路径、变压器套管不受母线自重的支撑原则、相位核对与换相节、中性点接地配合，附连接做法对照表，帮机电团队把电源侧接入做对做稳。">
+<meta name="keywords" content="母线槽与变压器连接,变压器低压侧母线槽,母线槽接变压器,变压器母线法兰连接,过渡铜排,换相节">
+<link rel="canonical" href="https://xn--ubwp2bz56a.cn/articles/muxiancao-bianyaqi-lianjie.html">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="母线槽与变压器连接怎么做？低压侧出线做法全解析" />
+<meta property="og:description" content="母线槽与变压器连接怎么做？本文聚焦低压侧出线，讲清法兰与过渡铜排的连接路径、变压器套管不受母线自重的支撑原则、相位核对与换相节、中性点接地配合，附连接做法对照表，帮机电团队把电源侧接入做对做稳。" />
+<meta property="og:url" content="https://xn--ubwp2bz56a.cn/articles/muxiancao-bianyaqi-lianjie.html" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2540'/%3E%3Cpath d='M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z' fill='%23E87A1F'/%3E%3Ccircle cx='12' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='23' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='35' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='12' cy='47' r='3' fill='%23F2B25C'/%3E%3Ccircle cx='52' cy='47' r='3' fill='%23F2B25C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{--ink:#0B2540;--navy:#123A5E;--steel:#EAF0F6;--line:#D6DFE9;--paper:#FFFFFF;--accent:#E87A1F;--text:#23303F;--muted:#5B6B7C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+.brand svg{width:30px;height:30px}.brand .cn{color:#F2B25C;font-weight:700}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#E8EEF6}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{background:rgba(232,122,31,.18);color:#F7B06A}
+.nav .cta{background:var(--accent);color:#fff;font-weight:700}
+.nav .cta:hover{background:#D16A15}
+.article-wrap{max-width:820px;margin:0 auto;padding:40px 20px 60px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--accent)}
+.article-wrap h1{font-size:1.85rem;color:var(--ink);font-weight:900;line-height:1.4;margin-bottom:14px}
+@media(min-width:860px){.article-wrap h1{font-size:2.2rem}}
+.meta-line{color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:26px}
+.article-wrap h2{font-size:1.3rem;color:var(--navy);font-weight:900;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-wrap h3{font-size:1.1rem;color:var(--ink);font-weight:700;margin:20px 0 10px}
+.article-wrap p{margin-bottom:14px}
+.article-wrap ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+.article-wrap li{position:relative;padding:5px 0 5px 26px;margin-bottom:4px}
+.article-wrap li::before{content:"";position:absolute;left:2px;top:14px;width:14px;height:14px;border-radius:4px;background:#FBE9D8}
+.article-wrap ol{margin:0 0 16px 0;padding-left:22px}
+.article-wrap ol li{position:static;padding:0;margin-bottom:6px;list-style:decimal}
+.article-wrap strong{color:var(--ink)}
+.article-wrap .qa{background:#F7FAFD;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.article-wrap .qa b{display:block;color:var(--ink);margin-bottom:6px}
+.article-wrap .refs{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:16px}
+.article-wrap .refs a{color:var(--navy);word-break:break-all}
+.cta-box{margin-top:40px;background:linear-gradient(140deg,#0B2540,#123A5E);color:#fff;border-radius:14px;padding:26px 24px;text-align:center}
+.cta-box h2{font-size:1.25rem;font-weight:900;border-left:0;padding-left:0;margin:0 0 10px}
+.cta-box .cta-title{font-size:1.25rem;font-weight:900;margin:0 0 10px}
+.cta-box p{color:#BFD2E6;font-size:.93rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;font-size:.98rem;background:var(--accent);color:#fff}
+.btn:hover{background:#D16A15}
+.table-wrap{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:var(--steel);font-weight:700;color:var(--ink)}
+tr:nth-child(even){background:#FAFCFD}
+.key-points{background:#F7FAFD;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin:0 0 28px 0}
+.key-points strong{display:block;font-size:.95rem;margin-bottom:8px}
+.key-points ul{margin:0;padding-left:20px}
+.key-points li{list-style:disc;padding:3px 0}
+.inline-cta{background:linear-gradient(135deg,#FFF4E6,#FFF8F0);border:1px solid #F0D9B8;border-radius:10px;padding:14px 18px;margin:20px 0}
+.inline-cta p{margin:0 0 8px;font-size:.95rem}
+.inline-cta a{font-weight:700;color:var(--accent)}
+.site-footer{background:var(--ink);color:#9DB2C8;font-size:.88rem}
+.footer-inner{max-width:1120px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:760px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-inner h4{color:#fff;font-size:.95rem;margin-bottom:10px;font-weight:700}
+.footer-inner a{display:block;color:#9DB2C8;padding:3px 0}
+.footer-inner a:hover{color:#F7A25C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:16px 20px;text-align:center;color:#71879C}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16304F"/><path d="M16 20h32v6H16zM16 32h32v6H16zM16 44h32v6H16z" fill="#E87A1F"/><circle cx="12" cy="23" r="3" fill="#F2B25C"/><circle cx="52" cy="23" r="3" fill="#F2B25C"/><circle cx="12" cy="35" r="3" fill="#F2B25C"/><circle cx="52" cy="35" r="3" fill="#F2B25C"/><circle cx="12" cy="47" r="3" fill="#F2B25C"/><circle cx="52" cy="47" r="3" fill="#F2B25C"/></svg>
+      <span>母线槽<span class="cn">.cn</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="行业文章.html" class="on">行业文章</a>
+      <a class="cta" href="../huangye.html#apply">免费入驻</a>
+    </nav>
+  </div>
+</header>
+<main class="article-wrap">  <nav class="crumb"><a href="../index.html">首页</a> / <a href="行业文章.html">行业文章</a> / 技术专题</nav>
+<h1>母线槽与变压器连接怎么做？低压侧出线做法全解析</h1>
+  <div class="meta-line">母线槽.cn 行业指南 · 2026 年发布 · 阅读约 14 分钟</div>
+
+  <p>变压器低压套管不是承重件——把整段母线槽的重量和电动力都挂在套管上，是变配电室最不该犯、却最常见的错。母线槽与变压器连接，看起来只是「把母线接到变压器出线端」，真做起来要同时解决四件事：怎么接（路径与过渡件）、力往哪卸（套管不受力）、相位对不对、中性点怎么配合。本文聚焦低压侧出线，把母线槽与变压器连接的连接路径、受力原则、相位核对与接地配合逐层讲清，附连接做法对照表。文中力矩、铜排截面、相序排列等均为厂商宣称或工程示例口径，只述原则不写死，具体以项目技术文件与产品说明书为准，涉及停电验电的作业按现场工作票与安全规程执行。</p>
+
+  <div class="key-points"><strong>关键要点</strong><ul>
+    <li>母线槽与变压器连接属电源接入四级矩阵中最上游的「变压器低压套管侧」，与柜侧、柴发侧、高压侧各有专门篇章。</li>
+    <li>核心受力原则：母线槽自重与短路电动力由独立支撑承担，变压器套管不作承重件、不受母线侧向拉力。</li>
+    <li>连接路径以法兰过渡、过渡铜排、软连接为主，具体形式依变压器出线结构与厂家接口确定。</li>
+    <li>相位核对、换相节使用与中性点/接地配合，是送电前必须确认的三项，核相记录随竣工资料归档。</li>
+    <li>力矩、截面、相序排列等数值各家口径不一，本文只给框架，以项目技术文件与产品说明书为准。</li>
+  </ul></div>
+
+  <h2>在电源接入矩阵中的位置</h2>
+  <p>母线槽与变压器连接不是孤立的接法，它是整个电源接入矩阵里的一环。先看清它在哪，才不会和邻近篇章混淆。</p>
+  <h3>变压器侧 / 配电柜侧 / 低压柴发侧 / 高压共箱四级划分</h3>
+  <p>按电源接入点的不同，母线槽对接场景可以分成四级：<strong>变压器低压套管侧</strong>——也就是本篇，讲的是低压出线端怎么接；<strong>配电柜侧</strong>——母线经始端箱接入低压配电柜进线，见<a href="muxiancao-shiduanxiang-lianjie.html">母线槽始端箱与配电柜连接</a>；<strong>低压柴发侧</strong>——应急电源经软连接接入母线，见<a href="muxiancao-fadianji-lianjie.html">柴油发电机与母线槽连接</a>；<strong>高压侧</strong>——发电厂、变电站的高压母线，见<a href="gaoya-gongxiang-muxiancao-xuanxing.html">高压共箱母线槽</a>。四级各有各的接口结构与受力逻辑，本篇只管最上游的变压器低压侧，不越界替代其他三篇。</p>
+  <h3>与「母线槽始端箱与配电柜连接」篇的边界（柜侧进线）</h3>
+  <p>始端箱篇讲的是母线如何把电送进配电柜，重点在柜侧进线方式、始端箱的作用与软连接。<a href="muxiancao-shiduanxiang-lianjie.html">母线槽始端箱与配电柜连接</a>处理的是「柜子这一头」，本篇处理的是「变压器那一头」——两者分处同一段母线的两端，接口对象、受力主体都不同，不要互相套用。</p>
+  <h3>与「高压共箱母线槽」篇的边界（高压侧）</h3>
+  <p>共箱篇讨论的是高压侧母线选型与结构，电压等级、绝缘距离、防护要求与低压侧完全不是一个量级。<a href="gaoya-gongxiang-muxiancao-xuanxing.html">高压共箱母线槽</a>服务于发电厂和变电站的高压场景，本篇聚焦 1 千伏以下的低压出线。虽然都叫「变压器连接」，但高压套管和低压套管的做法不可混谈。</p>
+
+  <h2>连接路径与部件</h2>
+  <p>明确了位置，再看变压器侧到底用哪些部件、路径怎么走。下表把常见部件的作用和失效后果列清。</p>
+  <div class="table-wrap"><table>
+    <caption>变压器侧连接部件对照表（工程做法框架，具体形式以产品技术文件为准）</caption>
+    <thead><tr><th scope="col">部件</th><th scope="col">作用</th><th scope="col">安装要点</th><th scope="col">失效后果</th></tr></thead>
+    <tbody>
+      <tr><td>法兰过渡</td><td>把母线端头与变压器出线端子对接</td><td>接触面处理到位、对中，连接随变压器端子结构确定</td><td>接触不良、发热、受力传递至套管</td></tr>
+      <tr><td>过渡铜排</td><td>在出线端子与母线之间转接、适配间距</td><td>截面按电流与温升核算，走向避免硬别劲</td><td>截面不足过热、安装应力集中</td></tr>
+      <tr><td>软连接</td><td>吸收位移、隔振、释放热胀冷缩应力</td><td>预留合理余量，不绷紧、不承力</td><td>刚性连接把力传给套管或接头</td></tr>
+      <tr><td>换相节</td><td>在需要时调整相位排列以对齐两端</td><td>仅在相位确需调整时使用，做好标识与记录</td><td>误用导致相序错、并列事故</td></tr>
+      <tr><td>独立支撑</td><td>承担母线自重与电动力，保护套管</td><td>靠近出线端设置，受力路径独立可靠</td><td>套管承重、接头拉裂</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:.86rem;color:var(--muted)">注：本表只给部件作用与安装要点，力矩、铜排截面、相序排列等数值均为厂商宣称或工程示例，以项目技术文件与产品说明书为准。</p>
+  <h3>法兰过渡与过渡铜排的适用情形</h3>
+  <p>当变压器出线端子与母线端头能直接对口时，可用法兰过渡；当两者间距、孔位或高度不匹配时，就需要过渡铜排做转接。公开工程做法里「直接与配电柜或变压器连接可用法兰、通过中间过渡铜排连接」是常见口径，但具体采用哪种，取决于变压器出线结构、端子形式和厂家接口，没有通用答案。选型时把变压器端子的尺寸与位置资料交给母线厂家做深化，比凭经验预判可靠。</p>
+  <h3>软连接与母线独立支撑的作用</h3>
+  <p>变压器运行有振动，母线自身也会热胀冷缩，硬邦邦地刚性对接会把这些位移和应力直接顶到端子和接头上。软连接的作用就是吸收位移、隔振、释放热应力；独立支撑的作用则是把母线自重和短路电动力卸给结构。两者配合，才能做到「电气接通、机械脱开」。典型场景示意：某项目母线直接用硬排顶在变压器端子上，运行数月后端子渗油、接头松动——根源就是把变压器套管当成了受力点。</p>
+  <h3>变压器套管不受母线自重与电动力的原则</h3>
+  <p>这是母线槽与变压器连接里最该写死的一条：变压器低压套管主要用于导电与绝缘，不是结构承重件。母线的自重要靠靠近出线端的独立支撑承担，短路时的电动力要靠合理的支撑与固定体系消解，都不能让套管去扛。核对方法是顺着力的路径问一句——这段母线的重量和短路冲击最终传到哪里？如果答案是「传到套管上」，方案就要改。具体支撑间距与形式按厂家技术文件和深化设计确定。</p>
+
+  <h2>相位排列与换相</h2>
+  <p>接得牢还不够，相位必须对。母线槽与变压器连接一旦相位错，轻则设备反转，重则并列短路。</p>
+  <h3>两端相位标识核对方法</h3>
+  <p>核对从标识开始：变压器出线端子的相序标记、母线的相序标记、图纸的相序约定，三者要一致。核对不仅看颜色，更要按图纸逐相追溯导体走向，避免「看着对、接错相」。相序排列的具体顺序各家有不同做法（厂商宣称/工程示例），不能凭某张样本图照搬，须以本项目图纸和产品文件为准。</p>
+  <h3>换相节的适用情形与限制</h3>
+  <p>当变压器出线相序与母线受电相序不一致、而两端又不宜改线时，可用换相节在中间调整相位。但换相节不是「万能补丁」：它增加了一段连接与一个潜在故障点，只在确有必要、且经设计确认时使用。用之前要核清相位关系、做好标识，用之后要复核相序并记录。能通过在设计阶段调整路由解决相位问题的，就不必增加换相节。</p>
+  <h3>核相记录与送电前复核</h3>
+  <p>接完必须核相，送电前还要结合投运流程再复核一遍。核相的方法与在<a href="muxiancao-songdian-shiyunxing.html">母线槽送电试运行</a>流程中的位置，见该篇送电前检查章节——本篇关注「变压器侧相位怎么对齐」，送电篇关注「核相在流程里何时做、记录怎么留」。核相涉及带电作业，按现场工作票与安全规程执行。</p>
+
+  <h2>中性点与接地配合</h2>
+  <p>接地的另一项重点是 N 线和 PE 线怎么处理、外壳接地怎么连续——它直接关系人身与设备安全。</p>
+  <h3>接地形式与 N/PE 区分原则</h3>
+  <p>先确认系统的接地形式（如 TN、TT、IT 等），它决定了中性线（N）与保护线（PE）如何设置和区分。N 线参与正常工作电流，PE 线只在故障时承载电流、承担保护功能，两者不能随意混接。变压器中性点的接地方式要与系统接地形式一致，具体做法属设计范畴，须按设计文件执行，本文只给区分原则，不替设计定值。</p>
+  <h3>母线外壳接地连续性的实现</h3>
+  <p>母线槽的金属外壳必须全程电气连续并可靠接地，跨接处、连接处、插接箱安装处都不能断开。接地连续性的检测在项目绝缘与接地检测专题里有系统方法，本篇强调：变压器出线端是接地的起点之一，这里的跨接与引出如果漏做，后面整段外壳的接地保护就打了折扣。</p>
+  <h3>与「母线槽接地」内容的衔接</h3>
+  <p>接地的完整做法——接地形式选择、跨接要求、检测方法——属于专门的接地技术专题，本篇不展开，只强调变压器连接处的接地起点地位。把这里的接地做对，是整条母线接地连续的前提。</p>
+
+  <h2>电流匹配与保护接口</h2>
+  <p>母线槽与变压器连接，还要在电流和保护上与上下游对齐，避免「接是接上了，保护和容量不匹配」。</p>
+  <h3>变压器容量与母线额定电流的匹配思路</h3>
+  <p>母线额定电流要与变压器低压侧容量相匹配：既要能长期承担变压器可输出的电流，也要在异常时与上级保护配合。匹配不是简单按容量除电压一步算完，还要考虑负载性质、温升条件与扩容预留。余量怎么留、降容怎么算，可参考本站负载率与降容的技术框架，本文只给匹配思路不给具体数值。</p>
+  <h3>上级保护配合的接口条件</h3>
+  <p>变压器低压侧的保护装置与母线保护之间要满足选择性要求——末端故障由下级切除，变压器侧保护作后备。这套配合的核对框架见母线槽保护配合的技术专题：本篇负责把「变压器侧这个接口的保护条件」说清，配合篇负责把它纳入整条保护链。涉及定值修改按现场工作票与安全规程执行。</p>
+  <h3>与「母线槽负载率」篇的余量衔接</h3>
+  <p>变压器出线侧的母线往往承担主要负荷，余量是否充足直接影响后续扩容。负载率与降容的完整方法见相关技术专题，本篇只提醒：变压器容量确定后，母线余量应在设计阶段一次算清，别等投运后负荷涨上来才发现干线到顶。</p>
+
+  <h2>施工与验收要点</h2>
+  <p>最后落到施工与验收。变压器连接是带电作业高风险环节，纪律比技巧更重要。</p>
+  <h3>接触面处理与螺栓紧固（厂商口径标注）</h3>
+  <p>连接接触面要清洁、平整、涂覆合适的导电膏，螺栓按规定力矩对角、分次紧固并做防松标记。力矩值随螺栓规格与厂家要求变化，是典型的厂商宣称口径（示例），必须以产品说明书为准——凭手感拧紧或照抄别的项目力矩，都是隐患的来源。所有紧固作业须在断电、验电、挂牌后按工作票执行。</p>
+  <h3>绝缘与耐压复核</h3>
+  <p>连接完成后要复核绝缘与耐压，确认安装过程没有损伤绝缘、没有遗留异物。测试方法按交接试验要求与产品技术文件执行，判定阈值本文不列。绝缘测试必须在断电放电后进行，合格方可进入送电流程。</p>
+  <h3>BIM 深化阶段的接口与孔洞预留</h3>
+  <p>变压器低压套管侧的接口位置、母线走向、支撑点位，最好在模型阶段就协调到位——变压器室的孔洞、支架预埋、检修空间都需要在深化时预留。这部分三维协同的做法见<a href="muxiancao-bim-guanxian.html">母线槽BIM管线综合</a>：把接口在模型里先「接一遍」，能显著减少现场返工。</p>
+
+  <h2>常见问题（FAQ）</h2>
+  <div class="qa"><b>Q1：母线槽能直接挂在变压器低压套管上吗？</b><p>不能。低压套管主要用于导电与绝缘，不是承重件。母线自重与短路电动力应由靠近出线端的独立支撑承担，不能让套管受力。核对时顺着力的路径看它最终传到哪里，传到套管就要改方案。</p></div>
+  <div class="qa"><b>Q2：法兰和过渡铜排各起什么作用？</b><p>法兰用于在端子与母线能直接对口时做连接；过渡铜排用于间距、孔位或高度不匹配时做转接适配。采用哪种取决于变压器出线结构与厂家接口，应把端子资料交母线厂家深化，具体做法以项目技术文件为准。</p></div>
+  <div class="qa"><b>Q3：变压器侧相位对不上怎么办？</b><p>先在设计阶段核对两端相序约定与标识，能调整路由解决的就调整；确需在中间调整时可用换相节，并做好标识、复核与记录。换相节会增加连接点，不宜滥用。核相与带电作业按现场工作票与安全规程执行。</p></div>
+  <div class="qa"><b>Q4：中性点接地要注意什么？</b><p>先确认系统接地形式，再决定 N 线与 PE 线的设置与区分，不能混接；变压器中性点接地方式要与系统一致。母线外壳须全程接地连续，出线端是接地的起点之一。具体做法按设计文件执行。</p></div>
+  <div class="qa"><b>Q5：变压器侧连接完要测什么？</b><p>复核绝缘电阻与耐压、检查接地连续性、核对相位、检查连接紧固与防松标记，测试须在断电放电后按交接试验要求执行。判定阈值以产品技术文件为准；涉及送电的操作按现场工作票与安全规程执行。</p></div>
+
+  <div class="cta-box">
+    <p class="cta-title">电源侧接入，找懂变压器接口的厂家更省心</p>
+    <p>母线槽与变压器连接的关键，是厂家能否结合变压器出线结构给出法兰、过渡铜排与独立支撑的成套接口方案。浏览本站企业黄页，筛选有变配电室业绩的母线槽生产厂家与深化设计单位，也可免费入驻让机电总包直接找到你。</p>
+    <a class="btn" href="../huangye.html#apply">进入企业黄页 / 免费入驻</a>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料：</strong><br>
+    <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C09C8DDFAD467798FAAE736B9E97CEB1" target="_blank" rel="noopener">GB/T 7251.6-2015《低压成套开关设备和控制设备 第 6 部分：母线干线系统（母线槽）》全文（国家标准全文公开系统）</a><br>
+    <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=DDC142C7F26B5CA1AB759DAA1855E0F2" target="_blank" rel="noopener">GB/T 7251.1-2023《低压成套开关设备和控制设备 第 1 部分：总则》全文（国家标准全文公开系统）</a><br>
+    <a href="https://www.mohurd.gov.cn/gongkai/fdzdgknr/bzgg/index.html" target="_blank" rel="noopener">工程建设国家标准发布公告（住房和城乡建设部官网）</a>
+  </div></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h3>母线槽.cn</h3>
+      <p>专注母线槽行业的免费企业黄页平台，覆盖空气型、密集型、耐火、防水防潮、智能、照明母线槽的生产、经销、工程与设计咨询企业。</p>
+    </div>
+    <div>
+      <h3>站点导航</h3>
+      <a href="../index.html">首页</a>
+      <a href="../huangye.html">企业黄页</a>
+      <a href="../articles/母线槽是什么.html">母线槽百科</a>
+      <a href="../articles/母线槽厂家怎么选.html">厂家采购指南</a>
+      <a href="../articles/密集型母线槽规格型号.html">规格型号</a>
+      <a href="../articles/母线槽怎么安装.html">安装施工</a>
+    </div>
+    <div>
+      <h3>合作推广</h3>
+      <a href="https://172.lot-ml.com/ProductEn/Index/04a04744e3c8d9a6" target="_blank" rel="noopener">母线产品国际站 · 合作推广</a>
+      <a href="https://400.xn--fiqs8s/" target="_blank" rel="noopener">400.中国</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 母线槽.cn · 免费企业黄页 · 收录数据由管理员审核后自动同步</div>
+</footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "母线槽与变压器连接怎么做？低压侧出线做法全解析",
+  "description": "母线槽与变压器连接怎么做？本文聚焦低压侧出线，讲清法兰与过渡铜排的连接路径、变压器套管不受母线自重的支撑原则、相位核对与换相节、中性点接地配合，附连接做法对照表，帮机电团队把电源侧接入做对做稳。",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "母线槽.cn"
+  },
+  "datePublished": "2026-11-19",
+  "mainEntityOfPage": "https://xn--ubwp2bz56a.cn/articles/muxiancao-bianyaqi-lianjie.html",
+  "about": [
+    "母线槽与变压器连接",
+    "变压器低压侧母线槽",
+    "母线槽接变压器",
+    "变压器母线法兰连接",
+    "过渡铜排",
+    "换相节"
+  ]
+}
+</script>
+</body>
+</html>
